@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj: \
  /opt/toolchains/zephyr/lib/utils/dec.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/zephyr/include/zephyr/sys/util.h \
  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \

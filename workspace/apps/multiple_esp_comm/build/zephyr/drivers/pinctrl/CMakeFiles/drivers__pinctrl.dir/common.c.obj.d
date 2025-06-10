@@ -1,6 +1,6 @@
 zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj: \
  /opt/toolchains/zephyr/drivers/pinctrl/common.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/zephyr/include/zephyr/drivers/pinctrl.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/errno.h \
@@ -17,7 +17,7 @@ zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj: \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/devicetree_generated.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/devicetree_generated.h \
  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
  /opt/toolchains/zephyr/include/zephyr/sys/__assert.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
@@ -60,10 +60,10 @@ zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj: \
  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
  /opt/toolchains/zephyr/include/zephyr/sys/sys_io.h \
  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/device.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/device.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscall_list.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscall_list.h \
  /opt/toolchains/zephyr/include/zephyr/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \

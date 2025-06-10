@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Utility rule file for xtensa_handlers_h.
 
@@ -69,12 +69,12 @@ include zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/progress.m
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h: zephyr/include/generated/xtensa_handlers.h
 
 zephyr/include/generated/xtensa_handlers.h: zephyr/include/generated/xtensa_handlers_tmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../../../include/generated/xtensa_handlers.h"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/venv/bin/python3 /opt/toolchains/zephyr/arch/xtensa/core/xtensa_intgen.py /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/xtensa_handlers_tmp.c > /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/xtensa_handlers.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../../../include/generated/xtensa_handlers.h"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/venv/bin/python3 /opt/toolchains/zephyr/arch/xtensa/core/xtensa_intgen.py /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/xtensa_handlers_tmp.c > /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/xtensa_handlers.h
 
 zephyr/include/generated/xtensa_handlers_tmp.c:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ../../../../include/generated/xtensa_handlers_tmp.c"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc -E -U__XCC__ -I/opt/toolchains/modules/hal/xtensa/zephyr/soc/esp32s3 -o /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/xtensa_handlers_tmp.c - < /opt/toolchains/zephyr/arch/xtensa/core/xtensa_intgen.tmpl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ../../../../include/generated/xtensa_handlers_tmp.c"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc -E -U__XCC__ -I/opt/toolchains/modules/hal/xtensa/zephyr/soc/esp32s3 -o /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/xtensa_handlers_tmp.c - < /opt/toolchains/zephyr/arch/xtensa/core/xtensa_intgen.tmpl
 
 xtensa_handlers_h: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h
 xtensa_handlers_h: zephyr/include/generated/xtensa_handlers.h
@@ -87,10 +87,10 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build: xtensa_hand
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && $(CMAKE_COMMAND) -P CMakeFiles/xtensa_handlers_h.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && $(CMAKE_COMMAND) -P CMakeFiles/xtensa_handlers_h.dir/cmake_clean.cmake
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/clean
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr/arch/xtensa/core /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr/arch/xtensa/core /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/depend
 

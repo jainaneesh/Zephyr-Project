@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Include any dependencies generated for this target.
 include zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/depend.make
@@ -72,30 +72,30 @@ include zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/flags.make
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/flags.make
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj: /opt/toolchains/zephyr/lib/libc/common/source/stdlib/abort.c
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj -MF CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj.d -o CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj -c /opt/toolchains/zephyr/lib/libc/common/source/stdlib/abort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj -MF CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj.d -o CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj -c /opt/toolchains/zephyr/lib/libc/common/source/stdlib/abort.c
 
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/lib/libc/common/source/stdlib/abort.c > CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/lib/libc/common/source/stdlib/abort.c > CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.i
 
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/lib/libc/common/source/stdlib/abort.c -o CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/lib/libc/common/source/stdlib/abort.c -o CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.s
 
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/flags.make
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj: /opt/toolchains/zephyr/lib/libc/common/source/stdlib/malloc.c
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj -MF CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj.d -o CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj -c /opt/toolchains/zephyr/lib/libc/common/source/stdlib/malloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj -MF CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj.d -o CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj -c /opt/toolchains/zephyr/lib/libc/common/source/stdlib/malloc.c
 
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/lib/libc/common/source/stdlib/malloc.c > CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/lib/libc/common/source/stdlib/malloc.c > CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.i
 
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/lib/libc/common/source/stdlib/malloc.c -o CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/lib/libc/common/source/stdlib/malloc.c -o CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.s
 
 # Object files for target lib__libc__common
 lib__libc__common_OBJECTS = \
@@ -109,19 +109,19 @@ zephyr/lib/libc/common/liblib__libc__common.a: zephyr/lib/libc/common/CMakeFiles
 zephyr/lib/libc/common/liblib__libc__common.a: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
 zephyr/lib/libc/common/liblib__libc__common.a: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make
 zephyr/lib/libc/common/liblib__libc__common.a: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblib__libc__common.a"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && $(CMAKE_COMMAND) -P CMakeFiles/lib__libc__common.dir/cmake_clean_target.cmake
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib__libc__common.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblib__libc__common.a"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && $(CMAKE_COMMAND) -P CMakeFiles/lib__libc__common.dir/cmake_clean_target.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib__libc__common.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build: zephyr/lib/libc/common/liblib__libc__common.a
 .PHONY : zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build
 
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common && $(CMAKE_COMMAND) -P CMakeFiles/lib__libc__common.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common && $(CMAKE_COMMAND) -P CMakeFiles/lib__libc__common.dir/cmake_clean.cmake
 .PHONY : zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/clean
 
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr/lib/libc/common /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr/lib/libc/common /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/depend
 

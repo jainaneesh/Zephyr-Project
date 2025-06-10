@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Utility rule file for parse_syscalls_target.
 
@@ -71,8 +71,8 @@ zephyr/CMakeFiles/parse_syscalls_target: zephyr/misc/generated/struct_tags.json
 
 zephyr/misc/generated/syscalls.json: zephyr/misc/generated/syscalls_subdirs.trigger
 zephyr/misc/generated/syscalls.json: zephyr/misc/generated/syscalls_file_list.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating misc/generated/syscalls.json, misc/generated/struct_tags.json"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/venv/bin/python3 /opt/toolchains/zephyr/scripts/build/parse_syscalls.py --scan /opt/toolchains/zephyr/include --scan /opt/toolchains/zephyr/drivers --scan /opt/toolchains/zephyr/subsys/net --json-file /workspace/apps/05_solution_pwm_knob/build/zephyr/misc/generated/syscalls.json --tag-struct-file /workspace/apps/05_solution_pwm_knob/build/zephyr/misc/generated/struct_tags.json --file-list /workspace/apps/05_solution_pwm_knob/build/zephyr/misc/generated/syscalls_file_list.txt 
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating misc/generated/syscalls.json, misc/generated/struct_tags.json"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/venv/bin/python3 /opt/toolchains/zephyr/scripts/build/parse_syscalls.py --scan /opt/toolchains/zephyr/include --scan /opt/toolchains/zephyr/drivers --scan /opt/toolchains/zephyr/subsys/net --json-file /workspace/apps/multiple_esp_comm/build/zephyr/misc/generated/syscalls.json --tag-struct-file /workspace/apps/multiple_esp_comm/build/zephyr/misc/generated/struct_tags.json --file-list /workspace/apps/multiple_esp_comm/build/zephyr/misc/generated/syscalls_file_list.txt 
 
 zephyr/misc/generated/struct_tags.json: zephyr/misc/generated/syscalls.json
 	@$(CMAKE_COMMAND) -E touch_nocreate zephyr/misc/generated/struct_tags.json
@@ -305,12 +305,12 @@ zephyr/misc/generated/syscalls_subdirs.trigger: zephyr/misc/generated/syscalls_l
 zephyr/misc/generated/syscalls_subdirs.trigger: zephyr/misc/generated/syscalls_links/include_zephyr_xen_public
 zephyr/misc/generated/syscalls_subdirs.trigger: zephyr/misc/generated/syscalls_links/include_zephyr_xen_public_hvm
 zephyr/misc/generated/syscalls_subdirs.trigger: zephyr/misc/generated/syscalls_links/include_zephyr_xen_public_io
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating misc/generated/syscalls_subdirs.trigger"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/venv/bin/python3 /opt/toolchains/zephyr/scripts/build/subfolder_list.py --directory /opt/toolchains/zephyr/include --out-file /workspace/apps/05_solution_pwm_knob/build/zephyr/misc/generated/syscalls_subdirs.txt --trigger-file /workspace/apps/05_solution_pwm_knob/build/zephyr/misc/generated/syscalls_subdirs.trigger --create-links /workspace/apps/05_solution_pwm_knob/build/zephyr/misc/generated/syscalls_links
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating misc/generated/syscalls_subdirs.trigger"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/venv/bin/python3 /opt/toolchains/zephyr/scripts/build/subfolder_list.py --directory /opt/toolchains/zephyr/include --out-file /workspace/apps/multiple_esp_comm/build/zephyr/misc/generated/syscalls_subdirs.txt --trigger-file /workspace/apps/multiple_esp_comm/build/zephyr/misc/generated/syscalls_subdirs.trigger --create-links /workspace/apps/multiple_esp_comm/build/zephyr/misc/generated/syscalls_links
 
 zephyr/misc/generated/syscalls_links/include:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Preparing syscall dependency handling"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /usr/bin/cmake -E echo 
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Preparing syscall dependency handling"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /usr/bin/cmake -E echo 
 
 zephyr/misc/generated/syscalls_links/include_zephyr: zephyr/misc/generated/syscalls_links/include
 	@$(CMAKE_COMMAND) -E touch_nocreate zephyr/misc/generated/syscalls_links/include_zephyr
@@ -1233,10 +1233,10 @@ zephyr/CMakeFiles/parse_syscalls_target.dir/build: parse_syscalls_target
 .PHONY : zephyr/CMakeFiles/parse_syscalls_target.dir/build
 
 zephyr/CMakeFiles/parse_syscalls_target.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/parse_syscalls_target.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/parse_syscalls_target.dir/cmake_clean.cmake
 .PHONY : zephyr/CMakeFiles/parse_syscalls_target.dir/clean
 
 zephyr/CMakeFiles/parse_syscalls_target.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr /workspace/apps/05_solution_pwm_knob/build/zephyr/CMakeFiles/parse_syscalls_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr /workspace/apps/multiple_esp_comm/build/zephyr/CMakeFiles/parse_syscalls_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/CMakeFiles/parse_syscalls_target.dir/depend
 

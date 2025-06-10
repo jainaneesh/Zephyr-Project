@@ -1,6 +1,6 @@
 zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/xtensa_sys_timer.c.obj: \
  /opt/toolchains/zephyr/drivers/timer/xtensa_sys_timer.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/zephyr/include/zephyr/init.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
@@ -53,11 +53,11 @@ zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/xtensa_sys_timer.c.obj: \
  /opt/toolchains/zephyr/include/zephyr/sys/slist.h \
  /opt/toolchains/zephyr/include/zephyr/sys/list_gen.h \
  /opt/toolchains/zephyr/include/zephyr/sys/rb.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/zsr.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/zsr.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h \
  /opt/toolchains/zephyr/include/zephyr/irq.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/devicetree_generated.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/devicetree_generated.h \
  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree/clocks.h \
@@ -87,10 +87,10 @@ zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/xtensa_sys_timer.c.obj: \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/device.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/device.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscall_list.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscall_list.h \
  /opt/toolchains/zephyr/include/zephyr/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \
@@ -107,4 +107,4 @@ zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/xtensa_sys_timer.c.obj: \
  /opt/toolchains/zephyr/include/zephyr/debug/sparse.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread_stack.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/arch.h
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/arch.h

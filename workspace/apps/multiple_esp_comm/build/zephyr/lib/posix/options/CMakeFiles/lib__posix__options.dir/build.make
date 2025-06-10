@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Include any dependencies generated for this target.
 include zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/depend.make
@@ -72,16 +72,16 @@ include zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/flags.make
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj: zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/flags.make
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj: /opt/toolchains/zephyr/misc/empty_file.c
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj: zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/options && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj -MF CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj.d -o CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj -c /opt/toolchains/zephyr/misc/empty_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/options && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj -MF CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj.d -o CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj -c /opt/toolchains/zephyr/misc/empty_file.c
 
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/options && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/misc/empty_file.c > CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/options && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/misc/empty_file.c > CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.i
 
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/options && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/misc/empty_file.c -o CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/options && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/misc/empty_file.c -o CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.s
 
 # Object files for target lib__posix__options
 lib__posix__options_OBJECTS = \
@@ -93,19 +93,19 @@ lib__posix__options_EXTERNAL_OBJECTS =
 zephyr/lib/posix/options/liblib__posix__options.a: zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/opt/toolchains/zephyr/misc/empty_file.c.obj
 zephyr/lib/posix/options/liblib__posix__options.a: zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/build.make
 zephyr/lib/posix/options/liblib__posix__options.a: zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library liblib__posix__options.a"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/options && $(CMAKE_COMMAND) -P CMakeFiles/lib__posix__options.dir/cmake_clean_target.cmake
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/options && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib__posix__options.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library liblib__posix__options.a"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/options && $(CMAKE_COMMAND) -P CMakeFiles/lib__posix__options.dir/cmake_clean_target.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/options && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib__posix__options.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/build: zephyr/lib/posix/options/liblib__posix__options.a
 .PHONY : zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/build
 
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/options && $(CMAKE_COMMAND) -P CMakeFiles/lib__posix__options.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/options && $(CMAKE_COMMAND) -P CMakeFiles/lib__posix__options.dir/cmake_clean.cmake
 .PHONY : zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/clean
 
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr/lib/posix/options /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/options /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr/lib/posix/options /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/options /workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/depend
 

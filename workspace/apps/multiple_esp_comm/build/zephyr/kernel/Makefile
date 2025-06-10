@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build/zephyr/kernel//CMakeFiles/progress.marks
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build/zephyr/kernel//CMakeFiles/progress.marks
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/clean
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zephyr/kernel/CMakeFiles/kernel.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/CMakeFiles/kernel.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/CMakeFiles/kernel.dir/rule
 .PHONY : zephyr/kernel/CMakeFiles/kernel.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ kernel: zephyr/kernel/CMakeFiles/kernel.dir/rule
 
 # fast build rule for target.
 kernel/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/build
 .PHONY : kernel/fast
 
 banner.obj: banner.c.obj
@@ -135,7 +135,7 @@ banner.obj: banner.c.obj
 
 # target to build an object file
 banner.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
 .PHONY : banner.c.obj
 
 banner.i: banner.c.i
@@ -143,7 +143,7 @@ banner.i: banner.c.i
 
 # target to preprocess a source file
 banner.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/banner.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/banner.c.i
 .PHONY : banner.c.i
 
 banner.s: banner.c.s
@@ -151,7 +151,7 @@ banner.s: banner.c.s
 
 # target to generate assembly for a file
 banner.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/banner.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/banner.c.s
 .PHONY : banner.c.s
 
 busy_wait.obj: busy_wait.c.obj
@@ -159,7 +159,7 @@ busy_wait.obj: busy_wait.c.obj
 
 # target to build an object file
 busy_wait.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
 .PHONY : busy_wait.c.obj
 
 busy_wait.i: busy_wait.c.i
@@ -167,7 +167,7 @@ busy_wait.i: busy_wait.c.i
 
 # target to preprocess a source file
 busy_wait.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.i
 .PHONY : busy_wait.c.i
 
 busy_wait.s: busy_wait.c.s
@@ -175,7 +175,7 @@ busy_wait.s: busy_wait.c.s
 
 # target to generate assembly for a file
 busy_wait.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.s
 .PHONY : busy_wait.c.s
 
 condvar.obj: condvar.c.obj
@@ -183,7 +183,7 @@ condvar.obj: condvar.c.obj
 
 # target to build an object file
 condvar.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
 .PHONY : condvar.c.obj
 
 condvar.i: condvar.c.i
@@ -191,7 +191,7 @@ condvar.i: condvar.c.i
 
 # target to preprocess a source file
 condvar.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.i
 .PHONY : condvar.c.i
 
 condvar.s: condvar.c.s
@@ -199,7 +199,7 @@ condvar.s: condvar.c.s
 
 # target to generate assembly for a file
 condvar.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.s
 .PHONY : condvar.c.s
 
 device.obj: device.c.obj
@@ -207,7 +207,7 @@ device.obj: device.c.obj
 
 # target to build an object file
 device.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
 .PHONY : device.c.obj
 
 device.i: device.c.i
@@ -215,7 +215,7 @@ device.i: device.c.i
 
 # target to preprocess a source file
 device.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/device.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/device.c.i
 .PHONY : device.c.i
 
 device.s: device.c.s
@@ -223,7 +223,7 @@ device.s: device.c.s
 
 # target to generate assembly for a file
 device.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/device.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/device.c.s
 .PHONY : device.c.s
 
 dynamic_disabled.obj: dynamic_disabled.c.obj
@@ -231,7 +231,7 @@ dynamic_disabled.obj: dynamic_disabled.c.obj
 
 # target to build an object file
 dynamic_disabled.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
 .PHONY : dynamic_disabled.c.obj
 
 dynamic_disabled.i: dynamic_disabled.c.i
@@ -239,7 +239,7 @@ dynamic_disabled.i: dynamic_disabled.c.i
 
 # target to preprocess a source file
 dynamic_disabled.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.i
 .PHONY : dynamic_disabled.c.i
 
 dynamic_disabled.s: dynamic_disabled.c.s
@@ -247,7 +247,7 @@ dynamic_disabled.s: dynamic_disabled.c.s
 
 # target to generate assembly for a file
 dynamic_disabled.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.s
 .PHONY : dynamic_disabled.c.s
 
 errno.obj: errno.c.obj
@@ -255,7 +255,7 @@ errno.obj: errno.c.obj
 
 # target to build an object file
 errno.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
 .PHONY : errno.c.obj
 
 errno.i: errno.c.i
@@ -263,7 +263,7 @@ errno.i: errno.c.i
 
 # target to preprocess a source file
 errno.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/errno.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/errno.c.i
 .PHONY : errno.c.i
 
 errno.s: errno.c.s
@@ -271,7 +271,7 @@ errno.s: errno.c.s
 
 # target to generate assembly for a file
 errno.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/errno.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/errno.c.s
 .PHONY : errno.c.s
 
 fatal.obj: fatal.c.obj
@@ -279,7 +279,7 @@ fatal.obj: fatal.c.obj
 
 # target to build an object file
 fatal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
 .PHONY : fatal.c.obj
 
 fatal.i: fatal.c.i
@@ -287,7 +287,7 @@ fatal.i: fatal.c.i
 
 # target to preprocess a source file
 fatal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.i
 .PHONY : fatal.c.i
 
 fatal.s: fatal.c.s
@@ -295,7 +295,7 @@ fatal.s: fatal.c.s
 
 # target to generate assembly for a file
 fatal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.s
 .PHONY : fatal.c.s
 
 float.obj: float.c.obj
@@ -303,7 +303,7 @@ float.obj: float.c.obj
 
 # target to build an object file
 float.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/float.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/float.c.obj
 .PHONY : float.c.obj
 
 float.i: float.c.i
@@ -311,7 +311,7 @@ float.i: float.c.i
 
 # target to preprocess a source file
 float.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/float.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/float.c.i
 .PHONY : float.c.i
 
 float.s: float.c.s
@@ -319,7 +319,7 @@ float.s: float.c.s
 
 # target to generate assembly for a file
 float.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/float.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/float.c.s
 .PHONY : float.c.s
 
 idle.obj: idle.c.obj
@@ -327,7 +327,7 @@ idle.obj: idle.c.obj
 
 # target to build an object file
 idle.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
 .PHONY : idle.c.obj
 
 idle.i: idle.c.i
@@ -335,7 +335,7 @@ idle.i: idle.c.i
 
 # target to preprocess a source file
 idle.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/idle.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/idle.c.i
 .PHONY : idle.c.i
 
 idle.s: idle.c.s
@@ -343,7 +343,7 @@ idle.s: idle.c.s
 
 # target to generate assembly for a file
 idle.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/idle.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/idle.c.s
 .PHONY : idle.c.s
 
 init.obj: init.c.obj
@@ -351,7 +351,7 @@ init.obj: init.c.obj
 
 # target to build an object file
 init.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
 .PHONY : init.c.obj
 
 init.i: init.c.i
@@ -359,7 +359,7 @@ init.i: init.c.i
 
 # target to preprocess a source file
 init.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init.c.i
 .PHONY : init.c.i
 
 init.s: init.c.s
@@ -367,7 +367,7 @@ init.s: init.c.s
 
 # target to generate assembly for a file
 init.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init.c.s
 .PHONY : init.c.s
 
 init_static.obj: init_static.c.obj
@@ -375,7 +375,7 @@ init_static.obj: init_static.c.obj
 
 # target to build an object file
 init_static.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init_static.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init_static.c.obj
 .PHONY : init_static.c.obj
 
 init_static.i: init_static.c.i
@@ -383,7 +383,7 @@ init_static.i: init_static.c.i
 
 # target to preprocess a source file
 init_static.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init_static.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init_static.c.i
 .PHONY : init_static.c.i
 
 init_static.s: init_static.c.s
@@ -391,7 +391,7 @@ init_static.s: init_static.c.s
 
 # target to generate assembly for a file
 init_static.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init_static.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/init_static.c.s
 .PHONY : init_static.c.s
 
 kheap.obj: kheap.c.obj
@@ -399,7 +399,7 @@ kheap.obj: kheap.c.obj
 
 # target to build an object file
 kheap.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
 .PHONY : kheap.c.obj
 
 kheap.i: kheap.c.i
@@ -407,7 +407,7 @@ kheap.i: kheap.c.i
 
 # target to preprocess a source file
 kheap.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.i
 .PHONY : kheap.c.i
 
 kheap.s: kheap.c.s
@@ -415,7 +415,7 @@ kheap.s: kheap.c.s
 
 # target to generate assembly for a file
 kheap.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.s
 .PHONY : kheap.c.s
 
 mailbox.obj: mailbox.c.obj
@@ -423,7 +423,7 @@ mailbox.obj: mailbox.c.obj
 
 # target to build an object file
 mailbox.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
 .PHONY : mailbox.c.obj
 
 mailbox.i: mailbox.c.i
@@ -431,7 +431,7 @@ mailbox.i: mailbox.c.i
 
 # target to preprocess a source file
 mailbox.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.i
 .PHONY : mailbox.c.i
 
 mailbox.s: mailbox.c.s
@@ -439,7 +439,7 @@ mailbox.s: mailbox.c.s
 
 # target to generate assembly for a file
 mailbox.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.s
 .PHONY : mailbox.c.s
 
 main_weak.obj: main_weak.c.obj
@@ -447,7 +447,7 @@ main_weak.obj: main_weak.c.obj
 
 # target to build an object file
 main_weak.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
 .PHONY : main_weak.c.obj
 
 main_weak.i: main_weak.c.i
@@ -455,7 +455,7 @@ main_weak.i: main_weak.c.i
 
 # target to preprocess a source file
 main_weak.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.i
 .PHONY : main_weak.c.i
 
 main_weak.s: main_weak.c.s
@@ -463,7 +463,7 @@ main_weak.s: main_weak.c.s
 
 # target to generate assembly for a file
 main_weak.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.s
 .PHONY : main_weak.c.s
 
 mem_slab.obj: mem_slab.c.obj
@@ -471,7 +471,7 @@ mem_slab.obj: mem_slab.c.obj
 
 # target to build an object file
 mem_slab.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
 .PHONY : mem_slab.c.obj
 
 mem_slab.i: mem_slab.c.i
@@ -479,7 +479,7 @@ mem_slab.i: mem_slab.c.i
 
 # target to preprocess a source file
 mem_slab.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.i
 .PHONY : mem_slab.c.i
 
 mem_slab.s: mem_slab.c.s
@@ -487,7 +487,7 @@ mem_slab.s: mem_slab.c.s
 
 # target to generate assembly for a file
 mem_slab.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.s
 .PHONY : mem_slab.c.s
 
 mempool.obj: mempool.c.obj
@@ -495,7 +495,7 @@ mempool.obj: mempool.c.obj
 
 # target to build an object file
 mempool.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
 .PHONY : mempool.c.obj
 
 mempool.i: mempool.c.i
@@ -503,7 +503,7 @@ mempool.i: mempool.c.i
 
 # target to preprocess a source file
 mempool.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.i
 .PHONY : mempool.c.i
 
 mempool.s: mempool.c.s
@@ -511,7 +511,7 @@ mempool.s: mempool.c.s
 
 # target to generate assembly for a file
 mempool.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.s
 .PHONY : mempool.c.s
 
 msg_q.obj: msg_q.c.obj
@@ -519,7 +519,7 @@ msg_q.obj: msg_q.c.obj
 
 # target to build an object file
 msg_q.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
 .PHONY : msg_q.c.obj
 
 msg_q.i: msg_q.c.i
@@ -527,7 +527,7 @@ msg_q.i: msg_q.c.i
 
 # target to preprocess a source file
 msg_q.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.i
 .PHONY : msg_q.c.i
 
 msg_q.s: msg_q.c.s
@@ -535,7 +535,7 @@ msg_q.s: msg_q.c.s
 
 # target to generate assembly for a file
 msg_q.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.s
 .PHONY : msg_q.c.s
 
 mutex.obj: mutex.c.obj
@@ -543,7 +543,7 @@ mutex.obj: mutex.c.obj
 
 # target to build an object file
 mutex.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
 .PHONY : mutex.c.obj
 
 mutex.i: mutex.c.i
@@ -551,7 +551,7 @@ mutex.i: mutex.c.i
 
 # target to preprocess a source file
 mutex.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.i
 .PHONY : mutex.c.i
 
 mutex.s: mutex.c.s
@@ -559,7 +559,7 @@ mutex.s: mutex.c.s
 
 # target to generate assembly for a file
 mutex.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.s
 .PHONY : mutex.c.s
 
 priority_queues.obj: priority_queues.c.obj
@@ -567,7 +567,7 @@ priority_queues.obj: priority_queues.c.obj
 
 # target to build an object file
 priority_queues.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/priority_queues.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/priority_queues.c.obj
 .PHONY : priority_queues.c.obj
 
 priority_queues.i: priority_queues.c.i
@@ -575,7 +575,7 @@ priority_queues.i: priority_queues.c.i
 
 # target to preprocess a source file
 priority_queues.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/priority_queues.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/priority_queues.c.i
 .PHONY : priority_queues.c.i
 
 priority_queues.s: priority_queues.c.s
@@ -583,7 +583,7 @@ priority_queues.s: priority_queues.c.s
 
 # target to generate assembly for a file
 priority_queues.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/priority_queues.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/priority_queues.c.s
 .PHONY : priority_queues.c.s
 
 queue.obj: queue.c.obj
@@ -591,7 +591,7 @@ queue.obj: queue.c.obj
 
 # target to build an object file
 queue.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
 .PHONY : queue.c.obj
 
 queue.i: queue.c.i
@@ -599,7 +599,7 @@ queue.i: queue.c.i
 
 # target to preprocess a source file
 queue.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/queue.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/queue.c.i
 .PHONY : queue.c.i
 
 queue.s: queue.c.s
@@ -607,7 +607,7 @@ queue.s: queue.c.s
 
 # target to generate assembly for a file
 queue.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/queue.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/queue.c.s
 .PHONY : queue.c.s
 
 sched.obj: sched.c.obj
@@ -615,7 +615,7 @@ sched.obj: sched.c.obj
 
 # target to build an object file
 sched.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
 .PHONY : sched.c.obj
 
 sched.i: sched.c.i
@@ -623,7 +623,7 @@ sched.i: sched.c.i
 
 # target to preprocess a source file
 sched.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sched.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sched.c.i
 .PHONY : sched.c.i
 
 sched.s: sched.c.s
@@ -631,7 +631,7 @@ sched.s: sched.c.s
 
 # target to generate assembly for a file
 sched.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sched.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sched.c.s
 .PHONY : sched.c.s
 
 sem.obj: sem.c.obj
@@ -639,7 +639,7 @@ sem.obj: sem.c.obj
 
 # target to build an object file
 sem.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
 .PHONY : sem.c.obj
 
 sem.i: sem.c.i
@@ -647,7 +647,7 @@ sem.i: sem.c.i
 
 # target to preprocess a source file
 sem.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sem.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sem.c.i
 .PHONY : sem.c.i
 
 sem.s: sem.c.s
@@ -655,7 +655,7 @@ sem.s: sem.c.s
 
 # target to generate assembly for a file
 sem.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sem.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/sem.c.s
 .PHONY : sem.c.s
 
 stack.obj: stack.c.obj
@@ -663,7 +663,7 @@ stack.obj: stack.c.obj
 
 # target to build an object file
 stack.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
 .PHONY : stack.c.obj
 
 stack.i: stack.c.i
@@ -671,7 +671,7 @@ stack.i: stack.c.i
 
 # target to preprocess a source file
 stack.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/stack.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/stack.c.i
 .PHONY : stack.c.i
 
 stack.s: stack.c.s
@@ -679,7 +679,7 @@ stack.s: stack.c.s
 
 # target to generate assembly for a file
 stack.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/stack.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/stack.c.s
 .PHONY : stack.c.s
 
 system_work_q.obj: system_work_q.c.obj
@@ -687,7 +687,7 @@ system_work_q.obj: system_work_q.c.obj
 
 # target to build an object file
 system_work_q.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
 .PHONY : system_work_q.c.obj
 
 system_work_q.i: system_work_q.c.i
@@ -695,7 +695,7 @@ system_work_q.i: system_work_q.c.i
 
 # target to preprocess a source file
 system_work_q.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.i
 .PHONY : system_work_q.c.i
 
 system_work_q.s: system_work_q.c.s
@@ -703,7 +703,7 @@ system_work_q.s: system_work_q.c.s
 
 # target to generate assembly for a file
 system_work_q.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.s
 .PHONY : system_work_q.c.s
 
 thread.obj: thread.c.obj
@@ -711,7 +711,7 @@ thread.obj: thread.c.obj
 
 # target to build an object file
 thread.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
 .PHONY : thread.c.obj
 
 thread.i: thread.c.i
@@ -719,7 +719,7 @@ thread.i: thread.c.i
 
 # target to preprocess a source file
 thread.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/thread.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/thread.c.i
 .PHONY : thread.c.i
 
 thread.s: thread.c.s
@@ -727,7 +727,7 @@ thread.s: thread.c.s
 
 # target to generate assembly for a file
 thread.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/thread.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/thread.c.s
 .PHONY : thread.c.s
 
 timeout.obj: timeout.c.obj
@@ -735,7 +735,7 @@ timeout.obj: timeout.c.obj
 
 # target to build an object file
 timeout.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
 .PHONY : timeout.c.obj
 
 timeout.i: timeout.c.i
@@ -743,7 +743,7 @@ timeout.i: timeout.c.i
 
 # target to preprocess a source file
 timeout.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.i
 .PHONY : timeout.c.i
 
 timeout.s: timeout.c.s
@@ -751,7 +751,7 @@ timeout.s: timeout.c.s
 
 # target to generate assembly for a file
 timeout.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.s
 .PHONY : timeout.c.s
 
 timer.obj: timer.c.obj
@@ -759,7 +759,7 @@ timer.obj: timer.c.obj
 
 # target to build an object file
 timer.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
 .PHONY : timer.c.obj
 
 timer.i: timer.c.i
@@ -767,7 +767,7 @@ timer.i: timer.c.i
 
 # target to preprocess a source file
 timer.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timer.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timer.c.i
 .PHONY : timer.c.i
 
 timer.s: timer.c.s
@@ -775,7 +775,7 @@ timer.s: timer.c.s
 
 # target to generate assembly for a file
 timer.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timer.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timer.c.s
 .PHONY : timer.c.s
 
 timeslicing.obj: timeslicing.c.obj
@@ -783,7 +783,7 @@ timeslicing.obj: timeslicing.c.obj
 
 # target to build an object file
 timeslicing.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.obj
 .PHONY : timeslicing.c.obj
 
 timeslicing.i: timeslicing.c.i
@@ -791,7 +791,7 @@ timeslicing.i: timeslicing.c.i
 
 # target to preprocess a source file
 timeslicing.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.i
 .PHONY : timeslicing.c.i
 
 timeslicing.s: timeslicing.c.s
@@ -799,7 +799,7 @@ timeslicing.s: timeslicing.c.s
 
 # target to generate assembly for a file
 timeslicing.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.s
 .PHONY : timeslicing.c.s
 
 version.obj: version.c.obj
@@ -807,7 +807,7 @@ version.obj: version.c.obj
 
 # target to build an object file
 version.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
 .PHONY : version.c.obj
 
 version.i: version.c.i
@@ -815,7 +815,7 @@ version.i: version.c.i
 
 # target to preprocess a source file
 version.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/version.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/version.c.i
 .PHONY : version.c.i
 
 version.s: version.c.s
@@ -823,7 +823,7 @@ version.s: version.c.s
 
 # target to generate assembly for a file
 version.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/version.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/version.c.s
 .PHONY : version.c.s
 
 work.obj: work.c.obj
@@ -831,7 +831,7 @@ work.obj: work.c.obj
 
 # target to build an object file
 work.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
 .PHONY : work.c.obj
 
 work.i: work.c.i
@@ -839,7 +839,7 @@ work.i: work.c.i
 
 # target to preprocess a source file
 work.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/work.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/work.c.i
 .PHONY : work.c.i
 
 work.s: work.c.s
@@ -847,7 +847,7 @@ work.s: work.c.s
 
 # target to generate assembly for a file
 work.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/work.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/work.c.s
 .PHONY : work.c.s
 
 # Help Target
@@ -960,6 +960,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

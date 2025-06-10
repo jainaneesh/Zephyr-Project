@@ -27,6 +27,8 @@
 		led-0 = &led_0;
 		led-1 = &led_1;
 		led-2 = &led_2;
+		flash-gpio = &driver_gpio_node;
+		detect-gpio = &detecting_gpio_node;
 	};
 	soc {
 		#address-cells = < 0x1 >;
@@ -674,6 +676,18 @@
 		};
 		led_2: pwm_led_2 {
 			pwms = < &ledc0 0x2 0x3e8 0x0 >;
+		};
+	};
+	gpio14-output {
+		compatible = "gpio-leds";
+		driver_gpio_node: driver_gpio {
+			gpios = < &gpio0 0xe 0x0 >;
+		};
+	};
+	gpio7_input {
+		compatible = "gpio-leds";
+		detecting_gpio_node: detecting_gpio {
+			gpios = < &gpio0 0x7 0x0 >;
 		};
 	};
 };

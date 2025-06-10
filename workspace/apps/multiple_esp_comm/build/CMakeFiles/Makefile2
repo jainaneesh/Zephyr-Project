@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -277,21 +277,6 @@ modules/mipi-sys-t/clean:
 .PHONY : modules/mipi-sys-t/clean
 
 #=============================================================================
-# Directory level rules for directory modules/number_of_leds
-
-# Recursive "all" directory target.
-modules/number_of_leds/all:
-.PHONY : modules/number_of_leds/all
-
-# Recursive "preinstall" directory target.
-modules/number_of_leds/preinstall:
-.PHONY : modules/number_of_leds/preinstall
-
-# Recursive "clean" directory target.
-modules/number_of_leds/clean:
-.PHONY : modules/number_of_leds/clean
-
-#=============================================================================
 # Directory level rules for directory modules/openthread
 
 # Recursive "all" directory target.
@@ -444,7 +429,6 @@ zephyr/all: modules/segger/all
 zephyr/all: modules/tinycrypt/all
 zephyr/all: modules/uoscore-uedhoc/all
 zephyr/all: modules/zcbor/all
-zephyr/all: modules/number_of_leds/all
 zephyr/all: zephyr/kernel/all
 zephyr/all: zephyr/cmake/flash/all
 zephyr/all: zephyr/cmake/usage/all
@@ -477,7 +461,6 @@ zephyr/preinstall: modules/segger/preinstall
 zephyr/preinstall: modules/tinycrypt/preinstall
 zephyr/preinstall: modules/uoscore-uedhoc/preinstall
 zephyr/preinstall: modules/zcbor/preinstall
-zephyr/preinstall: modules/number_of_leds/preinstall
 zephyr/preinstall: zephyr/kernel/preinstall
 zephyr/preinstall: zephyr/cmake/flash/preinstall
 zephyr/preinstall: zephyr/cmake/usage/preinstall
@@ -526,7 +509,6 @@ zephyr/clean: modules/segger/clean
 zephyr/clean: modules/tinycrypt/clean
 zephyr/clean: modules/uoscore-uedhoc/clean
 zephyr/clean: modules/zcbor/clean
-zephyr/clean: modules/number_of_leds/clean
 zephyr/clean: zephyr/kernel/clean
 zephyr/clean: zephyr/cmake/flash/clean
 zephyr/clean: zephyr/cmake/usage/clean
@@ -709,12 +691,10 @@ zephyr/drivers/all: zephyr/drivers/misc/all
 zephyr/drivers/all: zephyr/drivers/pcie/all
 zephyr/drivers/all: zephyr/drivers/usb/all
 zephyr/drivers/all: zephyr/drivers/usb_c/all
-zephyr/drivers/all: zephyr/drivers/adc/all
 zephyr/drivers/all: zephyr/drivers/clock_control/all
 zephyr/drivers/all: zephyr/drivers/console/all
 zephyr/drivers/all: zephyr/drivers/gpio/all
 zephyr/drivers/all: zephyr/drivers/pinctrl/all
-zephyr/drivers/all: zephyr/drivers/pwm/all
 zephyr/drivers/all: zephyr/drivers/serial/all
 zephyr/drivers/all: zephyr/drivers/timer/all
 .PHONY : zephyr/drivers/all
@@ -727,12 +707,10 @@ zephyr/drivers/preinstall: zephyr/drivers/misc/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/pcie/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/usb/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/usb_c/preinstall
-zephyr/drivers/preinstall: zephyr/drivers/adc/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/clock_control/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/console/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/gpio/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/pinctrl/preinstall
-zephyr/drivers/preinstall: zephyr/drivers/pwm/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/serial/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/timer/preinstall
 .PHONY : zephyr/drivers/preinstall
@@ -745,30 +723,13 @@ zephyr/drivers/clean: zephyr/drivers/misc/clean
 zephyr/drivers/clean: zephyr/drivers/pcie/clean
 zephyr/drivers/clean: zephyr/drivers/usb/clean
 zephyr/drivers/clean: zephyr/drivers/usb_c/clean
-zephyr/drivers/clean: zephyr/drivers/adc/clean
 zephyr/drivers/clean: zephyr/drivers/clock_control/clean
 zephyr/drivers/clean: zephyr/drivers/console/clean
 zephyr/drivers/clean: zephyr/drivers/gpio/clean
 zephyr/drivers/clean: zephyr/drivers/pinctrl/clean
-zephyr/drivers/clean: zephyr/drivers/pwm/clean
 zephyr/drivers/clean: zephyr/drivers/serial/clean
 zephyr/drivers/clean: zephyr/drivers/timer/clean
 .PHONY : zephyr/drivers/clean
-
-#=============================================================================
-# Directory level rules for directory zephyr/drivers/adc
-
-# Recursive "all" directory target.
-zephyr/drivers/adc/all: zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all
-.PHONY : zephyr/drivers/adc/all
-
-# Recursive "preinstall" directory target.
-zephyr/drivers/adc/preinstall:
-.PHONY : zephyr/drivers/adc/preinstall
-
-# Recursive "clean" directory target.
-zephyr/drivers/adc/clean: zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/clean
-.PHONY : zephyr/drivers/adc/clean
 
 #=============================================================================
 # Directory level rules for directory zephyr/drivers/clock_control
@@ -936,21 +897,6 @@ zephyr/drivers/pinctrl/renesas/preinstall:
 # Recursive "clean" directory target.
 zephyr/drivers/pinctrl/renesas/clean:
 .PHONY : zephyr/drivers/pinctrl/renesas/clean
-
-#=============================================================================
-# Directory level rules for directory zephyr/drivers/pwm
-
-# Recursive "all" directory target.
-zephyr/drivers/pwm/all: zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all
-.PHONY : zephyr/drivers/pwm/all
-
-# Recursive "preinstall" directory target.
-zephyr/drivers/pwm/preinstall:
-.PHONY : zephyr/drivers/pwm/preinstall
-
-# Recursive "clean" directory target.
-zephyr/drivers/pwm/clean: zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/clean
-.PHONY : zephyr/drivers/pwm/clean
 
 #=============================================================================
 # Directory level rules for directory zephyr/drivers/serial
@@ -1754,14 +1700,14 @@ zephyr/subsys/usb/clean:
 CMakeFiles/boards.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boards.dir/build.make CMakeFiles/boards.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boards.dir/build.make CMakeFiles/boards.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target boards"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target boards"
 .PHONY : CMakeFiles/boards.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/boards.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/boards.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/boards.dir/rule
 
 # Convenience name for target.
@@ -1780,14 +1726,14 @@ CMakeFiles/boards.dir/clean:
 CMakeFiles/build_info_schema_scope.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/build_info_schema_scope.dir/build.make CMakeFiles/build_info_schema_scope.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/build_info_schema_scope.dir/build.make CMakeFiles/build_info_schema_scope.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target build_info_schema_scope"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target build_info_schema_scope"
 .PHONY : CMakeFiles/build_info_schema_scope.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/build_info_schema_scope.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/build_info_schema_scope.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/build_info_schema_scope.dir/rule
 
 # Convenience name for target.
@@ -1806,14 +1752,14 @@ CMakeFiles/build_info_schema_scope.dir/clean:
 CMakeFiles/build_info_scope.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/build_info_scope.dir/build.make CMakeFiles/build_info_scope.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/build_info_scope.dir/build.make CMakeFiles/build_info_scope.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target build_info_scope"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target build_info_scope"
 .PHONY : CMakeFiles/build_info_scope.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/build_info_scope.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/build_info_scope.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/build_info_scope.dir/rule
 
 # Convenience name for target.
@@ -1832,14 +1778,14 @@ CMakeFiles/build_info_scope.dir/clean:
 CMakeFiles/shields.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shields.dir/build.make CMakeFiles/shields.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shields.dir/build.make CMakeFiles/shields.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target shields"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target shields"
 .PHONY : CMakeFiles/shields.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shields.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shields.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/shields.dir/rule
 
 # Convenience name for target.
@@ -1858,14 +1804,14 @@ CMakeFiles/shields.dir/clean:
 CMakeFiles/snippets_scope.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snippets_scope.dir/build.make CMakeFiles/snippets_scope.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snippets_scope.dir/build.make CMakeFiles/snippets_scope.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target snippets_scope"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target snippets_scope"
 .PHONY : CMakeFiles/snippets_scope.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/snippets_scope.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/snippets_scope.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/snippets_scope.dir/rule
 
 # Convenience name for target.
@@ -1884,14 +1830,14 @@ CMakeFiles/snippets_scope.dir/clean:
 CMakeFiles/snippets.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snippets.dir/build.make CMakeFiles/snippets.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snippets.dir/build.make CMakeFiles/snippets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target snippets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target snippets"
 .PHONY : CMakeFiles/snippets.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/snippets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/snippets.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/snippets.dir/rule
 
 # Convenience name for target.
@@ -1910,14 +1856,14 @@ CMakeFiles/snippets.dir/clean:
 CMakeFiles/devicetree_target.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/devicetree_target.dir/build.make CMakeFiles/devicetree_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/devicetree_target.dir/build.make CMakeFiles/devicetree_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target devicetree_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target devicetree_target"
 .PHONY : CMakeFiles/devicetree_target.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/devicetree_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/devicetree_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/devicetree_target.dir/rule
 
 # Convenience name for target.
@@ -1936,14 +1882,14 @@ CMakeFiles/devicetree_target.dir/clean:
 CMakeFiles/menuconfig.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/menuconfig.dir/build.make CMakeFiles/menuconfig.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/menuconfig.dir/build.make CMakeFiles/menuconfig.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target menuconfig"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target menuconfig"
 .PHONY : CMakeFiles/menuconfig.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/menuconfig.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/menuconfig.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/menuconfig.dir/rule
 
 # Convenience name for target.
@@ -1962,14 +1908,14 @@ CMakeFiles/menuconfig.dir/clean:
 CMakeFiles/guiconfig.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/guiconfig.dir/build.make CMakeFiles/guiconfig.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/guiconfig.dir/build.make CMakeFiles/guiconfig.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target guiconfig"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target guiconfig"
 .PHONY : CMakeFiles/guiconfig.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/guiconfig.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/guiconfig.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/guiconfig.dir/rule
 
 # Convenience name for target.
@@ -1988,14 +1934,14 @@ CMakeFiles/guiconfig.dir/clean:
 CMakeFiles/hardenconfig.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardenconfig.dir/build.make CMakeFiles/hardenconfig.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardenconfig.dir/build.make CMakeFiles/hardenconfig.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target hardenconfig"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target hardenconfig"
 .PHONY : CMakeFiles/hardenconfig.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hardenconfig.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hardenconfig.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/hardenconfig.dir/rule
 
 # Convenience name for target.
@@ -2014,14 +1960,14 @@ CMakeFiles/hardenconfig.dir/clean:
 CMakeFiles/config-twister.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/config-twister.dir/build.make CMakeFiles/config-twister.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/config-twister.dir/build.make CMakeFiles/config-twister.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target config-twister"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target config-twister"
 .PHONY : CMakeFiles/config-twister.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/config-twister.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/config-twister.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/config-twister.dir/rule
 
 # Convenience name for target.
@@ -2040,14 +1986,14 @@ CMakeFiles/config-twister.dir/clean:
 CMakeFiles/asm.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm.dir/build.make CMakeFiles/asm.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm.dir/build.make CMakeFiles/asm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target asm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target asm"
 .PHONY : CMakeFiles/asm.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/asm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/asm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/asm.dir/rule
 
 # Convenience name for target.
@@ -2066,14 +2012,14 @@ CMakeFiles/asm.dir/clean:
 CMakeFiles/compiler.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/compiler.dir/build.make CMakeFiles/compiler.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/compiler.dir/build.make CMakeFiles/compiler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target compiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target compiler"
 .PHONY : CMakeFiles/compiler.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/compiler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/compiler.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/compiler.dir/rule
 
 # Convenience name for target.
@@ -2092,14 +2038,14 @@ CMakeFiles/compiler.dir/clean:
 CMakeFiles/compiler-cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/compiler-cpp.dir/build.make CMakeFiles/compiler-cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/compiler-cpp.dir/build.make CMakeFiles/compiler-cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target compiler-cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target compiler-cpp"
 .PHONY : CMakeFiles/compiler-cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/compiler-cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/compiler-cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/compiler-cpp.dir/rule
 
 # Convenience name for target.
@@ -2118,14 +2064,14 @@ CMakeFiles/compiler-cpp.dir/clean:
 CMakeFiles/linker.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linker.dir/build.make CMakeFiles/linker.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linker.dir/build.make CMakeFiles/linker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target linker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target linker"
 .PHONY : CMakeFiles/linker.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/linker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/linker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/linker.dir/rule
 
 # Convenience name for target.
@@ -2144,14 +2090,14 @@ CMakeFiles/linker.dir/clean:
 CMakeFiles/bintools.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bintools.dir/build.make CMakeFiles/bintools.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bintools.dir/build.make CMakeFiles/bintools.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target bintools"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target bintools"
 .PHONY : CMakeFiles/bintools.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bintools.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bintools.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/bintools.dir/rule
 
 # Convenience name for target.
@@ -2170,14 +2116,14 @@ CMakeFiles/bintools.dir/clean:
 CMakeFiles/code_data_relocation_target.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code_data_relocation_target.dir/build.make CMakeFiles/code_data_relocation_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code_data_relocation_target.dir/build.make CMakeFiles/code_data_relocation_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target code_data_relocation_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target code_data_relocation_target"
 .PHONY : CMakeFiles/code_data_relocation_target.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/code_data_relocation_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/code_data_relocation_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/code_data_relocation_target.dir/rule
 
 # Convenience name for target.
@@ -2196,14 +2142,14 @@ CMakeFiles/code_data_relocation_target.dir/clean:
 CMakeFiles/runners_yaml_props_target.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runners_yaml_props_target.dir/build.make CMakeFiles/runners_yaml_props_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runners_yaml_props_target.dir/build.make CMakeFiles/runners_yaml_props_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target runners_yaml_props_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target runners_yaml_props_target"
 .PHONY : CMakeFiles/runners_yaml_props_target.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runners_yaml_props_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runners_yaml_props_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/runners_yaml_props_target.dir/rule
 
 # Convenience name for target.
@@ -2222,14 +2168,14 @@ CMakeFiles/runners_yaml_props_target.dir/clean:
 CMakeFiles/pristine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pristine.dir/build.make CMakeFiles/pristine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pristine.dir/build.make CMakeFiles/pristine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target pristine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target pristine"
 .PHONY : CMakeFiles/pristine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pristine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pristine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/pristine.dir/rule
 
 # Convenience name for target.
@@ -2248,14 +2194,14 @@ CMakeFiles/pristine.dir/clean:
 CMakeFiles/zephyr_property_target.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zephyr_property_target.dir/build.make CMakeFiles/zephyr_property_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zephyr_property_target.dir/build.make CMakeFiles/zephyr_property_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target zephyr_property_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target zephyr_property_target"
 .PHONY : CMakeFiles/zephyr_property_target.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/zephyr_property_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zephyr_property_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/zephyr_property_target.dir/rule
 
 # Convenience name for target.
@@ -2280,14 +2226,14 @@ CMakeFiles/app.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_
 CMakeFiles/app.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=1 "Built target app"
 .PHONY : CMakeFiles/app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : CMakeFiles/app.dir/rule
 
 # Convenience name for target.
@@ -2312,14 +2258,14 @@ zephyr/CMakeFiles/zephyr.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa
 zephyr/CMakeFiles/zephyr.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target zephyr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target zephyr"
 .PHONY : zephyr/CMakeFiles/zephyr.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/zephyr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 61
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/zephyr.dir/rule
 
 # Convenience name for target.
@@ -2338,14 +2284,14 @@ zephyr/CMakeFiles/zephyr.dir/clean:
 zephyr/CMakeFiles/version_h.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/version_h.dir/build.make zephyr/CMakeFiles/version_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/version_h.dir/build.make zephyr/CMakeFiles/version_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=39 "Built target version_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=41 "Built target version_h"
 .PHONY : zephyr/CMakeFiles/version_h.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/version_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/version_h.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/version_h.dir/rule
 
 # Convenience name for target.
@@ -2364,14 +2310,14 @@ zephyr/CMakeFiles/version_h.dir/clean:
 zephyr/CMakeFiles/syscall_list_h_target.dir/all: zephyr/CMakeFiles/parse_syscalls_target.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target syscall_list_h_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target syscall_list_h_target"
 .PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/syscall_list_h_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_list_h_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/rule
 
 # Convenience name for target.
@@ -2390,14 +2336,14 @@ zephyr/CMakeFiles/syscall_list_h_target.dir/clean:
 zephyr/CMakeFiles/parse_syscalls_target.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/parse_syscalls_target.dir/build.make zephyr/CMakeFiles/parse_syscalls_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/parse_syscalls_target.dir/build.make zephyr/CMakeFiles/parse_syscalls_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=37,38 "Built target parse_syscalls_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=39,40 "Built target parse_syscalls_target"
 .PHONY : zephyr/CMakeFiles/parse_syscalls_target.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/parse_syscalls_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/parse_syscalls_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/parse_syscalls_target.dir/rule
 
 # Convenience name for target.
@@ -2416,14 +2362,14 @@ zephyr/CMakeFiles/parse_syscalls_target.dir/clean:
 zephyr/CMakeFiles/driver_validation_h_target.dir/all: zephyr/CMakeFiles/parse_syscalls_target.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/driver_validation_h_target.dir/build.make zephyr/CMakeFiles/driver_validation_h_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/driver_validation_h_target.dir/build.make zephyr/CMakeFiles/driver_validation_h_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target driver_validation_h_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target driver_validation_h_target"
 .PHONY : zephyr/CMakeFiles/driver_validation_h_target.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/driver_validation_h_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/driver_validation_h_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/driver_validation_h_target.dir/rule
 
 # Convenience name for target.
@@ -2442,14 +2388,14 @@ zephyr/CMakeFiles/driver_validation_h_target.dir/clean:
 zephyr/CMakeFiles/kobj_types_h_target.dir/all: zephyr/CMakeFiles/parse_syscalls_target.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/kobj_types_h_target.dir/build.make zephyr/CMakeFiles/kobj_types_h_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/kobj_types_h_target.dir/build.make zephyr/CMakeFiles/kobj_types_h_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target kobj_types_h_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=33 "Built target kobj_types_h_target"
 .PHONY : zephyr/CMakeFiles/kobj_types_h_target.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/kobj_types_h_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/kobj_types_h_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/kobj_types_h_target.dir/rule
 
 # Convenience name for target.
@@ -2469,14 +2415,14 @@ zephyr/CMakeFiles/zephyr_generated_headers.dir/all: zephyr/CMakeFiles/version_h.
 zephyr/CMakeFiles/zephyr_generated_headers.dir/all: zephyr/CMakeFiles/offsets_h.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_generated_headers.dir/build.make zephyr/CMakeFiles/zephyr_generated_headers.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_generated_headers.dir/build.make zephyr/CMakeFiles/zephyr_generated_headers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target zephyr_generated_headers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target zephyr_generated_headers"
 .PHONY : zephyr/CMakeFiles/zephyr_generated_headers.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/zephyr_generated_headers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_generated_headers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/zephyr_generated_headers.dir/rule
 
 # Convenience name for target.
@@ -2500,14 +2446,14 @@ zephyr/CMakeFiles/offsets.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtens
 zephyr/CMakeFiles/offsets.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target offsets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=38 "Built target offsets"
 .PHONY : zephyr/CMakeFiles/offsets.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/offsets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/offsets.dir/rule
 
 # Convenience name for target.
@@ -2526,14 +2472,14 @@ zephyr/CMakeFiles/offsets.dir/clean:
 zephyr/CMakeFiles/offsets_h.dir/all: zephyr/CMakeFiles/offsets.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets_h.dir/build.make zephyr/CMakeFiles/offsets_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets_h.dir/build.make zephyr/CMakeFiles/offsets_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target offsets_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target offsets_h"
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/offsets_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets_h.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/rule
 
 # Convenience name for target.
@@ -2552,14 +2498,14 @@ zephyr/CMakeFiles/offsets_h.dir/clean:
 zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/all: zephyr/CMakeFiles/zephyr_generated_headers.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/build.make zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/build.make zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target linker_zephyr_prebuilt_script_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=37 "Built target linker_zephyr_prebuilt_script_target"
 .PHONY : zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/rule
 
 # Convenience name for target.
@@ -2591,25 +2537,23 @@ zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/x
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/all
-zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/console/CMakeFiles/drivers__console.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/all
-zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/all
 zephyr/CMakeFiles/zephyr_pre0.dir/all: zephyr/kernel/CMakeFiles/kernel.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=99 "Built target zephyr_pre0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=99 "Built target zephyr_pre0"
 .PHONY : zephyr/CMakeFiles/zephyr_pre0.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/zephyr_pre0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 93
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_pre0.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/zephyr_pre0.dir/rule
 
 # Convenience name for target.
@@ -2629,14 +2573,14 @@ zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/all: zephyr/CMakeFiles/z
 zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/all: zephyr/CMakeFiles/zephyr_pre0.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/build.make zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/build.make zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=35 "Built target linker_zephyr_final_script_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target linker_zephyr_final_script_target"
 .PHONY : zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 94
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/rule
 
 # Convenience name for target.
@@ -2669,25 +2613,23 @@ zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/all
-zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/console/CMakeFiles/drivers__console.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/all
-zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/all
 zephyr/CMakeFiles/zephyr_final.dir/all: zephyr/kernel/CMakeFiles/kernel.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=97,98 "Built target zephyr_final"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=97,98 "Built target zephyr_final"
 .PHONY : zephyr/CMakeFiles/zephyr_final.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/zephyr_final.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_final.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/zephyr_final.dir/rule
 
 # Convenience name for target.
@@ -2706,14 +2648,14 @@ zephyr/CMakeFiles/zephyr_final.dir/clean:
 zephyr/CMakeFiles/initlevels.dir/all: zephyr/CMakeFiles/zephyr_final.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/initlevels.dir/build.make zephyr/CMakeFiles/initlevels.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/initlevels.dir/build.make zephyr/CMakeFiles/initlevels.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target initlevels"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target initlevels"
 .PHONY : zephyr/CMakeFiles/initlevels.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/initlevels.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/initlevels.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/initlevels.dir/rule
 
 # Convenience name for target.
@@ -2732,14 +2674,14 @@ zephyr/CMakeFiles/initlevels.dir/clean:
 zephyr/CMakeFiles/run.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target run"
 .PHONY : zephyr/CMakeFiles/run.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/run.dir/rule
 
 # Convenience name for target.
@@ -2758,14 +2700,14 @@ zephyr/CMakeFiles/run.dir/clean:
 zephyr/CMakeFiles/llext-edk.dir/all: zephyr/CMakeFiles/zephyr_final.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/llext-edk.dir/build.make zephyr/CMakeFiles/llext-edk.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/llext-edk.dir/build.make zephyr/CMakeFiles/llext-edk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=36 "Built target llext-edk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target llext-edk"
 .PHONY : zephyr/CMakeFiles/llext-edk.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/llext-edk.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/llext-edk.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/llext-edk.dir/rule
 
 # Convenience name for target.
@@ -2791,14 +2733,14 @@ zephyr/arch/common/CMakeFiles/arch__common.dir/all: zephyr/arch/arch/xtensa/core
 zephyr/arch/common/CMakeFiles/arch__common.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=1,2 "Built target arch__common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=2 "Built target arch__common"
 .PHONY : zephyr/arch/common/CMakeFiles/arch__common.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/arch/common/CMakeFiles/arch__common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/CMakeFiles/arch__common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/arch/common/CMakeFiles/arch__common.dir/rule
 
 # Convenience name for target.
@@ -2823,14 +2765,14 @@ zephyr/arch/common/CMakeFiles/isr_tables.dir/all: zephyr/arch/arch/xtensa/core/C
 zephyr/arch/common/CMakeFiles/isr_tables.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=18 "Built target isr_tables"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=17 "Built target isr_tables"
 .PHONY : zephyr/arch/common/CMakeFiles/isr_tables.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/arch/common/CMakeFiles/isr_tables.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/CMakeFiles/isr_tables.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/arch/common/CMakeFiles/isr_tables.dir/rule
 
 # Convenience name for target.
@@ -2855,14 +2797,14 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/all: zephyr/arch/
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=3,4,5,6 "Built target arch__xtensa__core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target arch__xtensa__core"
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/rule
 
 # Convenience name for target.
@@ -2881,14 +2823,14 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/clean:
 zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=100 "Built target zsr_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=100 "Built target zsr_h"
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/rule
 
 # Convenience name for target.
@@ -2907,14 +2849,14 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/clean:
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target xtensa_handlers_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target xtensa_handlers_h"
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/rule
 
 # Convenience name for target.
@@ -2933,14 +2875,14 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/clean:
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=40 "Built target xtensa_vectors_ld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=42 "Built target xtensa_vectors_ld"
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/rule
 
 # Convenience name for target.
@@ -2965,14 +2907,14 @@ zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/all: zephyr/arch/arc
 zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/build.make zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/build.make zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target lib__libc__picolibc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=35 "Built target lib__libc__picolibc"
 .PHONY : zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/rule
 
 # Convenience name for target.
@@ -2997,14 +2939,14 @@ zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/all: zephyr/arch/arch/xt
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=32,33 "Built target lib__libc__common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=34 "Built target lib__libc__common"
 .PHONY : zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/rule
 
 # Convenience name for target.
@@ -3028,14 +2970,14 @@ zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/all: zephyr/arch/arc
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/build.make zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/build.make zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=34 "Built target lib__posix__options"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=36 "Built target lib__posix__options"
 .PHONY : zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir/rule
 
 # Convenience name for target.
@@ -3060,14 +3002,14 @@ zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir
 zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=12 "Built target drivers__interrupt_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=12 "Built target drivers__interrupt_controller"
 .PHONY : zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/rule
 
 # Convenience name for target.
@@ -3078,38 +3020,6 @@ drivers__interrupt_controller: zephyr/drivers/interrupt_controller/CMakeFiles/dr
 zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/clean:
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/clean
 .PHONY : zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/clean
-
-#=============================================================================
-# Target rules for target zephyr/drivers/adc/CMakeFiles/drivers__adc.dir
-
-# All Build rule for target.
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all: zephyr/CMakeFiles/syscall_list_h_target.dir/all
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all: zephyr/CMakeFiles/driver_validation_h_target.dir/all
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all: zephyr/CMakeFiles/kobj_types_h_target.dir/all
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all: zephyr/CMakeFiles/zephyr_generated_headers.dir/all
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/all
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/all
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
-	$(MAKE) $(MAKESILENT) -f zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/build.make zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/depend
-	$(MAKE) $(MAKESILENT) -f zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/build.make zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=8,9 "Built target drivers__adc"
-.PHONY : zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all
-
-# Build rule for subdir invocation for target.
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
-.PHONY : zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/rule
-
-# Convenience name for target.
-drivers__adc: zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/rule
-.PHONY : drivers__adc
-
-# clean rule for target.
-zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/clean:
-	$(MAKE) $(MAKESILENT) -f zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/build.make zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/clean
-.PHONY : zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/clean
 
 #=============================================================================
 # Target rules for target zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir
@@ -3124,14 +3034,14 @@ zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/all: zephyr/a
 zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/build.make zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/build.make zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target drivers__clock_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=9 "Built target drivers__clock_control"
 .PHONY : zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/rule
 
 # Convenience name for target.
@@ -3156,14 +3066,14 @@ zephyr/drivers/console/CMakeFiles/drivers__console.dir/all: zephyr/arch/arch/xte
 zephyr/drivers/console/CMakeFiles/drivers__console.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/console/CMakeFiles/drivers__console.dir/build.make zephyr/drivers/console/CMakeFiles/drivers__console.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/console/CMakeFiles/drivers__console.dir/build.make zephyr/drivers/console/CMakeFiles/drivers__console.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=10 "Built target drivers__console"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=10 "Built target drivers__console"
 .PHONY : zephyr/drivers/console/CMakeFiles/drivers__console.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/drivers/console/CMakeFiles/drivers__console.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/console/CMakeFiles/drivers__console.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/drivers/console/CMakeFiles/drivers__console.dir/rule
 
 # Convenience name for target.
@@ -3188,14 +3098,14 @@ zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/all: zephyr/arch/arch/xtensa/co
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/build.make zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/build.make zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=11 "Built target drivers__gpio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=11 "Built target drivers__gpio"
 .PHONY : zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/rule
 
 # Convenience name for target.
@@ -3220,14 +3130,14 @@ zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/all: zephyr/arch/arch/xte
 zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=13 "Built target drivers__pinctrl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=13,14 "Built target drivers__pinctrl"
 .PHONY : zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/rule
 
 # Convenience name for target.
@@ -3238,38 +3148,6 @@ drivers__pinctrl: zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/rule
 zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/clean:
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/clean
 .PHONY : zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/clean
-
-#=============================================================================
-# Target rules for target zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir
-
-# All Build rule for target.
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all: zephyr/CMakeFiles/syscall_list_h_target.dir/all
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all: zephyr/CMakeFiles/driver_validation_h_target.dir/all
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all: zephyr/CMakeFiles/kobj_types_h_target.dir/all
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all: zephyr/CMakeFiles/zephyr_generated_headers.dir/all
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/all
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/all
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
-	$(MAKE) $(MAKESILENT) -f zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/build.make zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/depend
-	$(MAKE) $(MAKESILENT) -f zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/build.make zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=14 "Built target drivers__pwm"
-.PHONY : zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all
-
-# Build rule for subdir invocation for target.
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
-.PHONY : zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/rule
-
-# Convenience name for target.
-drivers__pwm: zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/rule
-.PHONY : drivers__pwm
-
-# clean rule for target.
-zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/clean:
-	$(MAKE) $(MAKESILENT) -f zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/build.make zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/clean
-.PHONY : zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/clean
 
 #=============================================================================
 # Target rules for target zephyr/drivers/serial/CMakeFiles/drivers__serial.dir
@@ -3284,14 +3162,14 @@ zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/all: zephyr/arch/arch/xtens
 zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/build.make zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/build.make zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=15 "Built target drivers__serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=15 "Built target drivers__serial"
 .PHONY : zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/rule
 
 # Convenience name for target.
@@ -3316,14 +3194,14 @@ zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/all: zephyr/arch/arch/xtensa/
 zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/build.make zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/build.make zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=16 "Built target drivers__timer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=16 "Built target drivers__timer"
 .PHONY : zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/rule
 
 # Convenience name for target.
@@ -3348,14 +3226,14 @@ zephyr/kernel/CMakeFiles/kernel.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles
 zephyr/kernel/CMakeFiles/kernel.dir/all: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/kernel/CMakeFiles/kernel.dir/build.make zephyr/kernel/CMakeFiles/kernel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target kernel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target kernel"
 .PHONY : zephyr/kernel/CMakeFiles/kernel.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/kernel/CMakeFiles/kernel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/kernel/CMakeFiles/kernel.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/kernel/CMakeFiles/kernel.dir/rule
 
 # Convenience name for target.
@@ -3374,14 +3252,14 @@ zephyr/kernel/CMakeFiles/kernel.dir/clean:
 zephyr/cmake/flash/CMakeFiles/flash.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/flash/CMakeFiles/flash.dir/build.make zephyr/cmake/flash/CMakeFiles/flash.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/flash/CMakeFiles/flash.dir/build.make zephyr/cmake/flash/CMakeFiles/flash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=17 "Built target flash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target flash"
 .PHONY : zephyr/cmake/flash/CMakeFiles/flash.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/cmake/flash/CMakeFiles/flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/flash.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/cmake/flash/CMakeFiles/flash.dir/rule
 
 # Convenience name for target.
@@ -3400,14 +3278,14 @@ zephyr/cmake/flash/CMakeFiles/flash.dir/clean:
 zephyr/cmake/flash/CMakeFiles/debug.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target debug"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=8 "Built target debug"
 .PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/cmake/flash/CMakeFiles/debug.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/debug.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/rule
 
 # Convenience name for target.
@@ -3426,14 +3304,14 @@ zephyr/cmake/flash/CMakeFiles/debug.dir/clean:
 zephyr/cmake/flash/CMakeFiles/debugserver.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/flash/CMakeFiles/debugserver.dir/build.make zephyr/cmake/flash/CMakeFiles/debugserver.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/flash/CMakeFiles/debugserver.dir/build.make zephyr/cmake/flash/CMakeFiles/debugserver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=7 "Built target debugserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target debugserver"
 .PHONY : zephyr/cmake/flash/CMakeFiles/debugserver.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/cmake/flash/CMakeFiles/debugserver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/debugserver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/cmake/flash/CMakeFiles/debugserver.dir/rule
 
 # Convenience name for target.
@@ -3452,14 +3330,14 @@ zephyr/cmake/flash/CMakeFiles/debugserver.dir/clean:
 zephyr/cmake/flash/CMakeFiles/attach.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/flash/CMakeFiles/attach.dir/build.make zephyr/cmake/flash/CMakeFiles/attach.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/flash/CMakeFiles/attach.dir/build.make zephyr/cmake/flash/CMakeFiles/attach.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target attach"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target attach"
 .PHONY : zephyr/cmake/flash/CMakeFiles/attach.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/cmake/flash/CMakeFiles/attach.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/attach.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/cmake/flash/CMakeFiles/attach.dir/rule
 
 # Convenience name for target.
@@ -3478,14 +3356,14 @@ zephyr/cmake/flash/CMakeFiles/attach.dir/clean:
 zephyr/cmake/usage/CMakeFiles/usage.dir/all:
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/usage/CMakeFiles/usage.dir/build.make zephyr/cmake/usage/CMakeFiles/usage.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/usage/CMakeFiles/usage.dir/build.make zephyr/cmake/usage/CMakeFiles/usage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target usage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target usage"
 .PHONY : zephyr/cmake/usage/CMakeFiles/usage.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/cmake/usage/CMakeFiles/usage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/usage/CMakeFiles/usage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/cmake/usage/CMakeFiles/usage.dir/rule
 
 # Convenience name for target.
@@ -3504,14 +3382,14 @@ zephyr/cmake/usage/CMakeFiles/usage.dir/clean:
 zephyr/cmake/reports/CMakeFiles/ram_report.dir/all: zephyr/CMakeFiles/zephyr_final.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/ram_report.dir/build.make zephyr/cmake/reports/CMakeFiles/ram_report.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/ram_report.dir/build.make zephyr/cmake/reports/CMakeFiles/ram_report.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target ram_report"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target ram_report"
 .PHONY : zephyr/cmake/reports/CMakeFiles/ram_report.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/ram_report.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule
 
 # Convenience name for target.
@@ -3530,14 +3408,14 @@ zephyr/cmake/reports/CMakeFiles/ram_report.dir/clean:
 zephyr/cmake/reports/CMakeFiles/rom_report.dir/all: zephyr/CMakeFiles/zephyr_final.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target rom_report"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target rom_report"
 .PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/rom_report.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
 
 # Convenience name for target.
@@ -3556,14 +3434,14 @@ zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean:
 zephyr/cmake/reports/CMakeFiles/footprint.dir/all: zephyr/CMakeFiles/zephyr_final.dir/all
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/footprint.dir/build.make zephyr/cmake/reports/CMakeFiles/footprint.dir/depend
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/footprint.dir/build.make zephyr/cmake/reports/CMakeFiles/footprint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num= "Built target footprint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num= "Built target footprint"
 .PHONY : zephyr/cmake/reports/CMakeFiles/footprint.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/cmake/reports/CMakeFiles/footprint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/footprint.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : zephyr/cmake/reports/CMakeFiles/footprint.dir/rule
 
 # Convenience name for target.

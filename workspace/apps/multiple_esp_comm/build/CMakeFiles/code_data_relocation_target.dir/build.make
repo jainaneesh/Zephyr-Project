@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Utility rule file for code_data_relocation_target.
 
@@ -78,6 +78,6 @@ CMakeFiles/code_data_relocation_target.dir/clean:
 .PHONY : CMakeFiles/code_data_relocation_target.dir/clean
 
 CMakeFiles/code_data_relocation_target.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /workspace/apps/05_solution_pwm_knob /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/CMakeFiles/code_data_relocation_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /workspace/apps/multiple_esp_comm /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/CMakeFiles/code_data_relocation_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/code_data_relocation_target.dir/depend
 

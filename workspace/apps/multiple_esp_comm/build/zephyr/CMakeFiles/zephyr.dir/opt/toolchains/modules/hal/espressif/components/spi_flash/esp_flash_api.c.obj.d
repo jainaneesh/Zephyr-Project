@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.obj: \
  /opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
@@ -70,7 +70,7 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi
  /opt/toolchains/zephyr/include/zephyr/sys/rb.h \
  /opt/toolchains/zephyr/include/zephyr/kernel_version.h \
  /opt/toolchains/zephyr/include/zephyr/syscall.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscall_list.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscall_list.h \
  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/sys/printk.h \
@@ -79,11 +79,11 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi
  /opt/toolchains/zephyr/include/zephyr/irq_offload.h \
  /opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch_inlines.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/zsr.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/zsr.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h \
  /opt/toolchains/zephyr/include/zephyr/irq.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/devicetree_generated.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/devicetree_generated.h \
  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree/clocks.h \
@@ -110,7 +110,7 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi
  /opt/toolchains/zephyr/include/zephyr/kernel/internal/mm.h \
  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/device.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/device.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/irq.h \
@@ -126,7 +126,7 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread_stack.h \
  /opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/arch.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/arch.h \
  /opt/toolchains/zephyr/include/zephyr/sys_clock.h \
  /opt/toolchains/zephyr/include/zephyr/spinlock.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/errno.h \
@@ -139,13 +139,13 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi
  /opt/toolchains/zephyr/include/zephyr/kernel/thread.h \
  /opt/toolchains/zephyr/include/zephyr/sys/kobject.h \
  /opt/toolchains/zephyr/include/zephyr/sys/internal/kobject_internal.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/kobj-types-enum.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/kobject.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/kobj-types-enum.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/kobject.h \
  /opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_macros.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracking.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/kernel.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/kernel.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/esp_hw_support/include/esp_memory_utils.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/soc/esp32s3/include/soc/soc.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/esp_common/include/esp_assert.h \

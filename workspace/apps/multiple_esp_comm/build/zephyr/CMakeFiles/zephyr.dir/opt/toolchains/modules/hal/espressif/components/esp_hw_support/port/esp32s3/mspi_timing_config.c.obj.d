@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.obj: \
  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/param.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \

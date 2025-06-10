@@ -17,4 +17,3 @@
 "tinycrypt":"/opt/toolchains/modules/crypto/tinycrypt":"/opt/toolchains/modules/crypto/tinycrypt"
 "uoscore-uedhoc":"/opt/toolchains/modules/lib/uoscore-uedhoc":"${ZEPHYR_UOSCORE_UEDHOC_CMAKE_DIR}"
 "zcbor":"/opt/toolchains/modules/lib/zcbor":"${ZEPHYR_ZCBOR_CMAKE_DIR}"
-"number_of_leds":"/workspace/apps/05_solution_pwm_knob/../../modules/number_of_leds":"/workspace/modules/number_of_leds"

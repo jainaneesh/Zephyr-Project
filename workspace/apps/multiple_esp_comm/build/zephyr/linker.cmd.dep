@@ -1,7 +1,7 @@
 linker.cmd: /opt/toolchains/zephyr/soc/espressif/esp32s3/default.ld \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/devicetree_generated.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/devicetree_generated.h \
  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
  /opt/toolchains/zephyr/include/zephyr/sys/util.h \
  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \
@@ -31,23 +31,23 @@ linker.cmd: /opt/toolchains/zephyr/soc/espressif/esp32s3/default.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/section_tags.h \
  /opt/toolchains/zephyr/include/zephyr/linker/linker-defs.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/offsets.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/offsets.h \
  /opt/toolchains/zephyr/include/zephyr/linker/linker-tool.h \
  /opt/toolchains/zephyr/include/zephyr/linker/linker-tool-gcc.h \
  /opt/toolchains/zephyr/include/zephyr/kernel/mm.h \
  /opt/toolchains/zephyr/include/zephyr/kernel/internal/mm.h \
  /opt/toolchains/zephyr/soc/espressif/esp32s3/memory.h \
  /opt/toolchains/zephyr/include/zephyr/linker/rel-sections.ld \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/snippets-rwdata.ld \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/snippets-data-sections.ld \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/snippets-rwdata.ld \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/snippets-data-sections.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/common-ram.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/iterable_sections.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/snippets-ram-sections.ld \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/snippets-ram-sections.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/cplusplus-ram.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/kobject-data.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/common-rom/common-rom-logging.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/ram-end.ld \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/snippets-rodata.ld \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/snippets-rodata.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/cplusplus-rom.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/common-rom/common-rom-init.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/common-rom/common-rom-kernel-devices.ld \
@@ -58,6 +58,6 @@ linker.cmd: /opt/toolchains/zephyr/soc/espressif/esp32s3/default.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/common-rom/common-rom-debug.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/common-rom/common-rom-misc.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/thread-local-storage.ld \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/snippets-sections.ld \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/snippets-sections.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/intlist.ld \
  /opt/toolchains/zephyr/include/zephyr/linker/debug-sections.ld

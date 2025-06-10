@@ -105,9 +105,3 @@ config ZEPHYR_ZCBOR_MODULE
 	bool
 	default y
 endmenu
-menu "number_of_leds (/workspace/apps/05_solution_pwm_knob/../../modules/number_of_leds)"
-osource "/workspace/modules/number_of_leds/Kconfig"
-config ZEPHYR_NUMBER_OF_LEDS_MODULE
-	bool
-	default y
-endmenu

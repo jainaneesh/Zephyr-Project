@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/opt/toolchains/modules/crypto/tinycrypt")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/workspace/apps/05_solution_pwm_knob/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/workspace/apps/multiple_esp_comm/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

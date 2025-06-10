@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common//CMakeFiles/progress.marks
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build/zephyr/arch/common//CMakeFiles/progress.marks
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/clean
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zephyr/arch/common/CMakeFiles/arch__common.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/CMakeFiles/arch__common.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/CMakeFiles/arch__common.dir/rule
 .PHONY : zephyr/arch/common/CMakeFiles/arch__common.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ arch__common: zephyr/arch/common/CMakeFiles/arch__common.dir/rule
 
 # fast build rule for target.
 arch__common/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/build
 .PHONY : arch__common/fast
 
 # Convenience name for target.
 zephyr/arch/common/CMakeFiles/isr_tables.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/CMakeFiles/isr_tables.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/common/CMakeFiles/isr_tables.dir/rule
 .PHONY : zephyr/arch/common/CMakeFiles/isr_tables.dir/rule
 
 # Convenience name for target.
@@ -141,7 +141,7 @@ isr_tables: zephyr/arch/common/CMakeFiles/isr_tables.dir/rule
 
 # fast build rule for target.
 isr_tables/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/build
 .PHONY : isr_tables/fast
 
 dynamic_isr.obj: dynamic_isr.c.obj
@@ -149,7 +149,7 @@ dynamic_isr.obj: dynamic_isr.c.obj
 
 # target to build an object file
 dynamic_isr.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj
 .PHONY : dynamic_isr.c.obj
 
 dynamic_isr.i: dynamic_isr.c.i
@@ -157,7 +157,7 @@ dynamic_isr.i: dynamic_isr.c.i
 
 # target to preprocess a source file
 dynamic_isr.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.i
 .PHONY : dynamic_isr.c.i
 
 dynamic_isr.s: dynamic_isr.c.s
@@ -165,7 +165,7 @@ dynamic_isr.s: dynamic_isr.c.s
 
 # target to generate assembly for a file
 dynamic_isr.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.s
 .PHONY : dynamic_isr.c.s
 
 isr_tables.obj: isr_tables.c.obj
@@ -173,7 +173,7 @@ isr_tables.obj: isr_tables.c.obj
 
 # target to build an object file
 isr_tables.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
 .PHONY : isr_tables.c.obj
 
 isr_tables.i: isr_tables.c.i
@@ -181,7 +181,7 @@ isr_tables.i: isr_tables.c.i
 
 # target to preprocess a source file
 isr_tables.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.i
 .PHONY : isr_tables.c.i
 
 isr_tables.s: isr_tables.c.s
@@ -189,7 +189,7 @@ isr_tables.s: isr_tables.c.s
 
 # target to generate assembly for a file
 isr_tables.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/isr_tables.dir/build.make zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.s
 .PHONY : isr_tables.c.s
 
 sw_isr_common.obj: sw_isr_common.c.obj
@@ -197,7 +197,7 @@ sw_isr_common.obj: sw_isr_common.c.obj
 
 # target to build an object file
 sw_isr_common.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
 .PHONY : sw_isr_common.c.obj
 
 sw_isr_common.i: sw_isr_common.c.i
@@ -205,7 +205,7 @@ sw_isr_common.i: sw_isr_common.c.i
 
 # target to preprocess a source file
 sw_isr_common.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.i
 .PHONY : sw_isr_common.c.i
 
 sw_isr_common.s: sw_isr_common.c.s
@@ -213,7 +213,7 @@ sw_isr_common.s: sw_isr_common.c.s
 
 # target to generate assembly for a file
 sw_isr_common.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/common/CMakeFiles/arch__common.dir/build.make zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.s
 .PHONY : sw_isr_common.c.s
 
 # Help Target
@@ -246,6 +246,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

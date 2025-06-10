@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core//CMakeFiles/progress.marks
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core//CMakeFiles/progress.marks
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/clean
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/rule
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ arch__xtensa__core: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.d
 
 # fast build rule for target.
 arch__xtensa__core/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build
 .PHONY : arch__xtensa__core/fast
 
 # Convenience name for target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/rule
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ zsr_h: zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/rule
 
 # fast build rule for target.
 zsr_h/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/zsr_h.dir/build
 .PHONY : zsr_h/fast
 
 # Convenience name for target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/rule
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/rule
 
 # Convenience name for target.
@@ -155,12 +155,12 @@ xtensa_handlers_h: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir
 
 # fast build rule for target.
 xtensa_handlers_h/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_handlers_h.dir/build
 .PHONY : xtensa_handlers_h/fast
 
 # Convenience name for target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/rule
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/rule
 
 # Convenience name for target.
@@ -169,7 +169,7 @@ xtensa_vectors_ld: zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir
 
 # fast build rule for target.
 xtensa_vectors_ld/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/xtensa_vectors_ld.dir/build
 .PHONY : xtensa_vectors_ld/fast
 
 cpu_idle.obj: cpu_idle.c.obj
@@ -177,7 +177,7 @@ cpu_idle.obj: cpu_idle.c.obj
 
 # target to build an object file
 cpu_idle.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj
 .PHONY : cpu_idle.c.obj
 
 cpu_idle.i: cpu_idle.c.i
@@ -185,7 +185,7 @@ cpu_idle.i: cpu_idle.c.i
 
 # target to preprocess a source file
 cpu_idle.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.i
 .PHONY : cpu_idle.c.i
 
 cpu_idle.s: cpu_idle.c.s
@@ -193,7 +193,7 @@ cpu_idle.s: cpu_idle.c.s
 
 # target to generate assembly for a file
 cpu_idle.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.s
 .PHONY : cpu_idle.c.s
 
 fatal.obj: fatal.c.obj
@@ -201,7 +201,7 @@ fatal.obj: fatal.c.obj
 
 # target to build an object file
 fatal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj
 .PHONY : fatal.c.obj
 
 fatal.i: fatal.c.i
@@ -209,7 +209,7 @@ fatal.i: fatal.c.i
 
 # target to preprocess a source file
 fatal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.i
 .PHONY : fatal.c.i
 
 fatal.s: fatal.c.s
@@ -217,7 +217,7 @@ fatal.s: fatal.c.s
 
 # target to generate assembly for a file
 fatal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.s
 .PHONY : fatal.c.s
 
 irq_manage.obj: irq_manage.c.obj
@@ -225,7 +225,7 @@ irq_manage.obj: irq_manage.c.obj
 
 # target to build an object file
 irq_manage.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj
 .PHONY : irq_manage.c.obj
 
 irq_manage.i: irq_manage.c.i
@@ -233,7 +233,7 @@ irq_manage.i: irq_manage.c.i
 
 # target to preprocess a source file
 irq_manage.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.i
 .PHONY : irq_manage.c.i
 
 irq_manage.s: irq_manage.c.s
@@ -241,7 +241,7 @@ irq_manage.s: irq_manage.c.s
 
 # target to generate assembly for a file
 irq_manage.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.s
 .PHONY : irq_manage.c.s
 
 prep_c.obj: prep_c.c.obj
@@ -249,7 +249,7 @@ prep_c.obj: prep_c.c.obj
 
 # target to build an object file
 prep_c.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj
 .PHONY : prep_c.c.obj
 
 prep_c.i: prep_c.c.i
@@ -257,7 +257,7 @@ prep_c.i: prep_c.c.i
 
 # target to preprocess a source file
 prep_c.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.i
 .PHONY : prep_c.c.i
 
 prep_c.s: prep_c.c.s
@@ -265,7 +265,7 @@ prep_c.s: prep_c.c.s
 
 # target to generate assembly for a file
 prep_c.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.s
 .PHONY : prep_c.c.s
 
 thread.obj: thread.c.obj
@@ -273,7 +273,7 @@ thread.obj: thread.c.obj
 
 # target to build an object file
 thread.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj
 .PHONY : thread.c.obj
 
 thread.i: thread.c.i
@@ -281,7 +281,7 @@ thread.i: thread.c.i
 
 # target to preprocess a source file
 thread.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.i
 .PHONY : thread.c.i
 
 thread.s: thread.c.s
@@ -289,7 +289,7 @@ thread.s: thread.c.s
 
 # target to generate assembly for a file
 thread.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.s
 .PHONY : thread.c.s
 
 vector_handlers.obj: vector_handlers.c.obj
@@ -297,7 +297,7 @@ vector_handlers.obj: vector_handlers.c.obj
 
 # target to build an object file
 vector_handlers.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj
 .PHONY : vector_handlers.c.obj
 
 vector_handlers.i: vector_handlers.c.i
@@ -305,7 +305,7 @@ vector_handlers.i: vector_handlers.c.i
 
 # target to preprocess a source file
 vector_handlers.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.i
 .PHONY : vector_handlers.c.i
 
 vector_handlers.s: vector_handlers.c.s
@@ -313,7 +313,7 @@ vector_handlers.s: vector_handlers.c.s
 
 # target to generate assembly for a file
 vector_handlers.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.s
 .PHONY : vector_handlers.c.s
 
 window_vectors.obj: window_vectors.S.obj
@@ -321,7 +321,7 @@ window_vectors.obj: window_vectors.S.obj
 
 # target to build an object file
 window_vectors.S.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj
 .PHONY : window_vectors.S.obj
 
 xtensa_asm2_util.obj: xtensa_asm2_util.S.obj
@@ -329,7 +329,7 @@ xtensa_asm2_util.obj: xtensa_asm2_util.S.obj
 
 # target to build an object file
 xtensa_asm2_util.S.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj
 .PHONY : xtensa_asm2_util.S.obj
 
 # Help Target
@@ -375,6 +375,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

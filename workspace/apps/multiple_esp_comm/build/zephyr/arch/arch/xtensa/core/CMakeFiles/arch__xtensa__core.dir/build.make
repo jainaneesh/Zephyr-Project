@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Include any dependencies generated for this target.
 include zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/depend.make
@@ -72,112 +72,112 @@ include zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.mak
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.make
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj: /opt/toolchains/zephyr/arch/xtensa/core/cpu_idle.c
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj -MF CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/cpu_idle.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj -MF CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/cpu_idle.c
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/cpu_idle.c > CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/cpu_idle.c > CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.i
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/cpu_idle.c -o CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/cpu_idle.c -o CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.s
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.make
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj: /opt/toolchains/zephyr/arch/xtensa/core/fatal.c
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj -MF CMakeFiles/arch__xtensa__core.dir/fatal.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/fatal.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/fatal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj -MF CMakeFiles/arch__xtensa__core.dir/fatal.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/fatal.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/fatal.c
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arch__xtensa__core.dir/fatal.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/fatal.c > CMakeFiles/arch__xtensa__core.dir/fatal.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/fatal.c > CMakeFiles/arch__xtensa__core.dir/fatal.c.i
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arch__xtensa__core.dir/fatal.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/fatal.c -o CMakeFiles/arch__xtensa__core.dir/fatal.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/fatal.c -o CMakeFiles/arch__xtensa__core.dir/fatal.c.s
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.make
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj: /opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj -c /opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj -c /opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/arch__xtensa__core.dir/window_vectors.S.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S > CMakeFiles/arch__xtensa__core.dir/window_vectors.S.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S > CMakeFiles/arch__xtensa__core.dir/window_vectors.S.i
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/arch__xtensa__core.dir/window_vectors.S.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S -o CMakeFiles/arch__xtensa__core.dir/window_vectors.S.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S -o CMakeFiles/arch__xtensa__core.dir/window_vectors.S.s
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.make
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj: /opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building ASM object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj -c /opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building ASM object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj -c /opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S > CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S > CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.i
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S -o CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S -o CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.s
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.make
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj: /opt/toolchains/zephyr/arch/xtensa/core/irq_manage.c
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj -MF CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/irq_manage.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj -MF CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/irq_manage.c
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arch__xtensa__core.dir/irq_manage.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/irq_manage.c > CMakeFiles/arch__xtensa__core.dir/irq_manage.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/irq_manage.c > CMakeFiles/arch__xtensa__core.dir/irq_manage.c.i
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arch__xtensa__core.dir/irq_manage.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/irq_manage.c -o CMakeFiles/arch__xtensa__core.dir/irq_manage.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/irq_manage.c -o CMakeFiles/arch__xtensa__core.dir/irq_manage.c.s
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.make
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj: /opt/toolchains/zephyr/arch/xtensa/core/thread.c
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj -MF CMakeFiles/arch__xtensa__core.dir/thread.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/thread.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/thread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj -MF CMakeFiles/arch__xtensa__core.dir/thread.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/thread.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/thread.c
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arch__xtensa__core.dir/thread.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/thread.c > CMakeFiles/arch__xtensa__core.dir/thread.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/thread.c > CMakeFiles/arch__xtensa__core.dir/thread.c.i
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arch__xtensa__core.dir/thread.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/thread.c -o CMakeFiles/arch__xtensa__core.dir/thread.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/thread.c -o CMakeFiles/arch__xtensa__core.dir/thread.c.s
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.make
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj: /opt/toolchains/zephyr/arch/xtensa/core/vector_handlers.c
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj -MF CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/vector_handlers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj -MF CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/vector_handlers.c
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/vector_handlers.c > CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/vector_handlers.c > CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.i
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/vector_handlers.c -o CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/vector_handlers.c -o CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.s
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/flags.make
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj: /opt/toolchains/zephyr/arch/xtensa/core/prep_c.c
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj -MF CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/prep_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj -MF CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj.d -o CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/prep_c.c
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arch__xtensa__core.dir/prep_c.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/prep_c.c > CMakeFiles/arch__xtensa__core.dir/prep_c.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/xtensa/core/prep_c.c > CMakeFiles/arch__xtensa__core.dir/prep_c.c.i
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arch__xtensa__core.dir/prep_c.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/prep_c.c -o CMakeFiles/arch__xtensa__core.dir/prep_c.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/xtensa/core/prep_c.c -o CMakeFiles/arch__xtensa__core.dir/prep_c.c.s
 
 # Object files for target arch__xtensa__core
 arch__xtensa__core_OBJECTS = \
@@ -203,19 +203,19 @@ zephyr/arch/arch/xtensa/core/libarch__xtensa__core.a: zephyr/arch/arch/xtensa/co
 zephyr/arch/arch/xtensa/core/libarch__xtensa__core.a: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj
 zephyr/arch/arch/xtensa/core/libarch__xtensa__core.a: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build.make
 zephyr/arch/arch/xtensa/core/libarch__xtensa__core.a: zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libarch__xtensa__core.a"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && $(CMAKE_COMMAND) -P CMakeFiles/arch__xtensa__core.dir/cmake_clean_target.cmake
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arch__xtensa__core.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libarch__xtensa__core.a"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && $(CMAKE_COMMAND) -P CMakeFiles/arch__xtensa__core.dir/cmake_clean_target.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arch__xtensa__core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build: zephyr/arch/arch/xtensa/core/libarch__xtensa__core.a
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/build
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core && $(CMAKE_COMMAND) -P CMakeFiles/arch__xtensa__core.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core && $(CMAKE_COMMAND) -P CMakeFiles/arch__xtensa__core.dir/cmake_clean.cmake
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/clean
 
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr/arch/xtensa/core /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr/arch/xtensa/core /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core /workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/depend
 

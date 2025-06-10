@@ -14,7 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common/CMakeFiles/isr_tables.dir/DependInfo.cmake"
+  "/workspace/apps/multiple_esp_comm/build/zephyr/arch/common/CMakeFiles/isr_tables.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

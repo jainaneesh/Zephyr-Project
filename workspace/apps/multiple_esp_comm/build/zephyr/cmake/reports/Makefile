@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build/zephyr/cmake/reports//CMakeFiles/progress.marks
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build/zephyr/cmake/reports//CMakeFiles/progress.marks
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/clean
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule
 .PHONY : zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ ram_report: zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule
 
 # fast build rule for target.
 ram_report/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/ram_report.dir/build.make zephyr/cmake/reports/CMakeFiles/ram_report.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/ram_report.dir/build.make zephyr/cmake/reports/CMakeFiles/ram_report.dir/build
 .PHONY : ram_report/fast
 
 # Convenience name for target.
 zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
 .PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ rom_report: zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
 
 # fast build rule for target.
 rom_report/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/build
 .PHONY : rom_report/fast
 
 # Convenience name for target.
 zephyr/cmake/reports/CMakeFiles/footprint.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/footprint.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/footprint.dir/rule
 .PHONY : zephyr/cmake/reports/CMakeFiles/footprint.dir/rule
 
 # Convenience name for target.
@@ -155,7 +155,7 @@ footprint: zephyr/cmake/reports/CMakeFiles/footprint.dir/rule
 
 # fast build rule for target.
 footprint/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/footprint.dir/build.make zephyr/cmake/reports/CMakeFiles/footprint.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/footprint.dir/build.make zephyr/cmake/reports/CMakeFiles/footprint.dir/build
 .PHONY : footprint/fast
 
 # Help Target
@@ -180,6 +180,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/interrupt_controller//CMakeFiles/progress.marks
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build/zephyr/drivers/interrupt_controller//CMakeFiles/progress.marks
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/clean
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/rule
 .PHONY : zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ drivers__interrupt_controller: zephyr/drivers/interrupt_controller/CMakeFiles/dr
 
 # fast build rule for target.
 drivers__interrupt_controller/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build
 .PHONY : drivers__interrupt_controller/fast
 
 intc_esp32.obj: intc_esp32.c.obj
@@ -135,7 +135,7 @@ intc_esp32.obj: intc_esp32.c.obj
 
 # target to build an object file
 intc_esp32.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/intc_esp32.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/intc_esp32.c.obj
 .PHONY : intc_esp32.c.obj
 
 intc_esp32.i: intc_esp32.c.i
@@ -143,7 +143,7 @@ intc_esp32.i: intc_esp32.c.i
 
 # target to preprocess a source file
 intc_esp32.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/intc_esp32.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/intc_esp32.c.i
 .PHONY : intc_esp32.c.i
 
 intc_esp32.s: intc_esp32.c.s
@@ -151,7 +151,7 @@ intc_esp32.s: intc_esp32.c.s
 
 # target to generate assembly for a file
 intc_esp32.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/intc_esp32.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/build.make zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/intc_esp32.c.s
 .PHONY : intc_esp32.c.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

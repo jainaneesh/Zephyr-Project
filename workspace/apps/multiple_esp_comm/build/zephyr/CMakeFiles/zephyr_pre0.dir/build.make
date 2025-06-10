@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Include any dependencies generated for this target.
 include zephyr/CMakeFiles/zephyr_pre0.dir/depend.make
@@ -72,16 +72,16 @@ include zephyr/CMakeFiles/zephyr_pre0.dir/flags.make
 zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj: zephyr/CMakeFiles/zephyr_pre0.dir/flags.make
 zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj: /opt/toolchains/zephyr/misc/empty_file.c
 zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj: zephyr/CMakeFiles/zephyr_pre0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj -MF CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj.d -o CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj -c /opt/toolchains/zephyr/misc/empty_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj -MF CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj.d -o CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj -c /opt/toolchains/zephyr/misc/empty_file.c
 
 zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/misc/empty_file.c > CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/misc/empty_file.c > CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.i
 
 zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/misc/empty_file.c -o CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/misc/empty_file.c -o CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.s
 
 # Object files for target zephyr_pre0
 zephyr_pre0_OBJECTS = \
@@ -101,32 +101,30 @@ zephyr/zephyr_pre0.elf: zephyr/arch/arch/xtensa/core/libarch__xtensa__core.a
 zephyr/zephyr_pre0.elf: zephyr/lib/libc/picolibc/liblib__libc__picolibc.a
 zephyr/zephyr_pre0.elf: zephyr/lib/libc/common/liblib__libc__common.a
 zephyr/zephyr_pre0.elf: zephyr/drivers/interrupt_controller/libdrivers__interrupt_controller.a
-zephyr/zephyr_pre0.elf: zephyr/drivers/adc/libdrivers__adc.a
 zephyr/zephyr_pre0.elf: zephyr/drivers/clock_control/libdrivers__clock_control.a
 zephyr/zephyr_pre0.elf: zephyr/drivers/console/libdrivers__console.a
 zephyr/zephyr_pre0.elf: zephyr/drivers/gpio/libdrivers__gpio.a
 zephyr/zephyr_pre0.elf: zephyr/drivers/pinctrl/libdrivers__pinctrl.a
-zephyr/zephyr_pre0.elf: zephyr/drivers/pwm/libdrivers__pwm.a
 zephyr/zephyr_pre0.elf: zephyr/drivers/serial/libdrivers__serial.a
 zephyr/zephyr_pre0.elf: zephyr/drivers/timer/libdrivers__timer.a
 zephyr/zephyr_pre0.elf: zephyr/kernel/libkernel.a
 zephyr/zephyr_pre0.elf: zephyr/arch/common/libisr_tables.a
 zephyr/zephyr_pre0.elf: zephyr/linker_zephyr_pre0.cmd
 zephyr/zephyr_pre0.elf: zephyr/CMakeFiles/zephyr_pre0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable zephyr_pre0.elf"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zephyr_pre0.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable zephyr_pre0.elf"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zephyr_pre0.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Logical command for additional byproducts on target: zephyr_pre0"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /usr/bin/cmake -E true
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /usr/bin/cmake -E true
 
 # Rule to build all files generated by this target.
 zephyr/CMakeFiles/zephyr_pre0.dir/build: zephyr/zephyr_pre0.elf
 .PHONY : zephyr/CMakeFiles/zephyr_pre0.dir/build
 
 zephyr/CMakeFiles/zephyr_pre0.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/zephyr_pre0.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/zephyr_pre0.dir/cmake_clean.cmake
 .PHONY : zephyr/CMakeFiles/zephyr_pre0.dir/clean
 
 zephyr/CMakeFiles/zephyr_pre0.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr /workspace/apps/05_solution_pwm_knob/build/zephyr/CMakeFiles/zephyr_pre0.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr /workspace/apps/multiple_esp_comm/build/zephyr/CMakeFiles/zephyr_pre0.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/CMakeFiles/zephyr_pre0.dir/depend
 

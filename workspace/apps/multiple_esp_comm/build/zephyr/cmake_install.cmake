@@ -39,151 +39,146 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/arch/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/arch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/soc/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/soc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/boards/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/boards/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/subsys/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/subsys/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/drivers/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/acpica/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/acpica/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/fatfs/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/fatfs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/hal_espressif/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/hal_espressif/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/xtensa/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/xtensa/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/hostap/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/hostap/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/liblc3/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/liblc3/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/littlefs/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/littlefs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/loramac-node/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/loramac-node/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/lvgl/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/lvgl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/mbedtls/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/mbedtls/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/mcuboot/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/mcuboot/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/mipi-sys-t/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/mipi-sys-t/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/openthread/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/openthread/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/percepio/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/percepio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/picolibc/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/picolibc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/segger/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/segger/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/tinycrypt/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/tinycrypt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/uoscore-uedhoc/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/uoscore-uedhoc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/zcbor/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/modules/zcbor/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/modules/number_of_leds/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/kernel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/kernel/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/cmake/flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/cmake/flash/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/cmake/usage/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/cmake/usage/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/cmake/reports/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/cmake/reports/cmake_install.cmake")
 endif()
 

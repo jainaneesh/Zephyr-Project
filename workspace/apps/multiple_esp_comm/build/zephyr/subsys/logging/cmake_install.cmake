@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/subsys/logging/backends/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/subsys/logging/backends/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/subsys/logging/frontends/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/subsys/logging/frontends/cmake_install.cmake")
 endif()
 

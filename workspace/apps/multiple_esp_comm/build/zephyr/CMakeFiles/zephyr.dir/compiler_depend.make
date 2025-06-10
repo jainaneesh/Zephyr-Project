@@ -2920,1114 +2920,6 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/boo
   /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/efuse_hal.h \
   /opt/toolchains/modules/hal/espressif/components/hal/include/hal/efuse_hal.h
 
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.obj: /opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_includes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr/include/zephyr/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/limits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include-fixed/limits.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/sections.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/section_tags.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_types.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_loops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_listify.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_is_eq.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_inc.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_dec.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_x2.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/__assert.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/time_units.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_builtin.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/dlist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/slist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/list_gen.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sflist.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/obj_core.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_structs.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_heap.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_stats.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/structs.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/stats.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/rb.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_version.h \
-  /opt/toolchains/zephyr/include/zephyr/syscall.h \
-  zephyr/include/generated/zephyr/syscall_list.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/printk.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/cpu.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_interface.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_offload.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch_inlines.h \
-  zephyr/include/generated/zephyr/zsr.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/irq.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
-  zephyr/include/generated/zephyr/devicetree_generated.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/clocks.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/gpio.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/spi.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/dma.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pwms.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/fixed-partitions.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/ordinals.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pinctrl.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/can.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/reset.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/mbox.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_bitops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/ffs.h \
-  /opt/toolchains/zephyr/include/zephyr/sw_isr_table.h \
-  /opt/toolchains/zephyr/include/zephyr/device.h \
-  /opt/toolchains/zephyr/include/zephyr/init.h \
-  /opt/toolchains/zephyr/include/zephyr/pm/state.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/device_mmio.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
-  zephyr/include/generated/zephyr/syscalls/device.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/irq.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/hal.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/xtensa-versions.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/tie.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/addr_types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/gdbstub.h \
-  /opt/toolchains/zephyr/include/zephyr/debug/sparse.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h \
-  zephyr/include/generated/zephyr/syscalls/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/sys_clock.h \
-  /opt/toolchains/zephyr/include/zephyr/spinlock.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/errno.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/errno.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/exception.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal_types.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/app_memory/mem_domain.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/internal/kobject_internal.h \
-  zephyr/include/generated/zephyr/kobj-types-enum.h \
-  zephyr/include/generated/zephyr/syscalls/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_macros.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracking.h \
-  zephyr/include/generated/zephyr/syscalls/kernel.h \
-  /opt/toolchains/zephyr/include/zephyr/drivers/gpio.h \
-  /opt/toolchains/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
-  zephyr/include/generated/zephyr/syscalls/gpio.h \
-  /opt/toolchains/zephyr/include/zephyr/logging/log.h \
-  /opt/toolchains/zephyr/include/zephyr/logging/log_instance.h \
-  /opt/toolchains/zephyr/include/zephyr/logging/log_core.h \
-  /opt/toolchains/zephyr/include/zephyr/logging/log_msg.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mpsc_packet.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_internal.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_cxx.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_enums.h \
-  zephyr/include/generated/zephyr/syscalls/log_msg.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/ctype.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_check.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_pm/include/esp_pm.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/port/include/stubs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/esp32s3/esp_rom_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/gpio/include/driver/rtc_io.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/rtc_io_types.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/gpio/include/driver/gpio.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_intr_alloc.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/gpio_types.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_gpio.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gpio_pins.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/gpio/include/driver/gpio_etm.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_etm.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/lock.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/adc_share_hw_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/sar_periph_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc1_private.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/dma_types.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/adc_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/adc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/adc_channel.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types_private.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/assert.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/misc.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sens_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/regi2c_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/regi2c_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_regi2c.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_saradc.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal_common.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gdma_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/gdma_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/gdma_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gdma_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/periph_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/periph_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/deprecated/driver/adc_types_legacy.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_clk_tree.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_rtc_calib.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.obj: /opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_includes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr/include/zephyr/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/limits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include-fixed/limits.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/sections.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/section_tags.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_types.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_loops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_listify.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_is_eq.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_inc.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_dec.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_x2.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/__assert.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/time_units.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_builtin.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/dlist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/slist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/list_gen.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sflist.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/obj_core.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_structs.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_heap.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_stats.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/structs.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/stats.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/rb.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_version.h \
-  /opt/toolchains/zephyr/include/zephyr/syscall.h \
-  zephyr/include/generated/zephyr/syscall_list.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/printk.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/cpu.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_interface.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_offload.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch_inlines.h \
-  zephyr/include/generated/zephyr/zsr.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/irq.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
-  zephyr/include/generated/zephyr/devicetree_generated.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/clocks.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/gpio.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/spi.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/dma.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pwms.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/fixed-partitions.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/ordinals.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pinctrl.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/can.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/reset.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/mbox.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_bitops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/ffs.h \
-  /opt/toolchains/zephyr/include/zephyr/sw_isr_table.h \
-  /opt/toolchains/zephyr/include/zephyr/device.h \
-  /opt/toolchains/zephyr/include/zephyr/init.h \
-  /opt/toolchains/zephyr/include/zephyr/pm/state.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/device_mmio.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
-  zephyr/include/generated/zephyr/syscalls/device.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/irq.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/hal.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/xtensa-versions.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/tie.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/addr_types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/gdbstub.h \
-  /opt/toolchains/zephyr/include/zephyr/debug/sparse.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h \
-  zephyr/include/generated/zephyr/syscalls/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/sys_clock.h \
-  /opt/toolchains/zephyr/include/zephyr/spinlock.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/errno.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/errno.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/exception.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal_types.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/app_memory/mem_domain.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/internal/kobject_internal.h \
-  zephyr/include/generated/zephyr/kobj-types-enum.h \
-  zephyr/include/generated/zephyr/syscalls/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_macros.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracking.h \
-  zephyr/include/generated/zephyr/syscalls/kernel.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_check.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/gpio/include/driver/rtc_io.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/rtc_io_types.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/gpio/include/driver/gpio.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_intr_alloc.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/gpio_types.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_gpio.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gpio_pins.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/gpio/include/driver/gpio_etm.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_etm.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/rtc_io_hal.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/rtc_io_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_io_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_channel.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sens_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_cntl_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/io_mux_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/usb_serial_jtag_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/usb_serial_jtag_struct.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.obj: /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/include/esp_efuse.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_chip.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_table.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_rtc_calib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_types.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.obj: /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/include/esp_efuse.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_chip.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_table.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.obj: /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/private_include/esp_efuse_utility.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/include/esp_efuse.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_chip.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/private_include/esp_efuse_utility.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/efuse_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/misc.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/efuse_hal.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/efuse_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp32s3/rom/efuse.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/efuse_hal.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/param.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/endian.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_endian.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/param.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.obj: /opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/include/esp_efuse.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_chip.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/private_include/esp_efuse_utility.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_types.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/private_include/esp_efuse_utility.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/efuse_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/misc.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_table.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_includes.h \
-  /opt/toolchains/zephyr/include/zephyr/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/limits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include-fixed/limits.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/sections.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/section_tags.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_types.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_loops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_listify.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_is_eq.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_inc.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_dec.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_x2.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/__assert.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/time_units.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_builtin.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/dlist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/slist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/list_gen.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sflist.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/obj_core.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_structs.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_heap.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_stats.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/structs.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/stats.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/rb.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_version.h \
-  /opt/toolchains/zephyr/include/zephyr/syscall.h \
-  zephyr/include/generated/zephyr/syscall_list.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/printk.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/cpu.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_interface.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_offload.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch_inlines.h \
-  zephyr/include/generated/zephyr/zsr.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/irq.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
-  zephyr/include/generated/zephyr/devicetree_generated.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/clocks.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/gpio.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/spi.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/dma.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pwms.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/fixed-partitions.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/ordinals.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pinctrl.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/can.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/reset.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/mbox.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_bitops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/ffs.h \
-  /opt/toolchains/zephyr/include/zephyr/sw_isr_table.h \
-  /opt/toolchains/zephyr/include/zephyr/device.h \
-  /opt/toolchains/zephyr/include/zephyr/init.h \
-  /opt/toolchains/zephyr/include/zephyr/pm/state.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/device_mmio.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
-  zephyr/include/generated/zephyr/syscalls/device.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/irq.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/hal.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/xtensa-versions.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/tie.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/addr_types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/gdbstub.h \
-  /opt/toolchains/zephyr/include/zephyr/debug/sparse.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h \
-  zephyr/include/generated/zephyr/syscalls/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/sys_clock.h \
-  /opt/toolchains/zephyr/include/zephyr/spinlock.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/errno.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/errno.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/exception.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal_types.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/app_memory/mem_domain.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/internal/kobject_internal.h \
-  zephyr/include/generated/zephyr/kobj-types-enum.h \
-  zephyr/include/generated/zephyr/syscalls/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_macros.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracking.h \
-  zephyr/include/generated/zephyr/syscalls/kernel.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.obj: /opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/private_include/esp_efuse_utility.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/include/esp_efuse.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_chip.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/private_include/esp_efuse_utility.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/efuse_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/misc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/param.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/endian.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_endian.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/param.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.obj: /opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_types.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_check.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_rtc_calib.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/deprecated/driver/adc_types_legacy.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/include/esp_adc_cal_types_legacy.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_internal_legacy.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.obj: /opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_check.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/port/include/esp_adc_cal.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/deprecated/driver/adc.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/gpio/include/driver/gpio.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_intr_alloc.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/gpio_types.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_gpio.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gpio_pins.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/gpio/include/driver/gpio_etm.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_etm.h \
-  /opt/toolchains/modules/hal/espressif/components/driver/deprecated/driver/adc_types_legacy.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_internal_legacy.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.obj: /opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_includes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr/include/zephyr/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/limits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include-fixed/limits.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/sections.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/section_tags.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_types.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_loops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_listify.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_is_eq.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_inc.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_dec.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_x2.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/__assert.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/time_units.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_builtin.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/dlist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/slist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/list_gen.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sflist.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/obj_core.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_structs.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_heap.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_stats.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/structs.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/stats.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/rb.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_version.h \
-  /opt/toolchains/zephyr/include/zephyr/syscall.h \
-  zephyr/include/generated/zephyr/syscall_list.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/printk.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/cpu.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_interface.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_offload.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch_inlines.h \
-  zephyr/include/generated/zephyr/zsr.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/irq.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
-  zephyr/include/generated/zephyr/devicetree_generated.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/clocks.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/gpio.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/spi.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/dma.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pwms.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/fixed-partitions.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/ordinals.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pinctrl.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/can.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/reset.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/mbox.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_bitops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/ffs.h \
-  /opt/toolchains/zephyr/include/zephyr/sw_isr_table.h \
-  /opt/toolchains/zephyr/include/zephyr/device.h \
-  /opt/toolchains/zephyr/include/zephyr/init.h \
-  /opt/toolchains/zephyr/include/zephyr/pm/state.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/device_mmio.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
-  zephyr/include/generated/zephyr/syscalls/device.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/irq.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/hal.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/xtensa-versions.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/tie.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/addr_types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/gdbstub.h \
-  /opt/toolchains/zephyr/include/zephyr/debug/sparse.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h \
-  zephyr/include/generated/zephyr/syscalls/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/sys_clock.h \
-  /opt/toolchains/zephyr/include/zephyr/spinlock.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/errno.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/errno.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/exception.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal_types.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/app_memory/mem_domain.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/internal/kobject_internal.h \
-  zephyr/include/generated/zephyr/kobj-types-enum.h \
-  zephyr/include/generated/zephyr/syscalls/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_macros.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracking.h \
-  zephyr/include/generated/zephyr/syscalls/kernel.h \
-  /opt/toolchains/zephyr/include/zephyr/logging/log.h \
-  /opt/toolchains/zephyr/include/zephyr/logging/log_instance.h \
-  /opt/toolchains/zephyr/include/zephyr/logging/log_core.h \
-  /opt/toolchains/zephyr/include/zephyr/logging/log_msg.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mpsc_packet.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_internal.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_cxx.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_enums.h \
-  zephyr/include/generated/zephyr/syscalls/log_msg.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_types.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/lock.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h \
-  /opt/toolchains/modules/hal/espressif/components/log/include/esp_log_internal.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_check.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/dma_types.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/adc_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/adc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/adc_channel.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types_private.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/assert.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/misc.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sens_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/regi2c_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/regi2c_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_regi2c.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_saradc.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal_common.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gdma_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/gdma_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/gdma_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gdma_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/adc_share_hw_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/sar_periph_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_rtc_calib.h
-
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.obj: /opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c \
   zephyr/include/generated/zephyr/autoconf.h \
   /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
@@ -8251,146 +7143,6 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp
   /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
   /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h
 
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.obj: /opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/param.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/endian.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_endian.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/param.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/dma_types.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/adc_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/adc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/adc_channel.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types_private.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/assert.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/misc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sens_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/regi2c_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/regi2c_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_regi2c.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_saradc.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal_common.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gdma_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/gdma_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/gdma_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gdma_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/lldesc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_lldesc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/queue.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.obj: /opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/param.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/endian.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_endian.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/param.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal_common.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types_private.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/adc_ll.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/adc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/adc_channel.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/assert.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/misc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/string.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sens_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/regi2c_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/regi2c_ctrl.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_regi2c.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_saradc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h
-
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.obj: /opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c \
   zephyr/include/generated/zephyr/autoconf.h \
   /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
@@ -8618,74 +7370,6 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal
   /opt/toolchains/modules/hal/espressif/components/hal/include/hal/efuse_hal.h \
   /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h
 
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.obj: /opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/ledc_hal.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/ledc_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/ledc_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/ledc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/ledc_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/ledc_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_sys.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reset_reasons.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.obj: /opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/ledc_hal.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/ledc_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/ledc_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/clk_tree_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/ledc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/ledc_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/ledc_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/assert.h
-
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.obj: /opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c \
   zephyr/include/generated/zephyr/autoconf.h \
   /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
@@ -8790,63 +7474,6 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal
   /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/corebits.h \
   /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/xtruntime-core-state.h \
   /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/xtruntime-frames.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.obj: /opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/rtc_io_hal.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_err.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/rtc_io_ll.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_io_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_channel.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sens_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_cntl_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/gpio_types.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/io_mux_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/usb_serial_jtag_reg.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/usb_serial_jtag_struct.h \
-  /opt/toolchains/modules/hal/espressif/components/hal/include/hal/rtc_io_types.h
 
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.obj: /opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c \
   zephyr/include/generated/zephyr/autoconf.h \
@@ -9520,30 +8147,6 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log
   /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h \
   /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/stdlib.h \
   /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_compiler.h
-
-zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.obj: /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/include/soc/adc_periph.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/assert.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_bit_defs.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/reg_base.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/soc_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mpu_caps.h \
-  /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/adc_channel.h
 
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.obj: /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c \
   zephyr/include/generated/zephyr/autoconf.h \
@@ -13076,155 +11679,14 @@ zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj: /opt/toolchains/
   zephyr/include/generated/zephyr/autoconf.h \
   /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h
 
-zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.obj: /workspace/modules/number_of_leds/number_of_leds.c \
-  zephyr/include/generated/zephyr/autoconf.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_includes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stddef.h \
-  /opt/toolchains/zephyr/include/zephyr/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_default_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/features.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/picolibc.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_intsup.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_stdint.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/limits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/newlib.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/cdefs.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/syslimits.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include-fixed/limits.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \
-  /opt/toolchains/zephyr/include/zephyr/toolchain/common.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/sections.h \
-  /opt/toolchains/zephyr/include/zephyr/linker/section_tags.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_types.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_loops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_listify.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_is_eq.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_inc.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_dec.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/util_internal_util_x2.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/__assert.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/time_units.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/atomic_builtin.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/dlist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/slist.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/list_gen.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sflist.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/obj_core.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_structs.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_heap.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_stats.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/structs.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/stats.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/rb.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel_version.h \
-  /opt/toolchains/zephyr/include/zephyr/syscall.h \
-  zephyr/include/generated/zephyr/syscall_list.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/printk.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/inttypes.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/config.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/ieeefp.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdio.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/_types.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/cpu.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_interface.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_offload.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch_inlines.h \
-  zephyr/include/generated/zephyr/zsr.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/irq.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
-  zephyr/include/generated/zephyr/devicetree_generated.h \
-  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/clocks.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/gpio.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/spi.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/dma.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pwms.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/fixed-partitions.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/ordinals.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/pinctrl.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/can.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/reset.h \
-  /opt/toolchains/zephyr/include/zephyr/devicetree/mbox.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_bitops.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/sys_io.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/ffs.h \
-  /opt/toolchains/zephyr/include/zephyr/sw_isr_table.h \
-  /opt/toolchains/zephyr/include/zephyr/device.h \
-  /opt/toolchains/zephyr/include/zephyr/init.h \
-  /opt/toolchains/zephyr/include/zephyr/pm/state.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/device_mmio.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/mm.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
-  zephyr/include/generated/zephyr/syscalls/device.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/irq.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/hal.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/xtensa-versions.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
-  /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/tie.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/common/addr_types.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/gdbstub.h \
-  /opt/toolchains/zephyr/include/zephyr/debug/sparse.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h \
-  zephyr/include/generated/zephyr/syscalls/arch.h \
-  /opt/toolchains/zephyr/include/zephyr/sys_clock.h \
-  /opt/toolchains/zephyr/include/zephyr/spinlock.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/errno.h \
-  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/errno.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal.h \
-  /opt/toolchains/zephyr/include/zephyr/arch/exception.h \
-  /opt/toolchains/zephyr/include/zephyr/fatal_types.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread_stack.h \
-  /opt/toolchains/zephyr/include/zephyr/app_memory/mem_domain.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/thread.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/sys/internal/kobject_internal.h \
-  zephyr/include/generated/zephyr/kobj-types-enum.h \
-  zephyr/include/generated/zephyr/syscalls/kobject.h \
-  /opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_macros.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracing.h \
-  /opt/toolchains/zephyr/include/zephyr/tracing/tracking.h \
-  zephyr/include/generated/zephyr/syscalls/kernel.h \
-  /workspace/modules/number_of_leds/number_of_leds.h
-
-
-/workspace/modules/number_of_leds/number_of_leds.h:
 
 /opt/toolchains/zephyr/subsys/tracing/tracing_none.c:
 
 /opt/toolchains/zephyr/soc/espressif/esp32s3/soc_cache.c:
 
 /opt/toolchains/zephyr/include/zephyr/linker/linker-defs.h:
+
+/opt/toolchains/zephyr/soc/espressif/esp32s3/esp32s3-mp.c:
 
 /opt/toolchains/zephyr/soc/espressif/common/loader.c:
 
@@ -13260,6 +11722,8 @@ zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.o
 
 /opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_boya.h:
 
+/opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_winbond.h:
+
 /opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_mxic.h:
 
 /opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_issi.h:
@@ -13274,59 +11738,7 @@ zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.o
 
 /opt/toolchains/modules/hal/espressif/components/heap/include/heap_memory_layout.h:
 
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mmu.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/include/memspi_host_driver.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash/spi_flash_defs.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/opi_flash_private.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp32s3/rom/gpio.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c:
-
-/opt/toolchains/modules/hal/espressif/components/log/log_noos.c:
-
-/opt/toolchains/modules/hal/espressif/components/log/log.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/xt_wdt_ll.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c:
-
-/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/ieeefp.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/hwcrypto_reg.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/spi_flash_encrypted_ll.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/mpu_ll.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c:
-
-/opt/toolchains/zephyr/soc/espressif/esp32s3/esp32s3-mp.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/ledc_struct.h:
+/opt/toolchains/modules/hal/espressif/components/heap/include/soc/soc_memory_layout.h:
 
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/include/bootloader_common.h:
 
@@ -13366,12 +11778,6 @@ zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.o
 
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/endian.h:
 
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c:
-
-/opt/toolchains/modules/hal/espressif/components/log/esp_log_private.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h:
-
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_system/port/include/private/esp_private/brownout.h:
@@ -13383,6 +11789,8 @@ zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.o
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/spi_mem_reg.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/spi_struct.h:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sdmmc_pins.h:
 
 /opt/toolchains/zephyr/lib/os/assert.c:
 
@@ -13400,13 +11808,7 @@ zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.o
 
 /opt/toolchains/modules/hal/espressif/components/soc/include/soc/spi_periph.h:
 
-/opt/toolchains/modules/hal/espressif/components/heap/include/soc/soc_memory_layout.h:
-
-/opt/toolchains/modules/hal/espressif/zephyr/port/include/esp_adc_cal.h:
-
 /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/gpspi_flash_ll.h:
-
-/workspace/modules/number_of_leds/number_of_leds.c:
 
 /opt/toolchains/zephyr/include/zephyr/logging/log_instance.h:
 
@@ -13424,7 +11826,11 @@ zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.o
 
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/include/bootloader_flash.h:
 
+/opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c:
+
 /opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_mmap.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c:
 
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/include/esp_app_format.h:
 
@@ -13435,6 +11841,8 @@ zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.o
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdlib.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_system/include/esp_task.h:
+
+/opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h:
 
 /opt/toolchains/zephyr/include/zephyr/arch/exception.h:
 
@@ -13514,6 +11922,8 @@ zephyr/include/generated/zephyr/syscalls/log_msg.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/adc_channel.h:
 
+/opt/toolchains/zephyr/include/zephyr/sys/bitarray.h:
+
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c:
 
 /opt/toolchains/zephyr/include/zephyr/tracing/tracking.h:
@@ -13562,10 +11972,6 @@ zephyr/include/generated/zephyr/kobj-types-enum.h:
 
 zephyr/include/generated/zephyr/syscalls/device.h:
 
-/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c:
-
-zephyr/include/generated/zephyr/syscall_list.h:
-
 /opt/toolchains/zephyr/include/zephyr/arch/xtensa/gdbstub.h:
 
 /opt/toolchains/zephyr/include/zephyr/devicetree/ordinals.h:
@@ -13612,7 +12018,7 @@ zephyr/include/generated/zephyr/offsets.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/gdma.h:
 
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/ledc_hal.h:
+/opt/toolchains/zephyr/include/zephyr/sys/atomic_builtin.h:
 
 /opt/toolchains/zephyr/lib/heap/heap.c:
 
@@ -13656,6 +12062,10 @@ zephyr/include/generated/zephyr/offsets.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/include/soc/gpio_periph.h:
 
+/opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c:
+
+/opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/hal.h:
+
 /opt/toolchains/zephyr/include/zephyr/arch/syscall.h:
 
 /opt/toolchains/zephyr/include/zephyr/sys/rb.h:
@@ -13666,13 +12076,9 @@ zephyr/include/generated/zephyr/offsets.h:
 
 /opt/toolchains/modules/hal/espressif/components/xtensa/esp32s3/include/xtensa/config/core-isa.h:
 
-/opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc1_private.h:
-
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h:
 
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/private_include/bootloader_init.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/ledc_types.h:
 
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c:
 
@@ -13701,14 +12107,6 @@ zephyr/include/generated/zephyr/offsets.h:
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_channel.h:
 
 /opt/toolchains/zephyr/include/zephyr/sys/time_units.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/xt_wdt_hal.h:
-
-/opt/toolchains/zephyr/lib/utils/hex.c:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/mmu_hal.h:
 
 /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/spimem_flash_ll.h:
 
@@ -13782,6 +12180,8 @@ zephyr/include/generated/zephyr/devicetree_generated.h:
 
 /opt/toolchains/zephyr/include/zephyr/init.h:
 
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/mmu.h:
+
 /opt/toolchains/zephyr/include/zephyr/sys/heap_listener.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_defs.h:
@@ -13789,8 +12189,6 @@ zephyr/include/generated/zephyr/devicetree_generated.h:
 /opt/toolchains/zephyr/lib/os/thread_entry.c:
 
 /opt/toolchains/zephyr/include/zephyr/linker/utils.h:
-
-/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c:
 
@@ -13854,6 +12252,10 @@ zephyr/include/generated/zephyr/zsr.h:
 
 /opt/toolchains/zephyr/include/zephyr/arch/arch_interface.h:
 
+/opt/toolchains/zephyr/include/zephyr/linker/section_tags.h:
+
+/opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h:
+
 /opt/toolchains/zephyr/include/zephyr/toolchain.h:
 
 /opt/toolchains/zephyr/include/zephyr/devicetree.h:
@@ -13868,6 +12270,8 @@ zephyr/include/generated/zephyr/zsr.h:
 
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include-fixed/limits.h:
 
+/opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp32s3/rom/gpio.h:
+
 /opt/toolchains/zephyr/include/zephyr/devicetree/gpio.h:
 
 /opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c:
@@ -13878,6 +12282,8 @@ zephyr/include/generated/zephyr/zsr.h:
 
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/_endian.h:
 
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c:
+
 /opt/toolchains/zephyr/include/zephyr/devicetree/spi.h:
 
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/float.h:
@@ -13886,17 +12292,13 @@ zephyr/include/generated/zephyr/zsr.h:
 
 /opt/toolchains/zephyr/include/zephyr/devicetree/pwms.h:
 
-/opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c:
-
-/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/timespec.h:
-
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/param.h:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/touch_sensor_channel.h:
 
 /opt/toolchains/zephyr/kernel/include/kernel_internal.h:
 
 /opt/toolchains/zephyr/include/zephyr/kernel.h:
-
-/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/private_include/esp_efuse_utility.h:
 
 /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h:
 
@@ -13908,9 +12310,9 @@ zephyr/include/generated/zephyr/zsr.h:
 
 /opt/toolchains/zephyr/include/zephyr/arch/common/sys_bitops.h:
 
-/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c:
-
 zephyr/include/generated/zephyr/syscalls/arch.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c:
 
 /opt/toolchains/zephyr/include/zephyr/storage/flash_map.h:
 
@@ -14002,23 +12404,9 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 
 /opt/toolchains/modules/hal/espressif/components/hal/include/hal/gpio_types.h:
 
-/opt/toolchains/zephyr/include/zephyr/linker/section_tags.h:
-
-/opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gdma_struct.h:
-
-/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c:
-
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/i2s_reg.h:
 
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c:
-
-/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c:
-
-/opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/hal.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/include/soc/lldesc.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/efuse_struct.h:
 
@@ -14040,9 +12428,7 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/fe_reg.h:
 
-/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/math.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/mwdt_ll.h:
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/system_reg.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/syscon_reg.h:
 
@@ -14052,13 +12438,7 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 
 /opt/toolchains/modules/hal/espressif/components/spi_flash/include/esp_private/cache_utils.h:
 
-/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_common.inc:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/clk_tree_ll.h:
-
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_defs.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/ledc_reg.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/include/soc/touch_sensor_periph.h:
 
@@ -14078,6 +12458,8 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 
 /opt/toolchains/modules/hal/espressif/components/hal/platform_port/include/hal/log.h:
 
+/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c:
+
 /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp32s3/rom/rtc.h:
 
 /opt/toolchains/modules/hal/espressif/components/xtensa/include/xtensa/xtensa_api.h:
@@ -14093,10 +12475,6 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 /opt/toolchains/modules/hal/espressif/components/soc/include/soc/timer_periph.h:
 
 /opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c:
-
-/opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_periph.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/sleep_modem.h:
 
@@ -14152,17 +12530,15 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/interrupt_reg.h:
 
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c:
-
-/opt/toolchains/modules/hal/espressif/components/efuse/private_include/esp_efuse_utility.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/touch_sensor_channel.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal_common.h:
+/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/opi_flash_private.h:
 
 /opt/toolchains/modules/hal/espressif/components/driver/uart/include/driver/uart.h:
 
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/private_include/bootloader_soc.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/mwdt_ll.h:
+
+/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/math.h:
 
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/include/esp_private/bootloader_flash_internal.h:
 
@@ -14194,129 +12570,9 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 
 /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_table.h:
 
-/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/math.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types_private.h:
-
 /opt/toolchains/modules/hal/espressif/components/bootloader_support/include/esp_secure_boot.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/bb_reg.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/opi_flash_cmd_format_mxic.h:
-
-/opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c:
-
-/opt/toolchains/zephyr/lib/os/printk.c:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/rtc_ctrl.h:
-
-/opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_check.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/rtc_io_types.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_intr_alloc.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/clk_ctrl_os.h:
-
-/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c:
-
-/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/lock.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_driver.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/adc_share_hw_ctrl.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/include/soc/efuse_periph.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_mac.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/sar_periph_ctrl.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/system_reg.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_hal.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/dma_types.h:
-
-/opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c:
-
-/opt/toolchains/modules/hal/espressif/components/soc/include/soc/adc_periph.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/hal/soc_hal.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_struct.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/rwdt_ll.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sens_struct.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/sleep_cpu.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_system/include/esp_private/esp_task_wdt.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_generic.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/include/esp_flash_spi_init.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/include/hal/systimer_types.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/gdma_ll.h:
-
-/opt/toolchains/zephyr/include/zephyr/sys/bitarray.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/gdma_reg.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_winbond.h:
-
-/opt/toolchains/modules/hal/espressif/components/driver/deprecated/driver/adc_types_legacy.h:
-
-/opt/toolchains/zephyr/include/zephyr/dt-bindings/gpio/gpio.h:
-
-/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_rtc_calib.h:
-
-/opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c:
-
-/opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_io_periph.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_struct.h:
-
-/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c:
-
-/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_memory_utils.h:
-
-/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c:
-
-/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c:
-
-/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c:
-
-/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/include/esp_adc_cal_types_legacy.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_reg.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/syscon_struct.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/adc_ll.h:
-
-/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_internal_legacy.h:
-
-/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c:
-
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/systimer_struct.h:
 
 /opt/toolchains/zephyr/include/zephyr/irq_offload.h:
 
@@ -14326,7 +12582,15 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 
 /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/cache_ll.h:
 
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/clk_ctrl_os.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_intr_alloc.h:
+
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/esp_clk_tree_common.h:
+
+/opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_check.h:
 
 /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c:
 
@@ -14338,13 +12602,15 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 
 /opt/toolchains/modules/hal/espressif/components/heap/include/esp_heap_caps.h:
 
+/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c:
+
+/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/lock.h:
+
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_struct.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/esp_clk.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c:
-
-/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/ledc_ll.h:
 
 /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/ctype.h:
 
@@ -14353,8 +12619,6 @@ zephyr/include/generated/zephyr/syscalls/arch.h:
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c:
 
 /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h:
-
-/opt/toolchains/zephyr/include/zephyr/drivers/gpio.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/mspi_timing_tuning.h:
 
@@ -14366,13 +12630,9 @@ zephyr/include/generated/zephyr/syscalls/cache.h:
 
 /opt/toolchains/zephyr/include/zephyr/cache.h:
 
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c:
-
 /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp32s3/rom/opi_flash.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/rtc_clk.h:
-
-/opt/toolchains/modules/hal/espressif/components/driver/deprecated/driver/adc.h:
 
 /opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c:
 
@@ -14388,6 +12648,14 @@ zephyr/misc/generated/configs.c:
 
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/regi2c_ulp.h:
 
+/opt/toolchains/modules/hal/espressif/components/soc/include/soc/efuse_periph.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_mac.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/sar_periph_ctrl.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c:
+
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c:
 
 /opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp32s3/rom/ets_sys.h:
@@ -14398,15 +12666,55 @@ zephyr/misc/generated/configs.c:
 
 /opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c:
 
+/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/spi_flash_encrypted_ll.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:
+
+/opt/toolchains/modules/hal/espressif/components/hal/include/hal/rtc_io_types.h:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sens_struct.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/sleep_cpu.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_system/include/esp_private/esp_task_wdt.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/adc_ll.h:
+
+/opt/toolchains/modules/hal/espressif/components/soc/include/soc/adc_periph.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/hal/soc_hal.h:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/apb_saradc_struct.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/rwdt_ll.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c:
+
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/dport_access.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:
 
+/opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_io_periph.h:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_io_struct.h:
+
 /opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/nrx_reg.h:
 
 /opt/toolchains/modules/hal/espressif/components/soc/include/soc/syscon_periph.h:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/rtc_cntl_reg.h:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/syscon_struct.h:
+
+/opt/toolchains/zephyr/lib/os/printk.c:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_private/rtc_ctrl.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_memory_utils.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_hw_support/include/esp_sleep.h:
 
@@ -14438,6 +12746,8 @@ zephyr/misc/generated/configs.c:
 
 /opt/toolchains/modules/hal/espressif/components/esp_mm/ext_mem_layout.h:
 
+/opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_driver.h:
+
 /opt/toolchains/modules/hal/espressif/components/esp_mm/include/esp_mmu_map.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c:
@@ -14448,15 +12758,25 @@ zephyr/misc/generated/configs.c:
 
 /opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:
 
-zephyr/include/generated/zephyr/syscalls/gpio.h:
-
 /opt/toolchains/modules/hal/espressif/components/hal/include/hal/systimer_hal.h:
 
 /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/systimer_ll.h:
 
+/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/systimer_struct.h:
+
 /opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/include/esp_efuse_chip.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c:
+
+/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c:
+
+/opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c:
 
 /opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c:
 
@@ -14470,20 +12790,72 @@ zephyr/include/generated/zephyr/syscalls/gpio.h:
 
 /opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c:
 
-/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/sdmmc_pins.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c:
-
-/opt/toolchains/modules/hal/espressif/components/esp_rom/include/esp_rom_lldesc.h:
-
-/opt/toolchains/zephyr/include/zephyr/sys/atomic_builtin.h:
-
-/opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c:
-
-/opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h:
-
-/opt/toolchains/modules/hal/espressif/components/soc/include/soc/ledc_periph.h:
-
 /opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c:
 
-/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c:
+/opt/toolchains/modules/hal/espressif/components/log/log.c:
+
+/opt/toolchains/modules/hal/espressif/components/soc/include/soc/rtc_periph.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c:
+
+/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/mpu_ll.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c:
+
+/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/include/soc/hwcrypto_reg.h:
+
+/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/ieeefp.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/include/hal/adc_types_private.h:
+
+/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/machine/math.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c:
+
+/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/clk_tree_ll.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_common.inc:
+
+/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c:
+
+zephyr/include/generated/zephyr/syscall_list.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c:
+
+/opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c:
+
+/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/sys/timespec.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c:
+
+/opt/toolchains/zephyr/lib/utils/hex.c:
+
+/opt/toolchains/modules/hal/espressif/components/hal/include/hal/xt_wdt_hal.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/include/hal/xt_wdt_ll.h:
+
+/opt/toolchains/modules/hal/espressif/components/esp_common/include/esp_attr.h:
+
+/opt/toolchains/modules/hal/espressif/components/log/esp_log_private.h:
+
+/opt/toolchains/modules/hal/espressif/components/log/log_noos.c:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/opi_flash_cmd_format_mxic.h:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash/spi_flash_defs.h:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/include/memspi_host_driver.h:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/include/spi_flash_chip_generic.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/include/hal/systimer_types.h:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/include/esp_flash_spi_init.h:
+
+/opt/toolchains/modules/hal/espressif/components/hal/include/hal/mmu_hal.h:
+
+/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c:

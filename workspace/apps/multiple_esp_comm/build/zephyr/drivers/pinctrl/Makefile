@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/pinctrl//CMakeFiles/progress.marks
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build/zephyr/drivers/pinctrl//CMakeFiles/progress.marks
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/clean
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/rule
 .PHONY : zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ drivers__pinctrl: zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/rule
 
 # fast build rule for target.
 drivers__pinctrl/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build
 .PHONY : drivers__pinctrl/fast
 
 common.obj: common.c.obj
@@ -135,7 +135,7 @@ common.obj: common.c.obj
 
 # target to build an object file
 common.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
 .PHONY : common.c.obj
 
 common.i: common.c.i
@@ -143,7 +143,7 @@ common.i: common.c.i
 
 # target to preprocess a source file
 common.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.i
 .PHONY : common.c.i
 
 common.s: common.c.s
@@ -151,7 +151,7 @@ common.s: common.c.s
 
 # target to generate assembly for a file
 common.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.s
 .PHONY : common.c.s
 
 pinctrl_esp32.obj: pinctrl_esp32.c.obj
@@ -159,7 +159,7 @@ pinctrl_esp32.obj: pinctrl_esp32.c.obj
 
 # target to build an object file
 pinctrl_esp32.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_esp32.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_esp32.c.obj
 .PHONY : pinctrl_esp32.c.obj
 
 pinctrl_esp32.i: pinctrl_esp32.c.i
@@ -167,7 +167,7 @@ pinctrl_esp32.i: pinctrl_esp32.c.i
 
 # target to preprocess a source file
 pinctrl_esp32.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_esp32.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_esp32.c.i
 .PHONY : pinctrl_esp32.c.i
 
 pinctrl_esp32.s: pinctrl_esp32.c.s
@@ -175,7 +175,7 @@ pinctrl_esp32.s: pinctrl_esp32.c.s
 
 # target to generate assembly for a file
 pinctrl_esp32.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_esp32.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_esp32.c.s
 .PHONY : pinctrl_esp32.c.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -70,30 +70,46 @@ include CMakeFiles/app.dir/progress.make
 include CMakeFiles/app.dir/flags.make
 
 CMakeFiles/app.dir/src/main.c.obj: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/main.c.obj: /workspace/apps/05_solution_pwm_knob/src/main.c
+CMakeFiles/app.dir/src/main.c.obj: /workspace/apps/multiple_esp_comm/src/main.c
 CMakeFiles/app.dir/src/main.c.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/app.dir/src/main.c.obj"
-	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.c.obj -MF CMakeFiles/app.dir/src/main.c.obj.d -o CMakeFiles/app.dir/src/main.c.obj -c /workspace/apps/05_solution_pwm_knob/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/app.dir/src/main.c.obj"
+	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.c.obj -MF CMakeFiles/app.dir/src/main.c.obj.d -o CMakeFiles/app.dir/src/main.c.obj -c /workspace/apps/multiple_esp_comm/src/main.c
 
 CMakeFiles/app.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/app.dir/src/main.c.i"
-	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/apps/05_solution_pwm_knob/src/main.c > CMakeFiles/app.dir/src/main.c.i
+	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/apps/multiple_esp_comm/src/main.c > CMakeFiles/app.dir/src/main.c.i
 
 CMakeFiles/app.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/app.dir/src/main.c.s"
-	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/apps/05_solution_pwm_knob/src/main.c -o CMakeFiles/app.dir/src/main.c.s
+	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/apps/multiple_esp_comm/src/main.c -o CMakeFiles/app.dir/src/main.c.s
+
+CMakeFiles/app.dir/src/gpio_get.c.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/gpio_get.c.obj: /workspace/apps/multiple_esp_comm/src/gpio_get.c
+CMakeFiles/app.dir/src/gpio_get.c.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/app.dir/src/gpio_get.c.obj"
+	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/app.dir/src/gpio_get.c.obj -MF CMakeFiles/app.dir/src/gpio_get.c.obj.d -o CMakeFiles/app.dir/src/gpio_get.c.obj -c /workspace/apps/multiple_esp_comm/src/gpio_get.c
+
+CMakeFiles/app.dir/src/gpio_get.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/app.dir/src/gpio_get.c.i"
+	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/apps/multiple_esp_comm/src/gpio_get.c > CMakeFiles/app.dir/src/gpio_get.c.i
+
+CMakeFiles/app.dir/src/gpio_get.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/app.dir/src/gpio_get.c.s"
+	/opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/apps/multiple_esp_comm/src/gpio_get.c -o CMakeFiles/app.dir/src/gpio_get.c.s
 
 # Object files for target app
 app_OBJECTS = \
-"CMakeFiles/app.dir/src/main.c.obj"
+"CMakeFiles/app.dir/src/main.c.obj" \
+"CMakeFiles/app.dir/src/gpio_get.c.obj"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
 app/libapp.a: CMakeFiles/app.dir/src/main.c.obj
+app/libapp.a: CMakeFiles/app.dir/src/gpio_get.c.obj
 app/libapp.a: CMakeFiles/app.dir/build.make
 app/libapp.a: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library app/libapp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library app/libapp.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/app.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +122,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /workspace/apps/05_solution_pwm_knob /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/CMakeFiles/app.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /workspace/apps/multiple_esp_comm /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/CMakeFiles/app.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/app.dir/depend
 

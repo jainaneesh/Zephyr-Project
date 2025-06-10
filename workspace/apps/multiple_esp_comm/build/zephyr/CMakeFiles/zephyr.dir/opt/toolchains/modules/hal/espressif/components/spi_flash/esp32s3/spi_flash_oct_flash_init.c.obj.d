@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.obj: \
  /opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/log/include/esp_log.h \

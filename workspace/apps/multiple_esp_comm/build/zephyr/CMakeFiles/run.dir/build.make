@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Utility rule file for run.
 
@@ -67,7 +67,7 @@ include zephyr/CMakeFiles/run.dir/compiler_depend.make
 include zephyr/CMakeFiles/run.dir/progress.make
 
 zephyr/CMakeFiles/run:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /usr/bin/cmake -E echo =================================================== Emulation/Simulation\ not\ supported\ with\ this\ board. ===================================================
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /usr/bin/cmake -E echo =================================================== Emulation/Simulation\ not\ supported\ with\ this\ board. ===================================================
 
 run: zephyr/CMakeFiles/run
 run: zephyr/CMakeFiles/run.dir/build.make
@@ -78,10 +78,10 @@ zephyr/CMakeFiles/run.dir/build: run
 .PHONY : zephyr/CMakeFiles/run.dir/build
 
 zephyr/CMakeFiles/run.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/run.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/run.dir/cmake_clean.cmake
 .PHONY : zephyr/CMakeFiles/run.dir/clean
 
 zephyr/CMakeFiles/run.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr /workspace/apps/05_solution_pwm_knob/build/zephyr/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr /workspace/apps/multiple_esp_comm/build/zephyr/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/CMakeFiles/run.dir/depend
 

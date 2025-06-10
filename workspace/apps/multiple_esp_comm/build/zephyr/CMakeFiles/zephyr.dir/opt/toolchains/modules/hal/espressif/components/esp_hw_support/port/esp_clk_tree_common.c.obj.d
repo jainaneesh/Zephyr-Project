@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.obj: \
  /opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/esp_hw_support/include/esp_private/esp_clk_tree_common.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/stdint.h \
@@ -46,7 +46,7 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/soc/esp32s3/include/soc/rtc.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../port/include/stubs.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/devicetree_generated.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/devicetree_generated.h \
  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
  /opt/toolchains/zephyr/include/zephyr/sys/__assert.h \
  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \

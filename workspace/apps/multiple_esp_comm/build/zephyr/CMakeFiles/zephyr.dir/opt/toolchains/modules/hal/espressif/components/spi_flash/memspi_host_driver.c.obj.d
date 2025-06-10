@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.obj: \
  /opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/soc/esp32s3/include/soc/soc_caps.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/soc/esp32s3/include/soc/mpu_caps.h \
@@ -83,7 +83,7 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi
  /opt/toolchains/zephyr/include/zephyr/types.h \
  /opt/toolchains/zephyr/include/zephyr/device.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/devicetree_generated.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/devicetree_generated.h \
  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
  /opt/toolchains/zephyr/include/zephyr/sys/__assert.h \
  /opt/toolchains/zephyr/include/zephyr/sys/util_macro.h \
@@ -118,9 +118,9 @@ zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi
  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
  /opt/toolchains/zephyr/include/zephyr/sys/sys_io.h \
  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/device.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/device.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscall_list.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscall_list.h \
  /opt/toolchains/zephyr/include/zephyr/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \

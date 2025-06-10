@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.obj: \
  /opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/hal/esp32s3/include/hal/spi_flash_encrypted_ll.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdbool.h \

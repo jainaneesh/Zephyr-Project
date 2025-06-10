@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Include any dependencies generated for this target.
 include zephyr/arch/common/CMakeFiles/arch__common.dir/depend.make
@@ -72,30 +72,30 @@ include zephyr/arch/common/CMakeFiles/arch__common.dir/flags.make
 zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj: zephyr/arch/common/CMakeFiles/arch__common.dir/flags.make
 zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj: /opt/toolchains/zephyr/arch/common/sw_isr_common.c
 zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj: zephyr/arch/common/CMakeFiles/arch__common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj -MF CMakeFiles/arch__common.dir/sw_isr_common.c.obj.d -o CMakeFiles/arch__common.dir/sw_isr_common.c.obj -c /opt/toolchains/zephyr/arch/common/sw_isr_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj -MF CMakeFiles/arch__common.dir/sw_isr_common.c.obj.d -o CMakeFiles/arch__common.dir/sw_isr_common.c.obj -c /opt/toolchains/zephyr/arch/common/sw_isr_common.c
 
 zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arch__common.dir/sw_isr_common.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/common/sw_isr_common.c > CMakeFiles/arch__common.dir/sw_isr_common.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/common/sw_isr_common.c > CMakeFiles/arch__common.dir/sw_isr_common.c.i
 
 zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arch__common.dir/sw_isr_common.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/common/sw_isr_common.c -o CMakeFiles/arch__common.dir/sw_isr_common.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/common/sw_isr_common.c -o CMakeFiles/arch__common.dir/sw_isr_common.c.s
 
 zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj: zephyr/arch/common/CMakeFiles/arch__common.dir/flags.make
 zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj: /opt/toolchains/zephyr/arch/common/dynamic_isr.c
 zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj: zephyr/arch/common/CMakeFiles/arch__common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj -MF CMakeFiles/arch__common.dir/dynamic_isr.c.obj.d -o CMakeFiles/arch__common.dir/dynamic_isr.c.obj -c /opt/toolchains/zephyr/arch/common/dynamic_isr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj -MF CMakeFiles/arch__common.dir/dynamic_isr.c.obj.d -o CMakeFiles/arch__common.dir/dynamic_isr.c.obj -c /opt/toolchains/zephyr/arch/common/dynamic_isr.c
 
 zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arch__common.dir/dynamic_isr.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/common/dynamic_isr.c > CMakeFiles/arch__common.dir/dynamic_isr.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/arch/common/dynamic_isr.c > CMakeFiles/arch__common.dir/dynamic_isr.c.i
 
 zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arch__common.dir/dynamic_isr.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/common/dynamic_isr.c -o CMakeFiles/arch__common.dir/dynamic_isr.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/arch/common/dynamic_isr.c -o CMakeFiles/arch__common.dir/dynamic_isr.c.s
 
 # Object files for target arch__common
 arch__common_OBJECTS = \
@@ -109,19 +109,19 @@ zephyr/arch/common/libarch__common.a: zephyr/arch/common/CMakeFiles/arch__common
 zephyr/arch/common/libarch__common.a: zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj
 zephyr/arch/common/libarch__common.a: zephyr/arch/common/CMakeFiles/arch__common.dir/build.make
 zephyr/arch/common/libarch__common.a: zephyr/arch/common/CMakeFiles/arch__common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libarch__common.a"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && $(CMAKE_COMMAND) -P CMakeFiles/arch__common.dir/cmake_clean_target.cmake
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arch__common.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libarch__common.a"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && $(CMAKE_COMMAND) -P CMakeFiles/arch__common.dir/cmake_clean_target.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arch__common.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 zephyr/arch/common/CMakeFiles/arch__common.dir/build: zephyr/arch/common/libarch__common.a
 .PHONY : zephyr/arch/common/CMakeFiles/arch__common.dir/build
 
 zephyr/arch/common/CMakeFiles/arch__common.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common && $(CMAKE_COMMAND) -P CMakeFiles/arch__common.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/arch/common && $(CMAKE_COMMAND) -P CMakeFiles/arch__common.dir/cmake_clean.cmake
 .PHONY : zephyr/arch/common/CMakeFiles/arch__common.dir/clean
 
 zephyr/arch/common/CMakeFiles/arch__common.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr/arch/common /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common /workspace/apps/05_solution_pwm_knob/build/zephyr/arch/common/CMakeFiles/arch__common.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr/arch/common /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr/arch/common /workspace/apps/multiple_esp_comm/build/zephyr/arch/common/CMakeFiles/arch__common.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/arch/common/CMakeFiles/arch__common.dir/depend
 

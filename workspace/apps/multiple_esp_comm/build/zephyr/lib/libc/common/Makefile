@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/common//CMakeFiles/progress.marks
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/common//CMakeFiles/progress.marks
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/clean
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/rule
 .PHONY : zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ lib__libc__common: zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/rule
 
 # fast build rule for target.
 lib__libc__common/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build
 .PHONY : lib__libc__common/fast
 
 source/stdlib/abort.obj: source/stdlib/abort.c.obj
@@ -135,7 +135,7 @@ source/stdlib/abort.obj: source/stdlib/abort.c.obj
 
 # target to build an object file
 source/stdlib/abort.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
 .PHONY : source/stdlib/abort.c.obj
 
 source/stdlib/abort.i: source/stdlib/abort.c.i
@@ -143,7 +143,7 @@ source/stdlib/abort.i: source/stdlib/abort.c.i
 
 # target to preprocess a source file
 source/stdlib/abort.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.i
 .PHONY : source/stdlib/abort.c.i
 
 source/stdlib/abort.s: source/stdlib/abort.c.s
@@ -151,7 +151,7 @@ source/stdlib/abort.s: source/stdlib/abort.c.s
 
 # target to generate assembly for a file
 source/stdlib/abort.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.s
 .PHONY : source/stdlib/abort.c.s
 
 source/stdlib/malloc.obj: source/stdlib/malloc.c.obj
@@ -159,7 +159,7 @@ source/stdlib/malloc.obj: source/stdlib/malloc.c.obj
 
 # target to build an object file
 source/stdlib/malloc.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
 .PHONY : source/stdlib/malloc.c.obj
 
 source/stdlib/malloc.i: source/stdlib/malloc.c.i
@@ -167,7 +167,7 @@ source/stdlib/malloc.i: source/stdlib/malloc.c.i
 
 # target to preprocess a source file
 source/stdlib/malloc.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.i
 .PHONY : source/stdlib/malloc.c.i
 
 source/stdlib/malloc.s: source/stdlib/malloc.c.s
@@ -175,7 +175,7 @@ source/stdlib/malloc.s: source/stdlib/malloc.c.s
 
 # target to generate assembly for a file
 source/stdlib/malloc.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/build.make zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.s
 .PHONY : source/stdlib/malloc.c.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

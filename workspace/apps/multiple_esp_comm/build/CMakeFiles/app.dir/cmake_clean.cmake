@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/app.dir/src/gpio_get.c.obj"
+  "CMakeFiles/app.dir/src/gpio_get.c.obj.d"
   "CMakeFiles/app.dir/src/main.c.obj"
   "CMakeFiles/app.dir/src/main.c.obj.d"
   "app/libapp.a"

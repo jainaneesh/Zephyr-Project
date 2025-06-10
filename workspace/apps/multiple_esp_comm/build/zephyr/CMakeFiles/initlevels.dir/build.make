@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Utility rule file for initlevels.
 
@@ -67,7 +67,7 @@ include zephyr/CMakeFiles/initlevels.dir/compiler_depend.make
 include zephyr/CMakeFiles/initlevels.dir/progress.make
 
 zephyr/CMakeFiles/initlevels: zephyr/zephyr.elf
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/venv/bin/python3 /opt/toolchains/zephyr/scripts/build/check_init_priorities.py --elf-file=/workspace/apps/05_solution_pwm_knob/build/zephyr/zephyr.elf --initlevels
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/venv/bin/python3 /opt/toolchains/zephyr/scripts/build/check_init_priorities.py --elf-file=/workspace/apps/multiple_esp_comm/build/zephyr/zephyr.elf --initlevels
 
 initlevels: zephyr/CMakeFiles/initlevels
 initlevels: zephyr/CMakeFiles/initlevels.dir/build.make
@@ -78,10 +78,10 @@ zephyr/CMakeFiles/initlevels.dir/build: initlevels
 .PHONY : zephyr/CMakeFiles/initlevels.dir/build
 
 zephyr/CMakeFiles/initlevels.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/initlevels.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/initlevels.dir/cmake_clean.cmake
 .PHONY : zephyr/CMakeFiles/initlevels.dir/clean
 
 zephyr/CMakeFiles/initlevels.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr /workspace/apps/05_solution_pwm_knob/build/zephyr/CMakeFiles/initlevels.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr /workspace/apps/multiple_esp_comm/build/zephyr/CMakeFiles/initlevels.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/CMakeFiles/initlevels.dir/depend
 

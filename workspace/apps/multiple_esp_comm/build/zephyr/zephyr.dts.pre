@@ -935,6 +935,7 @@
 # 1 "/opt/toolchains/zephyr/include/zephyr/dt-bindings/pwm/pwm.h" 1 3 4
 # 3 "./boards/esp32s3_devkitc.overlay" 2
 
+
 / {
  aliases {
   my-adc = &adc0;
@@ -942,6 +943,8 @@
   led-0 = &led_0;
   led-1 = &led_1;
   led-2 = &led_2;
+  flash-gpio = &driver_gpio_node;
+  detect-gpio = &detecting_gpio_node;
  };
 
 
@@ -958,6 +961,20 @@
 
   led_2: pwm_led_2 {
    pwms = <&ledc0 2 1000 (0 << 0)>;
+  };
+ };
+
+ gpio14-output {
+  compatible = "gpio-leds";
+  driver_gpio_node: driver_gpio {
+   gpios = <&gpio0 14 (0 << 0)>;
+  };
+ };
+
+ gpio7_input {
+  compatible = "gpio-leds";
+  detecting_gpio_node: detecting_gpio {
+   gpios = <&gpio0 7 (0 << 0)>;
   };
  };
 };

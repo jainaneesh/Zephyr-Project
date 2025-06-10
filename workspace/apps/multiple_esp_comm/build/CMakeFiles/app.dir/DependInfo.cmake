@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/apps/05_solution_pwm_knob/src/main.c" "CMakeFiles/app.dir/src/main.c.obj" "gcc" "CMakeFiles/app.dir/src/main.c.obj.d"
+  "/workspace/apps/multiple_esp_comm/src/gpio_get.c" "CMakeFiles/app.dir/src/gpio_get.c.obj" "gcc" "CMakeFiles/app.dir/src/gpio_get.c.obj.d"
+  "/workspace/apps/multiple_esp_comm/src/main.c" "CMakeFiles/app.dir/src/main.c.obj" "gcc" "CMakeFiles/app.dir/src/main.c.obj.d"
   )
 
 # Targets to which this target links.

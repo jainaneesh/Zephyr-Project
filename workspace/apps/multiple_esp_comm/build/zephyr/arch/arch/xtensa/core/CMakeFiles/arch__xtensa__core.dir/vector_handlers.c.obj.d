@@ -1,6 +1,6 @@
 zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj: \
  /opt/toolchains/zephyr/arch/xtensa/core/vector_handlers.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/string.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/_ansi.h \
@@ -60,7 +60,7 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c
  /opt/toolchains/zephyr/include/zephyr/sys/rb.h \
  /opt/toolchains/zephyr/include/zephyr/kernel_version.h \
  /opt/toolchains/zephyr/include/zephyr/syscall.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscall_list.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscall_list.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/lib/gcc/xtensa-espressif_esp32s3_zephyr-elf/12.2.0/include/stdarg.h \
  /opt/toolchains/zephyr/include/zephyr/arch/syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/syscall.h \
@@ -77,11 +77,11 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c
  /opt/toolchains/zephyr/include/zephyr/irq_offload.h \
  /opt/toolchains/zephyr/include/zephyr/arch/arch_inlines.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch_inlines.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/zsr.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/zsr.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/arch.h \
  /opt/toolchains/zephyr/include/zephyr/irq.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/devicetree_generated.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/devicetree_generated.h \
  /opt/toolchains/zephyr/include/zephyr/irq_multilevel.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree/io-channels.h \
  /opt/toolchains/zephyr/include/zephyr/devicetree/clocks.h \
@@ -108,7 +108,7 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c
  /opt/toolchains/zephyr/include/zephyr/kernel/internal/mm.h \
  /opt/toolchains/zephyr/include/zephyr/sys/mem_manage.h \
  /opt/toolchains/zephyr/include/zephyr/sys/iterable_sections.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/device.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/device.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_syscall.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/irq.h \
@@ -122,7 +122,7 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/thread_stack.h \
  /opt/toolchains/zephyr/include/zephyr/drivers/timer/system_timer.h \
  /opt/toolchains/zephyr/include/zephyr/arch/xtensa/exception.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/arch.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/arch.h \
  /opt/toolchains/zephyr/include/zephyr/sys_clock.h \
  /opt/toolchains/zephyr/include/zephyr/spinlock.h \
  /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/picolibc/include/errno.h \
@@ -135,19 +135,19 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c
  /opt/toolchains/zephyr/include/zephyr/kernel/thread.h \
  /opt/toolchains/zephyr/include/zephyr/sys/kobject.h \
  /opt/toolchains/zephyr/include/zephyr/sys/internal/kobject_internal.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/kobj-types-enum.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/kobject.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/kobj-types-enum.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/kobject.h \
  /opt/toolchains/zephyr/include/zephyr/kernel/internal/smp.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing_macros.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracing.h \
  /opt/toolchains/zephyr/include/zephyr/tracing/tracking.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/kernel.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/kernel.h \
  /opt/toolchains/zephyr/kernel/include/ksched.h \
  /opt/toolchains/zephyr/kernel/include/kernel_internal.h \
  /opt/toolchains/zephyr/kernel/include/kernel_arch_interface.h \
  /opt/toolchains/zephyr/arch/xtensa/include/kernel_arch_func.h \
  /opt/toolchains/zephyr/include/zephyr/cache.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/cache.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/cache.h \
  /opt/toolchains/zephyr/kernel/include/timeout_q.h \
  /opt/toolchains/zephyr/kernel/include/kthread.h \
  /opt/toolchains/zephyr/kernel/include/priority_q.h \
@@ -164,8 +164,8 @@ zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c
  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_internal.h \
  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_cxx.h \
  /opt/toolchains/zephyr/include/zephyr/sys/cbprintf_enums.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/syscalls/log_msg.h \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/offsets.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/syscalls/log_msg.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/offsets.h \
  /opt/toolchains/zephyr/include/zephyr/arch/common/exc_handle.h \
  /opt/toolchains/zephyr/soc/espressif/common/include/_soc_inthandlers.h \
  /opt/toolchains/zephyr/arch/xtensa/include/xtensa_internal.h \

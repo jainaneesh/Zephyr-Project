@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.obj: \
  /opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/include/sdkconfig.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/bootloader_support/include/bootloader_random.h \

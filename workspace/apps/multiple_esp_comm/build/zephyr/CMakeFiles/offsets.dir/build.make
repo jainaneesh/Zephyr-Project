@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Include any dependencies generated for this target.
 include zephyr/CMakeFiles/offsets.dir/depend.make
@@ -72,16 +72,16 @@ include zephyr/CMakeFiles/offsets.dir/flags.make
 zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj: zephyr/CMakeFiles/offsets.dir/flags.make
 zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj: /opt/toolchains/zephyr/arch/xtensa/core/offsets/offsets.c
 zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj: zephyr/CMakeFiles/offsets.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -fno-lto -MD -MT zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj -MF CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj.d -o CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/offsets/offsets.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -fno-lto -MD -MT zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj -MF CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj.d -o CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj -c /opt/toolchains/zephyr/arch/xtensa/core/offsets/offsets.c
 
 zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -fno-lto -E /opt/toolchains/zephyr/arch/xtensa/core/offsets/offsets.c > CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -fno-lto -E /opt/toolchains/zephyr/arch/xtensa/core/offsets/offsets.c > CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.i
 
 zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -fno-lto -S /opt/toolchains/zephyr/arch/xtensa/core/offsets/offsets.c -o CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -fno-lto -S /opt/toolchains/zephyr/arch/xtensa/core/offsets/offsets.c -o CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.s
 
 offsets: zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj
 offsets: zephyr/CMakeFiles/offsets.dir/build.make
@@ -92,10 +92,10 @@ zephyr/CMakeFiles/offsets.dir/build: offsets
 .PHONY : zephyr/CMakeFiles/offsets.dir/build
 
 zephyr/CMakeFiles/offsets.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/offsets.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/offsets.dir/cmake_clean.cmake
 .PHONY : zephyr/CMakeFiles/offsets.dir/clean
 
 zephyr/CMakeFiles/offsets.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr /workspace/apps/05_solution_pwm_knob/build/zephyr/CMakeFiles/offsets.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr /workspace/apps/multiple_esp_comm/build/zephyr/CMakeFiles/offsets.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/CMakeFiles/offsets.dir/depend
 

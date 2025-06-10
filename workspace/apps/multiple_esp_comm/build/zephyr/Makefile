@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build/zephyr//CMakeFiles/progress.marks
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build/zephyr//CMakeFiles/progress.marks
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/clean
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/preinstall
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zephyr/CMakeFiles/zephyr.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr.dir/rule
 .PHONY : zephyr/CMakeFiles/zephyr.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ zephyr: zephyr/CMakeFiles/zephyr.dir/rule
 
 # fast build rule for target.
 zephyr/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/build
 .PHONY : zephyr/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/version_h.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/version_h.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/version_h.dir/rule
 .PHONY : zephyr/CMakeFiles/version_h.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ version_h: zephyr/CMakeFiles/version_h.dir/rule
 
 # fast build rule for target.
 version_h/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/version_h.dir/build.make zephyr/CMakeFiles/version_h.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/version_h.dir/build.make zephyr/CMakeFiles/version_h.dir/build
 .PHONY : version_h/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/syscall_list_h_target.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_list_h_target.dir/rule
 .PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/rule
 
 # Convenience name for target.
@@ -155,12 +155,12 @@ syscall_list_h_target: zephyr/CMakeFiles/syscall_list_h_target.dir/rule
 
 # fast build rule for target.
 syscall_list_h_target/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/build
 .PHONY : syscall_list_h_target/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/parse_syscalls_target.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/parse_syscalls_target.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/parse_syscalls_target.dir/rule
 .PHONY : zephyr/CMakeFiles/parse_syscalls_target.dir/rule
 
 # Convenience name for target.
@@ -169,12 +169,12 @@ parse_syscalls_target: zephyr/CMakeFiles/parse_syscalls_target.dir/rule
 
 # fast build rule for target.
 parse_syscalls_target/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/parse_syscalls_target.dir/build.make zephyr/CMakeFiles/parse_syscalls_target.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/parse_syscalls_target.dir/build.make zephyr/CMakeFiles/parse_syscalls_target.dir/build
 .PHONY : parse_syscalls_target/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/driver_validation_h_target.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/driver_validation_h_target.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/driver_validation_h_target.dir/rule
 .PHONY : zephyr/CMakeFiles/driver_validation_h_target.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ driver_validation_h_target: zephyr/CMakeFiles/driver_validation_h_target.dir/rul
 
 # fast build rule for target.
 driver_validation_h_target/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/driver_validation_h_target.dir/build.make zephyr/CMakeFiles/driver_validation_h_target.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/driver_validation_h_target.dir/build.make zephyr/CMakeFiles/driver_validation_h_target.dir/build
 .PHONY : driver_validation_h_target/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/kobj_types_h_target.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/kobj_types_h_target.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/kobj_types_h_target.dir/rule
 .PHONY : zephyr/CMakeFiles/kobj_types_h_target.dir/rule
 
 # Convenience name for target.
@@ -197,12 +197,12 @@ kobj_types_h_target: zephyr/CMakeFiles/kobj_types_h_target.dir/rule
 
 # fast build rule for target.
 kobj_types_h_target/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/kobj_types_h_target.dir/build.make zephyr/CMakeFiles/kobj_types_h_target.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/kobj_types_h_target.dir/build.make zephyr/CMakeFiles/kobj_types_h_target.dir/build
 .PHONY : kobj_types_h_target/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/zephyr_generated_headers.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_generated_headers.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_generated_headers.dir/rule
 .PHONY : zephyr/CMakeFiles/zephyr_generated_headers.dir/rule
 
 # Convenience name for target.
@@ -211,12 +211,12 @@ zephyr_generated_headers: zephyr/CMakeFiles/zephyr_generated_headers.dir/rule
 
 # fast build rule for target.
 zephyr_generated_headers/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_generated_headers.dir/build.make zephyr/CMakeFiles/zephyr_generated_headers.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_generated_headers.dir/build.make zephyr/CMakeFiles/zephyr_generated_headers.dir/build
 .PHONY : zephyr_generated_headers/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/offsets.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets.dir/rule
 .PHONY : zephyr/CMakeFiles/offsets.dir/rule
 
 # Convenience name for target.
@@ -225,12 +225,12 @@ offsets: zephyr/CMakeFiles/offsets.dir/rule
 
 # fast build rule for target.
 offsets/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/build
 .PHONY : offsets/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/offsets_h.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets_h.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets_h.dir/rule
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ offsets_h: zephyr/CMakeFiles/offsets_h.dir/rule
 
 # fast build rule for target.
 offsets_h/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets_h.dir/build.make zephyr/CMakeFiles/offsets_h.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets_h.dir/build.make zephyr/CMakeFiles/offsets_h.dir/build
 .PHONY : offsets_h/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/rule
 .PHONY : zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/rule
 
 # Convenience name for target.
@@ -253,12 +253,12 @@ linker_zephyr_prebuilt_script_target: zephyr/CMakeFiles/linker_zephyr_prebuilt_s
 
 # fast build rule for target.
 linker_zephyr_prebuilt_script_target/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/build.make zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/build.make zephyr/CMakeFiles/linker_zephyr_prebuilt_script_target.dir/build
 .PHONY : linker_zephyr_prebuilt_script_target/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/zephyr_pre0.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_pre0.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_pre0.dir/rule
 .PHONY : zephyr/CMakeFiles/zephyr_pre0.dir/rule
 
 # Convenience name for target.
@@ -267,12 +267,12 @@ zephyr_pre0: zephyr/CMakeFiles/zephyr_pre0.dir/rule
 
 # fast build rule for target.
 zephyr_pre0/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/build
 .PHONY : zephyr_pre0/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/rule
 .PHONY : zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/rule
 
 # Convenience name for target.
@@ -281,12 +281,12 @@ linker_zephyr_final_script_target: zephyr/CMakeFiles/linker_zephyr_final_script_
 
 # fast build rule for target.
 linker_zephyr_final_script_target/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/build.make zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/build.make zephyr/CMakeFiles/linker_zephyr_final_script_target.dir/build
 .PHONY : linker_zephyr_final_script_target/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/zephyr_final.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_final.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_final.dir/rule
 .PHONY : zephyr/CMakeFiles/zephyr_final.dir/rule
 
 # Convenience name for target.
@@ -295,12 +295,12 @@ zephyr_final: zephyr/CMakeFiles/zephyr_final.dir/rule
 
 # fast build rule for target.
 zephyr_final/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/build
 .PHONY : zephyr_final/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/initlevels.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/initlevels.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/initlevels.dir/rule
 .PHONY : zephyr/CMakeFiles/initlevels.dir/rule
 
 # Convenience name for target.
@@ -309,12 +309,12 @@ initlevels: zephyr/CMakeFiles/initlevels.dir/rule
 
 # fast build rule for target.
 initlevels/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/initlevels.dir/build.make zephyr/CMakeFiles/initlevels.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/initlevels.dir/build.make zephyr/CMakeFiles/initlevels.dir/build
 .PHONY : initlevels/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/run.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/run.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/run.dir/rule
 .PHONY : zephyr/CMakeFiles/run.dir/rule
 
 # Convenience name for target.
@@ -323,12 +323,12 @@ run: zephyr/CMakeFiles/run.dir/rule
 
 # fast build rule for target.
 run/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/build
 .PHONY : run/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/llext-edk.dir/rule:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/llext-edk.dir/rule
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/llext-edk.dir/rule
 .PHONY : zephyr/CMakeFiles/llext-edk.dir/rule
 
 # Convenience name for target.
@@ -337,7 +337,7 @@ llext-edk: zephyr/CMakeFiles/llext-edk.dir/rule
 
 # fast build rule for target.
 llext-edk/fast:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/llext-edk.dir/build.make zephyr/CMakeFiles/llext-edk.dir/build
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/llext-edk.dir/build.make zephyr/CMakeFiles/llext-edk.dir/build
 .PHONY : llext-edk/fast
 
 arch/xtensa/core/offsets/offsets.obj: arch/xtensa/core/offsets/offsets.c.obj
@@ -345,7 +345,7 @@ arch/xtensa/core/offsets/offsets.obj: arch/xtensa/core/offsets/offsets.c.obj
 
 # target to build an object file
 arch/xtensa/core/offsets/offsets.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj
 .PHONY : arch/xtensa/core/offsets/offsets.c.obj
 
 arch/xtensa/core/offsets/offsets.i: arch/xtensa/core/offsets/offsets.c.i
@@ -353,7 +353,7 @@ arch/xtensa/core/offsets/offsets.i: arch/xtensa/core/offsets/offsets.c.i
 
 # target to preprocess a source file
 arch/xtensa/core/offsets/offsets.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.i
 .PHONY : arch/xtensa/core/offsets/offsets.c.i
 
 arch/xtensa/core/offsets/offsets.s: arch/xtensa/core/offsets/offsets.c.s
@@ -361,7 +361,7 @@ arch/xtensa/core/offsets/offsets.s: arch/xtensa/core/offsets/offsets.c.s
 
 # target to generate assembly for a file
 arch/xtensa/core/offsets/offsets.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.s
 .PHONY : arch/xtensa/core/offsets/offsets.c.s
 
 isr_tables.obj: isr_tables.c.obj
@@ -369,7 +369,7 @@ isr_tables.obj: isr_tables.c.obj
 
 # target to build an object file
 isr_tables.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
 .PHONY : isr_tables.c.obj
 
 isr_tables.i: isr_tables.c.i
@@ -377,7 +377,7 @@ isr_tables.i: isr_tables.c.i
 
 # target to preprocess a source file
 isr_tables.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.i
 .PHONY : isr_tables.c.i
 
 isr_tables.s: isr_tables.c.s
@@ -385,7 +385,7 @@ isr_tables.s: isr_tables.c.s
 
 # target to generate assembly for a file
 isr_tables.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.s
 .PHONY : isr_tables.c.s
 
 lib/heap/heap.obj: lib/heap/heap.c.obj
@@ -393,7 +393,7 @@ lib/heap/heap.obj: lib/heap/heap.c.obj
 
 # target to build an object file
 lib/heap/heap.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
 .PHONY : lib/heap/heap.c.obj
 
 lib/heap/heap.i: lib/heap/heap.c.i
@@ -401,7 +401,7 @@ lib/heap/heap.i: lib/heap/heap.c.i
 
 # target to preprocess a source file
 lib/heap/heap.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.i
 .PHONY : lib/heap/heap.c.i
 
 lib/heap/heap.s: lib/heap/heap.c.s
@@ -409,7 +409,7 @@ lib/heap/heap.s: lib/heap/heap.c.s
 
 # target to generate assembly for a file
 lib/heap/heap.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.s
 .PHONY : lib/heap/heap.c.s
 
 lib/os/assert.obj: lib/os/assert.c.obj
@@ -417,7 +417,7 @@ lib/os/assert.obj: lib/os/assert.c.obj
 
 # target to build an object file
 lib/os/assert.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
 .PHONY : lib/os/assert.c.obj
 
 lib/os/assert.i: lib/os/assert.c.i
@@ -425,7 +425,7 @@ lib/os/assert.i: lib/os/assert.c.i
 
 # target to preprocess a source file
 lib/os/assert.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.i
 .PHONY : lib/os/assert.c.i
 
 lib/os/assert.s: lib/os/assert.c.s
@@ -433,7 +433,7 @@ lib/os/assert.s: lib/os/assert.c.s
 
 # target to generate assembly for a file
 lib/os/assert.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.s
 .PHONY : lib/os/assert.c.s
 
 lib/os/cbprintf_complete.obj: lib/os/cbprintf_complete.c.obj
@@ -441,7 +441,7 @@ lib/os/cbprintf_complete.obj: lib/os/cbprintf_complete.c.obj
 
 # target to build an object file
 lib/os/cbprintf_complete.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
 .PHONY : lib/os/cbprintf_complete.c.obj
 
 lib/os/cbprintf_complete.i: lib/os/cbprintf_complete.c.i
@@ -449,7 +449,7 @@ lib/os/cbprintf_complete.i: lib/os/cbprintf_complete.c.i
 
 # target to preprocess a source file
 lib/os/cbprintf_complete.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.i
 .PHONY : lib/os/cbprintf_complete.c.i
 
 lib/os/cbprintf_complete.s: lib/os/cbprintf_complete.c.s
@@ -457,7 +457,7 @@ lib/os/cbprintf_complete.s: lib/os/cbprintf_complete.c.s
 
 # target to generate assembly for a file
 lib/os/cbprintf_complete.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.s
 .PHONY : lib/os/cbprintf_complete.c.s
 
 lib/os/cbprintf_packaged.obj: lib/os/cbprintf_packaged.c.obj
@@ -465,7 +465,7 @@ lib/os/cbprintf_packaged.obj: lib/os/cbprintf_packaged.c.obj
 
 # target to build an object file
 lib/os/cbprintf_packaged.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
 .PHONY : lib/os/cbprintf_packaged.c.obj
 
 lib/os/cbprintf_packaged.i: lib/os/cbprintf_packaged.c.i
@@ -473,7 +473,7 @@ lib/os/cbprintf_packaged.i: lib/os/cbprintf_packaged.c.i
 
 # target to preprocess a source file
 lib/os/cbprintf_packaged.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.i
 .PHONY : lib/os/cbprintf_packaged.c.i
 
 lib/os/cbprintf_packaged.s: lib/os/cbprintf_packaged.c.s
@@ -481,7 +481,7 @@ lib/os/cbprintf_packaged.s: lib/os/cbprintf_packaged.c.s
 
 # target to generate assembly for a file
 lib/os/cbprintf_packaged.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.s
 .PHONY : lib/os/cbprintf_packaged.c.s
 
 lib/os/printk.obj: lib/os/printk.c.obj
@@ -489,7 +489,7 @@ lib/os/printk.obj: lib/os/printk.c.obj
 
 # target to build an object file
 lib/os/printk.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
 .PHONY : lib/os/printk.c.obj
 
 lib/os/printk.i: lib/os/printk.c.i
@@ -497,7 +497,7 @@ lib/os/printk.i: lib/os/printk.c.i
 
 # target to preprocess a source file
 lib/os/printk.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.i
 .PHONY : lib/os/printk.c.i
 
 lib/os/printk.s: lib/os/printk.c.s
@@ -505,7 +505,7 @@ lib/os/printk.s: lib/os/printk.c.s
 
 # target to generate assembly for a file
 lib/os/printk.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.s
 .PHONY : lib/os/printk.c.s
 
 lib/os/sem.obj: lib/os/sem.c.obj
@@ -513,7 +513,7 @@ lib/os/sem.obj: lib/os/sem.c.obj
 
 # target to build an object file
 lib/os/sem.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
 .PHONY : lib/os/sem.c.obj
 
 lib/os/sem.i: lib/os/sem.c.i
@@ -521,7 +521,7 @@ lib/os/sem.i: lib/os/sem.c.i
 
 # target to preprocess a source file
 lib/os/sem.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.i
 .PHONY : lib/os/sem.c.i
 
 lib/os/sem.s: lib/os/sem.c.s
@@ -529,7 +529,7 @@ lib/os/sem.s: lib/os/sem.c.s
 
 # target to generate assembly for a file
 lib/os/sem.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.s
 .PHONY : lib/os/sem.c.s
 
 lib/os/thread_entry.obj: lib/os/thread_entry.c.obj
@@ -537,7 +537,7 @@ lib/os/thread_entry.obj: lib/os/thread_entry.c.obj
 
 # target to build an object file
 lib/os/thread_entry.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
 .PHONY : lib/os/thread_entry.c.obj
 
 lib/os/thread_entry.i: lib/os/thread_entry.c.i
@@ -545,7 +545,7 @@ lib/os/thread_entry.i: lib/os/thread_entry.c.i
 
 # target to preprocess a source file
 lib/os/thread_entry.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.i
 .PHONY : lib/os/thread_entry.c.i
 
 lib/os/thread_entry.s: lib/os/thread_entry.c.s
@@ -553,7 +553,7 @@ lib/os/thread_entry.s: lib/os/thread_entry.c.s
 
 # target to generate assembly for a file
 lib/os/thread_entry.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.s
 .PHONY : lib/os/thread_entry.c.s
 
 lib/utils/bitarray.obj: lib/utils/bitarray.c.obj
@@ -561,7 +561,7 @@ lib/utils/bitarray.obj: lib/utils/bitarray.c.obj
 
 # target to build an object file
 lib/utils/bitarray.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
 .PHONY : lib/utils/bitarray.c.obj
 
 lib/utils/bitarray.i: lib/utils/bitarray.c.i
@@ -569,7 +569,7 @@ lib/utils/bitarray.i: lib/utils/bitarray.c.i
 
 # target to preprocess a source file
 lib/utils/bitarray.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.i
 .PHONY : lib/utils/bitarray.c.i
 
 lib/utils/bitarray.s: lib/utils/bitarray.c.s
@@ -577,7 +577,7 @@ lib/utils/bitarray.s: lib/utils/bitarray.c.s
 
 # target to generate assembly for a file
 lib/utils/bitarray.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.s
 .PHONY : lib/utils/bitarray.c.s
 
 lib/utils/dec.obj: lib/utils/dec.c.obj
@@ -585,7 +585,7 @@ lib/utils/dec.obj: lib/utils/dec.c.obj
 
 # target to build an object file
 lib/utils/dec.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
 .PHONY : lib/utils/dec.c.obj
 
 lib/utils/dec.i: lib/utils/dec.c.i
@@ -593,7 +593,7 @@ lib/utils/dec.i: lib/utils/dec.c.i
 
 # target to preprocess a source file
 lib/utils/dec.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.i
 .PHONY : lib/utils/dec.c.i
 
 lib/utils/dec.s: lib/utils/dec.c.s
@@ -601,7 +601,7 @@ lib/utils/dec.s: lib/utils/dec.c.s
 
 # target to generate assembly for a file
 lib/utils/dec.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.s
 .PHONY : lib/utils/dec.c.s
 
 lib/utils/hex.obj: lib/utils/hex.c.obj
@@ -609,7 +609,7 @@ lib/utils/hex.obj: lib/utils/hex.c.obj
 
 # target to build an object file
 lib/utils/hex.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
 .PHONY : lib/utils/hex.c.obj
 
 lib/utils/hex.i: lib/utils/hex.c.i
@@ -617,7 +617,7 @@ lib/utils/hex.i: lib/utils/hex.c.i
 
 # target to preprocess a source file
 lib/utils/hex.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.i
 .PHONY : lib/utils/hex.c.i
 
 lib/utils/hex.s: lib/utils/hex.c.s
@@ -625,7 +625,7 @@ lib/utils/hex.s: lib/utils/hex.c.s
 
 # target to generate assembly for a file
 lib/utils/hex.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.s
 .PHONY : lib/utils/hex.c.s
 
 lib/utils/rb.obj: lib/utils/rb.c.obj
@@ -633,7 +633,7 @@ lib/utils/rb.obj: lib/utils/rb.c.obj
 
 # target to build an object file
 lib/utils/rb.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
 .PHONY : lib/utils/rb.c.obj
 
 lib/utils/rb.i: lib/utils/rb.c.i
@@ -641,7 +641,7 @@ lib/utils/rb.i: lib/utils/rb.c.i
 
 # target to preprocess a source file
 lib/utils/rb.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.i
 .PHONY : lib/utils/rb.c.i
 
 lib/utils/rb.s: lib/utils/rb.c.s
@@ -649,7 +649,7 @@ lib/utils/rb.s: lib/utils/rb.c.s
 
 # target to generate assembly for a file
 lib/utils/rb.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.s
 .PHONY : lib/utils/rb.c.s
 
 lib/utils/timeutil.obj: lib/utils/timeutil.c.obj
@@ -657,7 +657,7 @@ lib/utils/timeutil.obj: lib/utils/timeutil.c.obj
 
 # target to build an object file
 lib/utils/timeutil.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
 .PHONY : lib/utils/timeutil.c.obj
 
 lib/utils/timeutil.i: lib/utils/timeutil.c.i
@@ -665,7 +665,7 @@ lib/utils/timeutil.i: lib/utils/timeutil.c.i
 
 # target to preprocess a source file
 lib/utils/timeutil.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.i
 .PHONY : lib/utils/timeutil.c.i
 
 lib/utils/timeutil.s: lib/utils/timeutil.c.s
@@ -673,7 +673,7 @@ lib/utils/timeutil.s: lib/utils/timeutil.c.s
 
 # target to generate assembly for a file
 lib/utils/timeutil.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.s
 .PHONY : lib/utils/timeutil.c.s
 
 misc/empty_file.obj: misc/empty_file.c.obj
@@ -681,8 +681,8 @@ misc/empty_file.obj: misc/empty_file.c.obj
 
 # target to build an object file
 misc/empty_file.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.obj
 .PHONY : misc/empty_file.c.obj
 
 misc/empty_file.i: misc/empty_file.c.i
@@ -690,8 +690,8 @@ misc/empty_file.i: misc/empty_file.c.i
 
 # target to preprocess a source file
 misc/empty_file.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.i
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.i
 .PHONY : misc/empty_file.c.i
 
 misc/empty_file.s: misc/empty_file.c.s
@@ -699,8 +699,8 @@ misc/empty_file.s: misc/empty_file.c.s
 
 # target to generate assembly for a file
 misc/empty_file.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.s
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_pre0.dir/build.make zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr_final.dir/build.make zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.s
 .PHONY : misc/empty_file.c.s
 
 misc/generated/configs.obj: misc/generated/configs.c.obj
@@ -708,7 +708,7 @@ misc/generated/configs.obj: misc/generated/configs.c.obj
 
 # target to build an object file
 misc/generated/configs.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
 .PHONY : misc/generated/configs.c.obj
 
 misc/generated/configs.i: misc/generated/configs.c.i
@@ -716,7 +716,7 @@ misc/generated/configs.i: misc/generated/configs.c.i
 
 # target to preprocess a source file
 misc/generated/configs.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.i
 .PHONY : misc/generated/configs.c.i
 
 misc/generated/configs.s: misc/generated/configs.c.s
@@ -724,7 +724,7 @@ misc/generated/configs.s: misc/generated/configs.c.s
 
 # target to generate assembly for a file
 misc/generated/configs.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.s
 .PHONY : misc/generated/configs.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.obj
@@ -732,7 +732,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.i
@@ -740,7 +740,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.s
@@ -748,7 +748,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
@@ -756,7 +756,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.i
@@ -764,7 +764,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.s
@@ -772,7 +772,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.obj
@@ -780,7 +780,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.i
@@ -788,7 +788,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.s
@@ -796,7 +796,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_fl
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.obj
@@ -804,7 +804,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.i
@@ -812,7 +812,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.s
@@ -820,7 +820,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.obj
@@ -828,7 +828,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.i
@@ -836,7 +836,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.s
@@ -844,7 +844,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_common_loader.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.obj
@@ -852,7 +852,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.i
@@ -860,7 +860,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.s
@@ -868,7 +868,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_console.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.obj
@@ -876,7 +876,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.i
@@ -884,7 +884,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.s
@@ -892,7 +892,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_init.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.obj
@@ -900,7 +900,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.i
@@ -908,7 +908,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.s
@@ -916,7 +916,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_mem.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.obj
@@ -924,7 +924,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.i
@@ -932,7 +932,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.s
@@ -940,7 +940,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloade
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/bootloader_random_esp32s3.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.obj
@@ -948,7 +948,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/b
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.i
@@ -956,7 +956,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/b
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.s
@@ -964,7 +964,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/b
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.obj
@@ -972,7 +972,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/b
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.i
@@ -980,7 +980,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/b
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.s
@@ -988,7 +988,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/b
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/esp32s3/bootloader_soc.c.s
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.obj: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.obj
@@ -996,7 +996,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_enc
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.obj
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.i: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.i
@@ -1004,7 +1004,7 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_enc
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.i
 
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.s: opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.s
@@ -1012,255 +1012,15 @@ opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_enc
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.s
-
-opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.obj: opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.obj
-
-opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.i: opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.i
-
-opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.s: opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.c.s
-
-opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.obj: opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.obj
-
-opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.i: opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.i
-
-opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.s: opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.c.s
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.obj: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.obj
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.i: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.i
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.s: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.c.s
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.obj: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.obj
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.i: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.i
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.s: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.c.s
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.obj: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.obj
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.i: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.i
-
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.s: opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.c.s
-
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.obj: opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.obj
-
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.i: opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.i
-
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.s: opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.s
-
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.obj: opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.obj
-
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.i: opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.i
-
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.s: opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.s
-
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.obj: opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.obj
-
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.i: opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.i
-
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.s: opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.s
-
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.obj: opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.obj
-
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.i: opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.i
-
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.s: opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c.s
-
-opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.obj
-
-opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.i
-
-opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.obj
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.i
@@ -1268,7 +1028,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.i: op
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.s
@@ -1276,7 +1036,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.s: op
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.obj
@@ -1284,7 +1044,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.obj: opt/tool
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.i
@@ -1292,7 +1052,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.i: opt/toolch
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.s
@@ -1300,7 +1060,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.s: opt/toolch
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/cpu.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.obj
@@ -1308,7 +1068,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.obj: opt/
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.i
@@ -1316,7 +1076,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.i: opt/to
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.s
@@ -1324,7 +1084,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.s: opt/to
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_clk.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.obj
@@ -1332,7 +1092,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.i
@@ -1340,7 +1100,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.s
@@ -1348,7 +1108,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.obj
@@ -1356,7 +1116,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.obj: op
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.i
@@ -1364,7 +1124,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.i: opt/
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.s
@@ -1372,7 +1132,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.s: opt/
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/hw_random.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.obj
@@ -1380,7 +1140,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.obj: opt
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.i
@@ -1388,7 +1148,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.i: opt/t
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.s
@@ -1396,7 +1156,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.s: opt/t
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/mac_addr.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.obj
@@ -1404,7 +1164,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tunin
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.i
@@ -1412,7 +1172,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tunin
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.s
@@ -1420,7 +1180,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tunin
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/mspi_timing_tuning.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.obj
@@ -1428,7 +1188,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.obj: 
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.i
@@ -1436,7 +1196,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.i: op
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.s
@@ -1444,7 +1204,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.s: op
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.obj
@@ -1452,7 +1212,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.i
@@ -1460,7 +1220,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.s
@@ -1468,7 +1228,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/cpu_region_protect.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.obj
@@ -1476,7 +1236,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.i
@@ -1484,7 +1244,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.s
@@ -1492,7 +1252,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/esp_clk_tree.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.obj
@@ -1500,7 +1260,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.i
@@ -1508,7 +1268,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.s
@@ -1516,7 +1276,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/mspi_timing_config.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.obj
@@ -1524,7 +1284,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.i
@@ -1532,7 +1292,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.s
@@ -1540,7 +1300,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.obj
@@ -1548,7 +1308,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.i
@@ -1556,7 +1316,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.s
@@ -1564,7 +1324,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_clk_init.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.obj
@@ -1572,7 +1332,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.i
@@ -1580,7 +1340,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.s
@@ -1588,7 +1348,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_init.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.obj
@@ -1596,7 +1356,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.i
@@ -1604,7 +1364,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.s
@@ -1612,7 +1372,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_sleep.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.obj
@@ -1620,7 +1380,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.i
@@ -1628,7 +1388,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.s
@@ -1636,7 +1396,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/rtc_time.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.obj
@@ -1644,7 +1404,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.i
@@ -1652,7 +1412,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.s
@@ -1660,7 +1420,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.obj
@@ -1668,7 +1428,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/syst
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.i
@@ -1676,7 +1436,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/syst
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.s
@@ -1684,7 +1444,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/syst
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp32s3/systimer.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.obj
@@ -1692,7 +1452,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.i
@@ -1700,7 +1460,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.s
@@ -1708,7 +1468,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.obj
@@ -1716,7 +1476,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.obj: 
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.i
@@ -1724,7 +1484,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.i: op
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.s
@@ -1732,7 +1492,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.s: op
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.obj
@@ -1740,7 +1500,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.obj: o
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.i
@@ -1748,7 +1508,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.i: opt
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.s
@@ -1756,7 +1516,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.s: opt
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/rtc_module.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.obj: opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.obj
@@ -1764,7 +1524,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.obj: 
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.i: opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.i
@@ -1772,7 +1532,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.i: op
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.s: opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.s
@@ -1780,7 +1540,7 @@ opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.s: op
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.obj: opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.obj
@@ -1788,7 +1548,7 @@ opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.obj: opt/tool
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.i: opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.i
@@ -1796,7 +1556,7 @@ opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.i: opt/toolch
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.s: opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.s
@@ -1804,7 +1564,7 @@ opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.s: opt/toolch
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.obj: opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.obj
@@ -1812,7 +1572,7 @@ opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layo
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.i: opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.i
@@ -1820,7 +1580,7 @@ opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layo
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.s: opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.s
@@ -1828,7 +1588,7 @@ opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layo
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_mm/port/esp32s3/ext_mem_layout.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
@@ -1836,7 +1596,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_es
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.i: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.i
@@ -1844,7 +1604,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_es
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.s: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.s
@@ -1852,7 +1612,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_es
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.obj
@@ -1860,7 +1620,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.obj:
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.i: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.i
@@ -1868,7 +1628,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.i: o
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.s: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.s
@@ -1876,7 +1636,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.s: o
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.obj
@@ -1884,7 +1644,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.ob
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.i: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.i
@@ -1892,7 +1652,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.i:
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.s: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.s
@@ -1900,7 +1660,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.s:
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_longjmp.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_longjmp.S.obj
@@ -1908,7 +1668,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_longjmp.
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_longjmp.S.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_longjmp.S.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_longjmp.S.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_longjmp.S.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.obj
@@ -1916,7 +1676,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.i: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.i
@@ -1924,7 +1684,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.s: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.s
@@ -1932,7 +1692,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.obj
@@ -1940,7 +1700,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.obj:
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.i: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.i
@@ -1948,7 +1708,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.i: o
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.s: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.s
@@ -1956,7 +1716,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.s: o
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.obj
@@ -1964,7 +1724,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.i: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.i
@@ -1972,7 +1732,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.s: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.s
@@ -1980,7 +1740,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_systimer.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.obj
@@ -1988,7 +1748,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.obj
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.i: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.i
@@ -1996,7 +1756,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.i: 
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.s: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.s
@@ -2004,7 +1764,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.s: 
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.obj: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.obj
@@ -2012,7 +1772,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.obj:
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.i: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.i
@@ -2020,7 +1780,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.i: o
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.s: opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.s
@@ -2028,7 +1788,7 @@ opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.s: o
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_rom/patches/esp_rom_wdt.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.obj: opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.obj
@@ -2036,7 +1796,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.obj: opt/tool
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.i: opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.i
@@ -2044,7 +1804,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.i: opt/toolch
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.s: opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.s
@@ -2052,7 +1812,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.s: opt/toolch
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/esp_err.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.obj: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.obj
@@ -2060,7 +1820,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.i: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.i
@@ -2068,7 +1828,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.s: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.s
@@ -2076,7 +1836,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/clk.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.obj: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.obj
@@ -2084,7 +1844,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/rese
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.i: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.i
@@ -2092,7 +1852,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/rese
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.s: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.s
@@ -2100,7 +1860,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/rese
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/reset_reason.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.obj: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.obj
@@ -2108,7 +1868,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/syst
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.i: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.i
@@ -2116,7 +1876,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/syst
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.s: opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.s
@@ -2124,7 +1884,7 @@ opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/syst
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_system/port/soc/esp32s3/system_internal.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.obj: opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.obj
@@ -2132,7 +1892,7 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.obj: opt
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.i: opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.i
@@ -2140,7 +1900,7 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.i: opt/t
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.s: opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.s
@@ -2148,7 +1908,7 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.s: opt/t
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.obj: opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.obj
@@ -2156,7 +1916,7 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_sys
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.i: opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.i
@@ -2164,7 +1924,7 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_sys
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.s: opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.s
@@ -2172,7 +1932,7 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_sys
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_systimer.c.s
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.obj: opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.obj
@@ -2180,7 +1940,7 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.o
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.obj
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.i: opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.i
@@ -2188,7 +1948,7 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.i
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.i
 
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.s: opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.s
@@ -2196,63 +1956,15 @@ opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.s
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.s
-
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.obj
-
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal.i: opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.i
-
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal.s: opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal.c.s
-
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.obj: opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.obj
-
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.i: opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.i
-
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.s: opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/cache_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/cache_hal.obj
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/cache_hal.i: opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.i
@@ -2260,7 +1972,7 @@ opt/toolchains/modules/hal/espressif/components/hal/cache_hal.i: opt/toolchains/
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/cache_hal.s: opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.s
@@ -2268,7 +1980,7 @@ opt/toolchains/modules/hal/espressif/components/hal/cache_hal.s: opt/toolchains/
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/cache_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.obj
@@ -2276,7 +1988,7 @@ opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.obj: opt/toolchain
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.i: opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.i
@@ -2284,7 +1996,7 @@ opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.i: opt/toolchains/
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.s: opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.s
@@ -2292,7 +2004,7 @@ opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.s: opt/toolchains/
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/efuse_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.obj
@@ -2300,7 +2012,7 @@ opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.obj: op
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.i: opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.i
@@ -2308,7 +2020,7 @@ opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.i: opt/
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.s: opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.s
@@ -2316,7 +2028,7 @@ opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.s: opt/
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/esp32s3/clk_tree_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.obj
@@ -2324,7 +2036,7 @@ opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.obj: opt/t
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.i: opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.i
@@ -2332,7 +2044,7 @@ opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.i: opt/too
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.s: opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.s
@@ -2340,63 +2052,15 @@ opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.s: opt/too
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.c.s
-
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.obj
-
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.i: opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.i
-
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.s: opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.c.s
-
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.obj: opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.obj
-
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.i: opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.i
-
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.s: opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.obj
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.i: opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.i
@@ -2404,7 +2068,7 @@ opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.i: opt/toolchains/mo
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.s: opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.s
@@ -2412,7 +2076,7 @@ opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.s: opt/toolchains/mo
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.obj
@@ -2420,7 +2084,7 @@ opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.obj: opt/toolchains/
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.i: opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.i
@@ -2428,7 +2092,7 @@ opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.i: opt/toolchains/mo
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.s: opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.s
@@ -2436,39 +2100,15 @@ opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.s: opt/toolchains/mo
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.c.s
-
-opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.obj
-
-opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.i: opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.i
-
-opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.s: opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.obj: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.obj
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.i: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.i
@@ -2476,7 +2116,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.i
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.s: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.s
@@ -2484,7 +2124,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.s
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.obj
@@ -2492,7 +2132,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.obj: opt/toolc
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.i: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.i
@@ -2500,7 +2140,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.i: opt/toolcha
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.s: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.s
@@ -2508,7 +2148,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.s: opt/toolcha
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.obj: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.obj
@@ -2516,7 +2156,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.obj: opt
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.i: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.i
@@ -2524,7 +2164,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.i: opt/t
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.s: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.s
@@ -2532,7 +2172,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.s: opt/t
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_gpspi.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.obj: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.obj
@@ -2540,7 +2180,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.obj: opt/
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.i: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.i
@@ -2548,7 +2188,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.i: opt/to
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.s: opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.s
@@ -2556,7 +2196,7 @@ opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.s: opt/to
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.obj
@@ -2564,7 +2204,7 @@ opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.obj: opt/toolch
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.i: opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.i
@@ -2572,7 +2212,7 @@ opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.i: opt/toolchai
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.s: opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.s
@@ -2580,7 +2220,7 @@ opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.s: opt/toolchai
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/systimer_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.obj
@@ -2588,7 +2228,7 @@ opt/toolchains/modules/hal/espressif/components/hal/uart_hal.obj: opt/toolchains
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal.i: opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.i
@@ -2596,7 +2236,7 @@ opt/toolchains/modules/hal/espressif/components/hal/uart_hal.i: opt/toolchains/m
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal.s: opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.s
@@ -2604,7 +2244,7 @@ opt/toolchains/modules/hal/espressif/components/hal/uart_hal.s: opt/toolchains/m
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.obj: opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.obj
@@ -2612,7 +2252,7 @@ opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.obj: opt/toolc
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.i: opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.i
@@ -2620,7 +2260,7 @@ opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.i: opt/toolcha
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.s: opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.s
@@ -2628,7 +2268,7 @@ opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.s: opt/toolcha
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/uart_hal_iram.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.obj: opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.obj
@@ -2636,7 +2276,7 @@ opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.obj: opt/toolch
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.i: opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.i
@@ -2644,7 +2284,7 @@ opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.i: opt/toolchai
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.s: opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.s
@@ -2652,7 +2292,7 @@ opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.s: opt/toolchai
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/wdt_hal_iram.c.s
 
 opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.obj: opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.obj
@@ -2660,7 +2300,7 @@ opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.obj: opt/toolchai
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.obj
 
 opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.i: opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.i
@@ -2668,7 +2308,7 @@ opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.i: opt/toolchains
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.i
 
 opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.s: opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.s
@@ -2676,7 +2316,7 @@ opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.s: opt/toolchains
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/hal/xt_wdt_hal.c.s
 
 opt/toolchains/modules/hal/espressif/components/log/log.obj: opt/toolchains/modules/hal/espressif/components/log/log.c.obj
@@ -2684,7 +2324,7 @@ opt/toolchains/modules/hal/espressif/components/log/log.obj: opt/toolchains/modu
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/log/log.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/log/log.c.obj
 
 opt/toolchains/modules/hal/espressif/components/log/log.i: opt/toolchains/modules/hal/espressif/components/log/log.c.i
@@ -2692,7 +2332,7 @@ opt/toolchains/modules/hal/espressif/components/log/log.i: opt/toolchains/module
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/log/log.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/log/log.c.i
 
 opt/toolchains/modules/hal/espressif/components/log/log.s: opt/toolchains/modules/hal/espressif/components/log/log.c.s
@@ -2700,7 +2340,7 @@ opt/toolchains/modules/hal/espressif/components/log/log.s: opt/toolchains/module
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/log/log.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/log/log.c.s
 
 opt/toolchains/modules/hal/espressif/components/log/log_noos.obj: opt/toolchains/modules/hal/espressif/components/log/log_noos.c.obj
@@ -2708,7 +2348,7 @@ opt/toolchains/modules/hal/espressif/components/log/log_noos.obj: opt/toolchains
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/log/log_noos.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log_noos.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log_noos.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/log/log_noos.c.obj
 
 opt/toolchains/modules/hal/espressif/components/log/log_noos.i: opt/toolchains/modules/hal/espressif/components/log/log_noos.c.i
@@ -2716,7 +2356,7 @@ opt/toolchains/modules/hal/espressif/components/log/log_noos.i: opt/toolchains/m
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/log/log_noos.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log_noos.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log_noos.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/log/log_noos.c.i
 
 opt/toolchains/modules/hal/espressif/components/log/log_noos.s: opt/toolchains/modules/hal/espressif/components/log/log_noos.c.s
@@ -2724,39 +2364,15 @@ opt/toolchains/modules/hal/espressif/components/log/log_noos.s: opt/toolchains/m
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/log/log_noos.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log_noos.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/log/log_noos.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/log/log_noos.c.s
-
-opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.obj: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.obj
-
-# target to build an object file
-opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.obj
-.PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.obj
-
-opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.i: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.i
-
-# target to preprocess a source file
-opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.i
-.PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.i
-
-opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.s: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.s
-
-# target to generate assembly for a file
-opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.s
-.PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.c.s
 
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.obj: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.obj
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.obj
 
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.i: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.i
@@ -2764,7 +2380,7 @@ opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.i: opt/t
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.i
 
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.s: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.s
@@ -2772,7 +2388,7 @@ opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.s: opt/t
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.c.s
 
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.obj: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.obj
@@ -2780,7 +2396,7 @@ opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.obj: o
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.obj
 
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.i: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.i
@@ -2788,7 +2404,7 @@ opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.i: opt
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.i
 
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.s: opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.s
@@ -2796,7 +2412,7 @@ opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.s: opt
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/soc/esp32s3/rtc_io_periph.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.obj
@@ -2804,7 +2420,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.i: opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.i
@@ -2812,7 +2428,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.s: opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.s
@@ -2820,7 +2436,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.obj
@@ -2828,7 +2444,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.obj: opt
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.i: opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.i
@@ -2836,7 +2452,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.i: opt/t
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.s: opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.s
@@ -2844,7 +2460,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.s: opt/t
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_api.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.obj
@@ -2852,7 +2468,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.obj
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.i: opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.i
@@ -2860,7 +2476,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.i: 
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.s: opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.s
@@ -2868,7 +2484,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.s: 
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.obj
@@ -2876,7 +2492,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.obj: opt/to
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.i: opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.i
@@ -2884,7 +2500,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.i: opt/tool
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.s: opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.s
@@ -2892,7 +2508,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.s: opt/tool
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/flash_mmap.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.obj
@@ -2900,7 +2516,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.obj: opt/too
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.i: opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.i
@@ -2908,7 +2524,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.i: opt/toolc
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.s: opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.s
@@ -2916,7 +2532,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.s: opt/toolc
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/flash_ops.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.obj
@@ -2924,7 +2540,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.obj
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.i: opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.i
@@ -2932,7 +2548,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.i: 
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.s: opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.s
@@ -2940,7 +2556,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.s: 
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.obj
@@ -2948,7 +2564,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.ob
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.i
@@ -2956,7 +2572,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.i:
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.s
@@ -2964,7 +2580,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.s:
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.obj
@@ -2972,7 +2588,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.i
@@ -2980,7 +2596,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.s
@@ -2988,7 +2604,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.obj
@@ -2996,7 +2612,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.obj:
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.i
@@ -3004,7 +2620,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.i: o
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.s
@@ -3012,7 +2628,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.s: o
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.obj
@@ -3020,7 +2636,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.i
@@ -3028,7 +2644,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.s
@@ -3036,7 +2652,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.obj
@@ -3044,7 +2660,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.ob
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.i
@@ -3052,7 +2668,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.i:
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.s
@@ -3060,7 +2676,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.s:
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.obj
@@ -3068,7 +2684,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.ob
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.i
@@ -3076,7 +2692,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.i:
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.s
@@ -3084,7 +2700,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.s:
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.obj
@@ -3092,7 +2708,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_op
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.i
@@ -3100,7 +2716,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_op
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.s
@@ -3108,7 +2724,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_op
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.obj
@@ -3116,7 +2732,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.obj:
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.i
@@ -3124,7 +2740,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.i: o
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.s
@@ -3132,7 +2748,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.s: o
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.obj
@@ -3140,7 +2756,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.i
@@ -3148,7 +2764,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.s
@@ -3156,7 +2772,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.obj
@@ -3164,7 +2780,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.o
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.i
@@ -3172,7 +2788,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.i
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.s
@@ -3180,7 +2796,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.s
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_hpm_enable.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.obj
@@ -3188,7 +2804,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.i
@@ -3196,7 +2812,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.s
@@ -3204,7 +2820,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.obj
@@ -3212,7 +2828,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.i
@@ -3220,7 +2836,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.s
@@ -3228,7 +2844,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.s
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.obj: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.obj
@@ -3236,7 +2852,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.obj: op
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.obj
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.i: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.i
@@ -3244,7 +2860,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.i: opt/
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.i
 
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.s: opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.s
@@ -3252,7 +2868,7 @@ opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.s: opt/
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/components/spi_flash/spi_flash_wrap.c.s
 
 opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.obj: opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.obj
@@ -3260,7 +2876,7 @@ opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.obj: opt/toolchain
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.obj
 
 opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.i: opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.i
@@ -3268,7 +2884,7 @@ opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.i: opt/toolchains/
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.i
 
 opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.s: opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.s
@@ -3276,7 +2892,7 @@ opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.s: opt/toolchains/
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/esp32s3/src/stubs.c.s
 
 opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.obj: opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.obj
@@ -3284,7 +2900,7 @@ opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.obj: opt/
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.obj
 
 opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.i: opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.i
@@ -3292,7 +2908,7 @@ opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.i: opt/to
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.i
 
 opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.s: opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.s
@@ -3300,7 +2916,7 @@ opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.s: opt/to
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.s
 
 opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.obj: opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.obj
@@ -3308,7 +2924,7 @@ opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.obj: opt
 
 # target to build an object file
 opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.obj
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.obj
 
 opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.i: opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.i
@@ -3316,7 +2932,7 @@ opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.i: opt/t
 
 # target to preprocess a source file
 opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.i
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.i
 
 opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.s: opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.s
@@ -3324,7 +2940,7 @@ opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.s: opt/t
 
 # target to generate assembly for a file
 opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.s
 .PHONY : opt/toolchains/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.s
 
 soc/espressif/common/esp_heap_runtime.obj: soc/espressif/common/esp_heap_runtime.c.obj
@@ -3332,7 +2948,7 @@ soc/espressif/common/esp_heap_runtime.obj: soc/espressif/common/esp_heap_runtime
 
 # target to build an object file
 soc/espressif/common/esp_heap_runtime.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/esp_heap_runtime.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/esp_heap_runtime.c.obj
 .PHONY : soc/espressif/common/esp_heap_runtime.c.obj
 
 soc/espressif/common/esp_heap_runtime.i: soc/espressif/common/esp_heap_runtime.c.i
@@ -3340,7 +2956,7 @@ soc/espressif/common/esp_heap_runtime.i: soc/espressif/common/esp_heap_runtime.c
 
 # target to preprocess a source file
 soc/espressif/common/esp_heap_runtime.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/esp_heap_runtime.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/esp_heap_runtime.c.i
 .PHONY : soc/espressif/common/esp_heap_runtime.c.i
 
 soc/espressif/common/esp_heap_runtime.s: soc/espressif/common/esp_heap_runtime.c.s
@@ -3348,7 +2964,7 @@ soc/espressif/common/esp_heap_runtime.s: soc/espressif/common/esp_heap_runtime.c
 
 # target to generate assembly for a file
 soc/espressif/common/esp_heap_runtime.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/esp_heap_runtime.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/esp_heap_runtime.c.s
 .PHONY : soc/espressif/common/esp_heap_runtime.c.s
 
 soc/espressif/common/loader.obj: soc/espressif/common/loader.c.obj
@@ -3356,7 +2972,7 @@ soc/espressif/common/loader.obj: soc/espressif/common/loader.c.obj
 
 # target to build an object file
 soc/espressif/common/loader.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/loader.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/loader.c.obj
 .PHONY : soc/espressif/common/loader.c.obj
 
 soc/espressif/common/loader.i: soc/espressif/common/loader.c.i
@@ -3364,7 +2980,7 @@ soc/espressif/common/loader.i: soc/espressif/common/loader.c.i
 
 # target to preprocess a source file
 soc/espressif/common/loader.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/loader.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/loader.c.i
 .PHONY : soc/espressif/common/loader.c.i
 
 soc/espressif/common/loader.s: soc/espressif/common/loader.c.s
@@ -3372,7 +2988,7 @@ soc/espressif/common/loader.s: soc/espressif/common/loader.c.s
 
 # target to generate assembly for a file
 soc/espressif/common/loader.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/loader.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/loader.c.s
 .PHONY : soc/espressif/common/loader.c.s
 
 soc/espressif/esp32s3/esp32s3-mp.obj: soc/espressif/esp32s3/esp32s3-mp.c.obj
@@ -3380,7 +2996,7 @@ soc/espressif/esp32s3/esp32s3-mp.obj: soc/espressif/esp32s3/esp32s3-mp.c.obj
 
 # target to build an object file
 soc/espressif/esp32s3/esp32s3-mp.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/esp32s3-mp.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/esp32s3-mp.c.obj
 .PHONY : soc/espressif/esp32s3/esp32s3-mp.c.obj
 
 soc/espressif/esp32s3/esp32s3-mp.i: soc/espressif/esp32s3/esp32s3-mp.c.i
@@ -3388,7 +3004,7 @@ soc/espressif/esp32s3/esp32s3-mp.i: soc/espressif/esp32s3/esp32s3-mp.c.i
 
 # target to preprocess a source file
 soc/espressif/esp32s3/esp32s3-mp.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/esp32s3-mp.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/esp32s3-mp.c.i
 .PHONY : soc/espressif/esp32s3/esp32s3-mp.c.i
 
 soc/espressif/esp32s3/esp32s3-mp.s: soc/espressif/esp32s3/esp32s3-mp.c.s
@@ -3396,7 +3012,7 @@ soc/espressif/esp32s3/esp32s3-mp.s: soc/espressif/esp32s3/esp32s3-mp.c.s
 
 # target to generate assembly for a file
 soc/espressif/esp32s3/esp32s3-mp.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/esp32s3-mp.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/esp32s3-mp.c.s
 .PHONY : soc/espressif/esp32s3/esp32s3-mp.c.s
 
 soc/espressif/esp32s3/soc.obj: soc/espressif/esp32s3/soc.c.obj
@@ -3404,7 +3020,7 @@ soc/espressif/esp32s3/soc.obj: soc/espressif/esp32s3/soc.c.obj
 
 # target to build an object file
 soc/espressif/esp32s3/soc.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc.c.obj
 .PHONY : soc/espressif/esp32s3/soc.c.obj
 
 soc/espressif/esp32s3/soc.i: soc/espressif/esp32s3/soc.c.i
@@ -3412,7 +3028,7 @@ soc/espressif/esp32s3/soc.i: soc/espressif/esp32s3/soc.c.i
 
 # target to preprocess a source file
 soc/espressif/esp32s3/soc.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc.c.i
 .PHONY : soc/espressif/esp32s3/soc.c.i
 
 soc/espressif/esp32s3/soc.s: soc/espressif/esp32s3/soc.c.s
@@ -3420,7 +3036,7 @@ soc/espressif/esp32s3/soc.s: soc/espressif/esp32s3/soc.c.s
 
 # target to generate assembly for a file
 soc/espressif/esp32s3/soc.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc.c.s
 .PHONY : soc/espressif/esp32s3/soc.c.s
 
 soc/espressif/esp32s3/soc_cache.obj: soc/espressif/esp32s3/soc_cache.c.obj
@@ -3428,7 +3044,7 @@ soc/espressif/esp32s3/soc_cache.obj: soc/espressif/esp32s3/soc_cache.c.obj
 
 # target to build an object file
 soc/espressif/esp32s3/soc_cache.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc_cache.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc_cache.c.obj
 .PHONY : soc/espressif/esp32s3/soc_cache.c.obj
 
 soc/espressif/esp32s3/soc_cache.i: soc/espressif/esp32s3/soc_cache.c.i
@@ -3436,7 +3052,7 @@ soc/espressif/esp32s3/soc_cache.i: soc/espressif/esp32s3/soc_cache.c.i
 
 # target to preprocess a source file
 soc/espressif/esp32s3/soc_cache.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc_cache.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc_cache.c.i
 .PHONY : soc/espressif/esp32s3/soc_cache.c.i
 
 soc/espressif/esp32s3/soc_cache.s: soc/espressif/esp32s3/soc_cache.c.s
@@ -3444,7 +3060,7 @@ soc/espressif/esp32s3/soc_cache.s: soc/espressif/esp32s3/soc_cache.c.s
 
 # target to generate assembly for a file
 soc/espressif/esp32s3/soc_cache.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc_cache.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32s3/soc_cache.c.s
 .PHONY : soc/espressif/esp32s3/soc_cache.c.s
 
 subsys/tracing/tracing_none.obj: subsys/tracing/tracing_none.c.obj
@@ -3452,7 +3068,7 @@ subsys/tracing/tracing_none.obj: subsys/tracing/tracing_none.c.obj
 
 # target to build an object file
 subsys/tracing/tracing_none.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj
 .PHONY : subsys/tracing/tracing_none.c.obj
 
 subsys/tracing/tracing_none.i: subsys/tracing/tracing_none.c.i
@@ -3460,7 +3076,7 @@ subsys/tracing/tracing_none.i: subsys/tracing/tracing_none.c.i
 
 # target to preprocess a source file
 subsys/tracing/tracing_none.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.i
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.i
 .PHONY : subsys/tracing/tracing_none.c.i
 
 subsys/tracing/tracing_none.s: subsys/tracing/tracing_none.c.s
@@ -3468,32 +3084,8 @@ subsys/tracing/tracing_none.s: subsys/tracing/tracing_none.c.s
 
 # target to generate assembly for a file
 subsys/tracing/tracing_none.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.s
+	cd /workspace/apps/multiple_esp_comm/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.s
 .PHONY : subsys/tracing/tracing_none.c.s
-
-workspace/modules/number_of_leds/number_of_leds.obj: workspace/modules/number_of_leds/number_of_leds.c.obj
-.PHONY : workspace/modules/number_of_leds/number_of_leds.obj
-
-# target to build an object file
-workspace/modules/number_of_leds/number_of_leds.c.obj:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.obj
-.PHONY : workspace/modules/number_of_leds/number_of_leds.c.obj
-
-workspace/modules/number_of_leds/number_of_leds.i: workspace/modules/number_of_leds/number_of_leds.c.i
-.PHONY : workspace/modules/number_of_leds/number_of_leds.i
-
-# target to preprocess a source file
-workspace/modules/number_of_leds/number_of_leds.c.i:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.i
-.PHONY : workspace/modules/number_of_leds/number_of_leds.c.i
-
-workspace/modules/number_of_leds/number_of_leds.s: workspace/modules/number_of_leds/number_of_leds.c.s
-.PHONY : workspace/modules/number_of_leds/number_of_leds.s
-
-# target to generate assembly for a file
-workspace/modules/number_of_leds/number_of_leds.c.s:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(MAKE) $(MAKESILENT) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/workspace/modules/number_of_leds/number_of_leds.c.s
-.PHONY : workspace/modules/number_of_leds/number_of_leds.c.s
 
 # Help Target
 help:
@@ -3603,36 +3195,6 @@ help:
 	@echo "... opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/driver/deprecated/adc_legacy.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/driver/gpio/rtc_io.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_rtc_calib.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_table.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/esp32s3/esp_efuse_utility.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_api.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/efuse/src/esp_efuse_utility.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_adc/deprecated/esp_adc_cal_common_legacy.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/esp_hw_support/adc_share_hw_ctrl.s"
 	@echo "... opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.s"
@@ -3751,12 +3313,6 @@ help:
 	@echo "... opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/adc_hal.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/adc_hal.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/adc_hal.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/adc_hal_common.s"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/cache_hal.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/cache_hal.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/cache_hal.s"
@@ -3769,21 +3325,12 @@ help:
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/esp32s3/efuse_hal.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/ledc_hal.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/ledc_hal_iram.s"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/mmu_hal.s"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/mpu_hal.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/hal/rtc_io_hal.s"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.s"
@@ -3817,9 +3364,6 @@ help:
 	@echo "... opt/toolchains/modules/hal/espressif/components/log/log_noos.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/log/log_noos.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/log/log_noos.s"
-	@echo "... opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.obj"
-	@echo "... opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.i"
-	@echo "... opt/toolchains/modules/hal/espressif/components/soc/esp32s3/adc_periph.s"
 	@echo "... opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.obj"
 	@echo "... opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.i"
 	@echo "... opt/toolchains/modules/hal/espressif/components/soc/esp32s3/gpio_periph.s"
@@ -3910,9 +3454,6 @@ help:
 	@echo "... subsys/tracing/tracing_none.obj"
 	@echo "... subsys/tracing/tracing_none.i"
 	@echo "... subsys/tracing/tracing_none.s"
-	@echo "... workspace/modules/number_of_leds/number_of_leds.obj"
-	@echo "... workspace/modules/number_of_leds/number_of_leds.i"
-	@echo "... workspace/modules/number_of_leds/number_of_leds.s"
 .PHONY : help
 
 
@@ -3924,6 +3465,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

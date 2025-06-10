@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Utility rule file for pristine.
 
@@ -67,7 +67,7 @@ include CMakeFiles/pristine.dir/compiler_depend.make
 include CMakeFiles/pristine.dir/progress.make
 
 CMakeFiles/pristine:
-	/usr/bin/cmake -DBINARY_DIR=/workspace/apps/05_solution_pwm_knob/build -DSOURCE_DIR=/workspace/apps/05_solution_pwm_knob -P /opt/toolchains/zephyr/cmake/pristine.cmake
+	/usr/bin/cmake -DBINARY_DIR=/workspace/apps/multiple_esp_comm/build -DSOURCE_DIR=/workspace/apps/multiple_esp_comm -P /opt/toolchains/zephyr/cmake/pristine.cmake
 
 pristine: CMakeFiles/pristine
 pristine: CMakeFiles/pristine.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/pristine.dir/clean:
 .PHONY : CMakeFiles/pristine.dir/clean
 
 CMakeFiles/pristine.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /workspace/apps/05_solution_pwm_knob /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/CMakeFiles/pristine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /workspace/apps/multiple_esp_comm /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/CMakeFiles/pristine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pristine.dir/depend
 

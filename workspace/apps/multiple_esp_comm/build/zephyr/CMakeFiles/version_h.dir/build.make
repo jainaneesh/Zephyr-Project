@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Utility rule file for version_h.
 
@@ -70,8 +70,8 @@ zephyr/CMakeFiles/version_h: zephyr/include/generated/zephyr/version.h
 
 zephyr/include/generated/zephyr/version.h: /opt/toolchains/zephyr/VERSION
 zephyr/include/generated/zephyr/version.h: /opt/toolchains/zephyr/.git/index
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/generated/zephyr/version.h"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /usr/bin/cmake -DZEPHYR_BASE=/opt/toolchains/zephyr -DOUT_FILE=/workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/version.h -DVERSION_TYPE=KERNEL -DVERSION_FILE=/opt/toolchains/zephyr/VERSION -DKERNEL_VERSION_CUSTOMIZATION="" -P /opt/toolchains/zephyr/cmake/gen_version_h.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/generated/zephyr/version.h"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /usr/bin/cmake -DZEPHYR_BASE=/opt/toolchains/zephyr -DOUT_FILE=/workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/version.h -DVERSION_TYPE=KERNEL -DVERSION_FILE=/opt/toolchains/zephyr/VERSION -DKERNEL_VERSION_CUSTOMIZATION="" -P /opt/toolchains/zephyr/cmake/gen_version_h.cmake
 
 version_h: zephyr/CMakeFiles/version_h
 version_h: zephyr/include/generated/zephyr/version.h
@@ -83,10 +83,10 @@ zephyr/CMakeFiles/version_h.dir/build: version_h
 .PHONY : zephyr/CMakeFiles/version_h.dir/build
 
 zephyr/CMakeFiles/version_h.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/version_h.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/version_h.dir/cmake_clean.cmake
 .PHONY : zephyr/CMakeFiles/version_h.dir/clean
 
 zephyr/CMakeFiles/version_h.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr /workspace/apps/05_solution_pwm_knob/build/zephyr/CMakeFiles/version_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr /workspace/apps/multiple_esp_comm/build/zephyr/CMakeFiles/version_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/CMakeFiles/version_h.dir/depend
 

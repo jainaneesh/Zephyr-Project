@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj: \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/misc/generated/configs.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/misc/generated/configs.c \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/gcc.h \

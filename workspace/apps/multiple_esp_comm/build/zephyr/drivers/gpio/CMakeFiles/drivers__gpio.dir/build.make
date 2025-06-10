@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Include any dependencies generated for this target.
 include zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/depend.make
@@ -72,16 +72,16 @@ include zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/flags.make
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj: zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/flags.make
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj: /opt/toolchains/zephyr/drivers/gpio/gpio_esp32.c
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj: zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/gpio && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj -MF CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj.d -o CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj -c /opt/toolchains/zephyr/drivers/gpio/gpio_esp32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/drivers/gpio && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj -MF CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj.d -o CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj -c /opt/toolchains/zephyr/drivers/gpio/gpio_esp32.c
 
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__gpio.dir/gpio_esp32.c.i"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/gpio && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/drivers/gpio/gpio_esp32.c > CMakeFiles/drivers__gpio.dir/gpio_esp32.c.i
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/drivers/gpio && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /opt/toolchains/zephyr/drivers/gpio/gpio_esp32.c > CMakeFiles/drivers__gpio.dir/gpio_esp32.c.i
 
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__gpio.dir/gpio_esp32.c.s"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/gpio && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/drivers/gpio/gpio_esp32.c -o CMakeFiles/drivers__gpio.dir/gpio_esp32.c.s
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/drivers/gpio && /opt/toolchains/zephyr-sdk-0.16.8/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /opt/toolchains/zephyr/drivers/gpio/gpio_esp32.c -o CMakeFiles/drivers__gpio.dir/gpio_esp32.c.s
 
 # Object files for target drivers__gpio
 drivers__gpio_OBJECTS = \
@@ -93,19 +93,19 @@ drivers__gpio_EXTERNAL_OBJECTS =
 zephyr/drivers/gpio/libdrivers__gpio.a: zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj
 zephyr/drivers/gpio/libdrivers__gpio.a: zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/build.make
 zephyr/drivers/gpio/libdrivers__gpio.a: zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libdrivers__gpio.a"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/gpio && $(CMAKE_COMMAND) -P CMakeFiles/drivers__gpio.dir/cmake_clean_target.cmake
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/gpio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drivers__gpio.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libdrivers__gpio.a"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/drivers/gpio && $(CMAKE_COMMAND) -P CMakeFiles/drivers__gpio.dir/cmake_clean_target.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/drivers/gpio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drivers__gpio.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/build: zephyr/drivers/gpio/libdrivers__gpio.a
 .PHONY : zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/build
 
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/gpio && $(CMAKE_COMMAND) -P CMakeFiles/drivers__gpio.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr/drivers/gpio && $(CMAKE_COMMAND) -P CMakeFiles/drivers__gpio.dir/cmake_clean.cmake
 .PHONY : zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/clean
 
 zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr/drivers/gpio /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/gpio /workspace/apps/05_solution_pwm_knob/build/zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr/drivers/gpio /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr/drivers/gpio /workspace/apps/multiple_esp_comm/build/zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/depend
 

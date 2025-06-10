@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/soc/soc/esp32s3/common/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/soc/soc/esp32s3/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/soc/soc/esp32s3/esp32s3/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/soc/soc/esp32s3/esp32s3/cmake_install.cmake")
 endif()
 

@@ -1,6 +1,6 @@
 zephyr/CMakeFiles/zephyr.dir/opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c.obj: \
  /opt/toolchains/modules/hal/espressif/components/hal/uart_hal.c \
- /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/autoconf.h \
+ /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/autoconf.h \
  /opt/toolchains/zephyr/include/zephyr/toolchain/zephyr_stdint.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/hal/include/hal/uart_hal.h \
  /opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/hal/esp32s3/include/hal/uart_ll.h \

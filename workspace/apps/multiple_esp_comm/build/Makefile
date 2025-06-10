@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles /workspace/apps/05_solution_pwm_knob/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles /workspace/apps/multiple_esp_comm/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/05_solution_pwm_knob/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/apps/multiple_esp_comm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -728,19 +728,6 @@ drivers__interrupt_controller/fast:
 .PHONY : drivers__interrupt_controller/fast
 
 #=============================================================================
-# Target rules for targets named drivers__adc
-
-# Build rule for target.
-drivers__adc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drivers__adc
-.PHONY : drivers__adc
-
-# fast build rule for target.
-drivers__adc/fast:
-	$(MAKE) $(MAKESILENT) -f zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/build.make zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/build
-.PHONY : drivers__adc/fast
-
-#=============================================================================
 # Target rules for targets named drivers__clock_control
 
 # Build rule for target.
@@ -791,19 +778,6 @@ drivers__pinctrl: cmake_check_build_system
 drivers__pinctrl/fast:
 	$(MAKE) $(MAKESILENT) -f zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build.make zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/build
 .PHONY : drivers__pinctrl/fast
-
-#=============================================================================
-# Target rules for targets named drivers__pwm
-
-# Build rule for target.
-drivers__pwm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drivers__pwm
-.PHONY : drivers__pwm
-
-# fast build rule for target.
-drivers__pwm/fast:
-	$(MAKE) $(MAKESILENT) -f zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/build.make zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/build
-.PHONY : drivers__pwm/fast
 
 #=============================================================================
 # Target rules for targets named drivers__serial
@@ -948,6 +922,30 @@ footprint/fast:
 	$(MAKE) $(MAKESILENT) -f zephyr/cmake/reports/CMakeFiles/footprint.dir/build.make zephyr/cmake/reports/CMakeFiles/footprint.dir/build
 .PHONY : footprint/fast
 
+src/gpio_get.obj: src/gpio_get.c.obj
+.PHONY : src/gpio_get.obj
+
+# target to build an object file
+src/gpio_get.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/gpio_get.c.obj
+.PHONY : src/gpio_get.c.obj
+
+src/gpio_get.i: src/gpio_get.c.i
+.PHONY : src/gpio_get.i
+
+# target to preprocess a source file
+src/gpio_get.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/gpio_get.c.i
+.PHONY : src/gpio_get.c.i
+
+src/gpio_get.s: src/gpio_get.c.s
+.PHONY : src/gpio_get.s
+
+# target to generate assembly for a file
+src/gpio_get.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/gpio_get.c.s
+.PHONY : src/gpio_get.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -1026,13 +1024,11 @@ help:
 	@echo "... app"
 	@echo "... arch__common"
 	@echo "... arch__xtensa__core"
-	@echo "... drivers__adc"
 	@echo "... drivers__clock_control"
 	@echo "... drivers__console"
 	@echo "... drivers__gpio"
 	@echo "... drivers__interrupt_controller"
 	@echo "... drivers__pinctrl"
-	@echo "... drivers__pwm"
 	@echo "... drivers__serial"
 	@echo "... drivers__timer"
 	@echo "... isr_tables"
@@ -1044,6 +1040,9 @@ help:
 	@echo "... zephyr"
 	@echo "... zephyr_final"
 	@echo "... zephyr_pre0"
+	@echo "... src/gpio_get.obj"
+	@echo "... src/gpio_get.i"
+	@echo "... src/gpio_get.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

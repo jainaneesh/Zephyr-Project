@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/apps/05_solution_pwm_knob
+# Install script for directory: /workspace/apps/multiple_esp_comm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/workspace/apps/05_solution_pwm_knob/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/workspace/apps/multiple_esp_comm/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

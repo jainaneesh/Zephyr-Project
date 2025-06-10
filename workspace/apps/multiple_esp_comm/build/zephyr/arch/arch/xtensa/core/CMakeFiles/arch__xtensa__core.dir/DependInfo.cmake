@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S" "/workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj"
-  "/opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S" "/workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj"
+  "/opt/toolchains/zephyr/arch/xtensa/core/window_vectors.S" "/workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj"
+  "/opt/toolchains/zephyr/arch/xtensa/core/xtensa_asm2_util.S" "/workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -110,7 +110,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/wpa_supplicant/src/eap_peer"
   "/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../../components/mbedtls/port/include"
   "/opt/toolchains/modules/hal/espressif/zephyr/esp32s3/../port/include/boot"
-  "/workspace/modules/number_of_leds/."
   "/opt/toolchains/zephyr/lib/libc/common/include"
   )
 

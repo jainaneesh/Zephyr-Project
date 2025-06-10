@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/apps/05_solution_pwm_knob
+CMAKE_SOURCE_DIR = /workspace/apps/multiple_esp_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/apps/05_solution_pwm_knob/build
+CMAKE_BINARY_DIR = /workspace/apps/multiple_esp_comm/build
 
 # Utility rule file for offsets_h.
 
@@ -69,8 +69,8 @@ include zephyr/CMakeFiles/offsets_h.dir/progress.make
 zephyr/CMakeFiles/offsets_h: zephyr/include/generated/zephyr/offsets.h
 
 zephyr/include/generated/zephyr/offsets.h: zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/05_solution_pwm_knob/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/generated/zephyr/offsets.h"
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && /opt/venv/bin/python3 /opt/toolchains/zephyr/scripts/build/gen_offset_header.py -i /workspace/apps/05_solution_pwm_knob/build/zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj -o /workspace/apps/05_solution_pwm_knob/build/zephyr/include/generated/zephyr/offsets.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/apps/multiple_esp_comm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/generated/zephyr/offsets.h"
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && /opt/venv/bin/python3 /opt/toolchains/zephyr/scripts/build/gen_offset_header.py -i /workspace/apps/multiple_esp_comm/build/zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj -o /workspace/apps/multiple_esp_comm/build/zephyr/include/generated/zephyr/offsets.h
 
 offsets_h: zephyr/CMakeFiles/offsets_h
 offsets_h: zephyr/include/generated/zephyr/offsets.h
@@ -82,10 +82,10 @@ zephyr/CMakeFiles/offsets_h.dir/build: offsets_h
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/build
 
 zephyr/CMakeFiles/offsets_h.dir/clean:
-	cd /workspace/apps/05_solution_pwm_knob/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/offsets_h.dir/cmake_clean.cmake
+	cd /workspace/apps/multiple_esp_comm/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/offsets_h.dir/cmake_clean.cmake
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/clean
 
 zephyr/CMakeFiles/offsets_h.dir/depend:
-	cd /workspace/apps/05_solution_pwm_knob/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/05_solution_pwm_knob /opt/toolchains/zephyr /workspace/apps/05_solution_pwm_knob/build /workspace/apps/05_solution_pwm_knob/build/zephyr /workspace/apps/05_solution_pwm_knob/build/zephyr/CMakeFiles/offsets_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/apps/multiple_esp_comm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/apps/multiple_esp_comm /opt/toolchains/zephyr /workspace/apps/multiple_esp_comm/build /workspace/apps/multiple_esp_comm/build/zephyr /workspace/apps/multiple_esp_comm/build/zephyr/CMakeFiles/offsets_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/depend
 

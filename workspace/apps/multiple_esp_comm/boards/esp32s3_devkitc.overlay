@@ -1,5 +1,6 @@
 // Define PWM_POLARITY_NORMAL
 #include <zephyr/dt-bindings/pwm/pwm.h>
+// #include <zephyr/dt-bindings/gpio.h>
 
 / {
 	aliases {
@@ -8,6 +9,8 @@
 		led-0 = &led_0;
 		led-1 = &led_1;
 		led-2 = &led_2;
+		flash-gpio = &driver_gpio_node;
+		detect-gpio = &detecting_gpio_node;
 	};
 
 	// User-defined node for configuring "pwm-leds" subnodes
@@ -24,6 +27,20 @@
 
 		led_2: pwm_led_2 {
 			pwms = <&ledc0 2 1000 PWM_POLARITY_NORMAL>;
+		};
+	};
+
+	gpio14-output {
+		compatible = "gpio-leds";
+		driver_gpio_node: driver_gpio {
+			gpios = <&gpio0 14 GPIO_ACTIVE_HIGH>;
+		};
+	};
+
+	gpio7_input {
+		compatible = "gpio-leds";
+		detecting_gpio_node: detecting_gpio {
+			gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
 		};
 	};
 };
@@ -94,4 +111,6 @@
 		};
 	};
 };
+
+
 

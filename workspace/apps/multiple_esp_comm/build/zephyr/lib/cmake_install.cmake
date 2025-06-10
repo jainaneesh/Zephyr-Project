@@ -39,41 +39,41 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/crc/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/crc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/libc/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/libc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/posix/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/posix/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/hash/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/hash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/heap/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/heap/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/mem_blocks/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/mem_blocks/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/os/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/os/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/lib/utils/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/lib/utils/cmake_install.cmake")
 endif()
 

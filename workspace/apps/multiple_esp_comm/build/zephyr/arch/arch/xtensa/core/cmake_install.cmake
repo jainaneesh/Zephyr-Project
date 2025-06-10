@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspace/apps/05_solution_pwm_knob/build/zephyr/arch/arch/xtensa/core/startup/cmake_install.cmake")
+  include("/workspace/apps/multiple_esp_comm/build/zephyr/arch/arch/xtensa/core/startup/cmake_install.cmake")
 endif()
 

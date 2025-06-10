@@ -55,6 +55,3 @@ config ZEPHYR_UOSCORE_UEDHOC_MODULE
 config ZEPHYR_ZCBOR_MODULE
    bool
    default y
-config ZEPHYR_NUMBER_OF_LEDS_MODULE
-   bool
-   default y
