@@ -10,7 +10,8 @@
 		led-1 = &led_1;
 		led-2 = &led_2;
 		flash-gpio = &driver_gpio_node;
-		detect-gpio = &detecting_gpio_node;
+		detect-gpio-board-1 = &detecting_gpio_node_board_1;
+		detect-gpio-board-2 = &detecting_gpio_node_board_2;
 	};
 
 	// User-defined node for configuring "pwm-leds" subnodes
@@ -39,8 +40,15 @@
 
 	gpio7_input {
 		compatible = "gpio-leds";
-		detecting_gpio_node: detecting_gpio {
+		detecting_gpio_node_board_1: detecting_gpio_node_board_1 {
 			gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
+		};
+	};
+
+	gpio6_input {
+		compatible = "gpio-leds";
+		detecting_gpio_node_board_2: detecting_gpio_board_2 {
+			gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
 		};
 	};
 };

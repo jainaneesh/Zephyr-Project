@@ -33,7 +33,9 @@ int main(void){
 
     if (role == ROLE_BOARD_1) {
         printk("You are board 1\r\n");
+    } else if (role == ROLE_BOARD_2) {
+        printk("You are board 2\r\n");
     } else {
-        printk("You are not the right board\r\n");
+        printk("Cannot recognize the board\r\n");
     }
 }
