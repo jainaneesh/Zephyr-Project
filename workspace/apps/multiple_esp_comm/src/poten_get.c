@@ -3,6 +3,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/adc.h>
 #include <zephyr/drivers/pwm.h>
+#include "poten_get.h"
 
 // Configs
 #define ADC_THRESHOLD 2000
