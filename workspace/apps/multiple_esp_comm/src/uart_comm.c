@@ -8,8 +8,15 @@
 #define UART_NODE DT_ALIAS(uart_tx)
 static const struct device *uart_dev = DEVICE_DT_GET(UART_NODE);
 
+// Thread stack and metadata
+K_THREAD_STACK_DEFINE(uart_stack, STACK_SIZE);
+struct k_thread uart_thread_data;
+
 static uint8_t rx_buf[UART_FRAME_SIZE];
 static size_t rx_index = 0;
+
+#define CMD_IDLE   0x10
+
 
 static uint8_t calculate_crc8(uint8_t cmd, uint8_t data)
 {
@@ -136,14 +143,22 @@ void uart_tx_thread(void *arg1, void *arg2, void *arg3)
 
     while (1) {
         if (k_msgq_get(&adc_msgq, &val, K_FOREVER) == 0) {
-            // Only send 8-bit value in the frame
-            uint8_t byte_val = (uint8_t)(val & 0xFF);
+            uint8_t cmd;
+            if (val < 1000)
+                cmd = CMD_IDLE;
+            else if (val < 2000)
+                cmd = CMD_WARN;
+            else
+                cmd = CMD_ALERT;
 
+            // 🧱 Build UART Frame
+            uint8_t data = (uint8_t)(val & 0xFF);
+            uint8_t crc = calculate_crc8(cmd, data);
             uint8_t frame[UART_FRAME_SIZE] = {
                 UART_START_BYTE,
-                CMD_PING,
-                byte_val,
-                calculate_crc8(CMD_PING, byte_val)
+                cmd,
+                data,
+                crc
             };
 
             for (int i = 0; i < UART_FRAME_SIZE; i++) {
