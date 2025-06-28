@@ -6,6 +6,9 @@
 #define CMD_PING        0x01
 #define CMD_WARN        0x20
 #define CMD_ALERT       0x30
+#define STACK_SIZE      1024
+
+
 
 extern struct k_msgq adc_msgq;
 

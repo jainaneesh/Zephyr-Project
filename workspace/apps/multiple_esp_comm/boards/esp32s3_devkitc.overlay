@@ -7,6 +7,7 @@
 / {
 	aliases {
 		my-adc = &adc0;
+		my-adc-channel = &adc0_ch0;
 		flash-gpio = &driver_gpio_node;
 		detect-gpio-board-1 = &detecting_gpio_node_board_1;
 		detect-gpio-board-2 = &detecting_gpio_node_board_2;
@@ -35,6 +36,21 @@
 	};
 };
 
+// ADC1 (adc0) channel 0 is connected to GPIO1
+&adc0 {
+	status = "okay";
+    #address-cells = <1>;
+	#size-cells = <0>;
+    
+	adc0_ch0: channel@0 {
+		reg = <0>;
+		zephyr,gain = "ADC_GAIN_1_4";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,vref-mv = <3900>;
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+};
 
 
 // Modify ledc0 node (defined in esp32s3_common.dtsi) to connect LED PWM
